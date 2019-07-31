@@ -4,6 +4,7 @@ import sklearn as skl
 
 print('Modulos importados')
 
+
 # str_inpath = r'C:\Users\jean_\PycharmProjects\Preco_Credito\entrata_teste.csv'
 str_inpath = r'entrata_teste.csv'
 

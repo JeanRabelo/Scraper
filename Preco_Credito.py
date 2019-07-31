@@ -3,3 +3,4 @@
 # import sklearn
 
 print('O programa terminou')
+print('Apenas para teste')
