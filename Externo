@@ -1,0 +1,22 @@
+import pandas as pd
+import sklearn as skl
+# pd.Dataframe('')
+
+print('Modulos importados')
+
+# str_inpath = r'C:\Users\jean_\PycharmProjects\Preco_Credito\entrata_teste.csv'
+str_inpath = r'entrata_teste.csv'
+
+print('Classe do str_inpath = ' + str(type(str_inpath)))
+print('Valor do str_inpath = ' + str_inpath)
+
+entrada = pd.read_csv(str_inpath)
+
+entrada.set_index(keys=entrada['Coluna c'])
+entrada.to_csv(r'Arquivos\saida.csv')
+
+print(entrada)
+
+# print('pd = ' + entrada)
+
+# print(fil)
