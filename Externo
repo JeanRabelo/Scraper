@@ -4,7 +4,6 @@ import sklearn as skl
 
 print('Modulos importados')
 
-
 # str_inpath = r'C:\Users\jean_\PycharmProjects\Preco_Credito\entrata_teste.csv'
 str_inpath = r'entrata_teste.csv'
 
@@ -18,6 +17,7 @@ entrada.to_csv(r'Arquivos\saida.csv')
 
 print(entrada)
 
-# print('pd = ' + entrada)
+print('O programa rodou bem')
 
+# print('pd  = ' + entrada)
 # print(fil)
