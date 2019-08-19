@@ -1,0 +1,15 @@
+# Importar bibliotecas
+import urllib3
+import urllib
+from bs4 import BeautifulSoup
+
+quote_page = 'https://www.pythonforbeginners.com/beautifulsoup/beautifulsoup-4-python'
+
+# query the website and return the html to the variable ‘page’
+
+page = urllib.request.urlopen(quote_page)
+
+soup = BeautifulSoup(page, 'html.parser')
+print(soup)
+# name_box = soup.find('h1', attrs={'class': 'priceText__1853e8a5'})
+# print(name_box)
