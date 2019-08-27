@@ -9,29 +9,18 @@ def print_conveniente(str_nivel, elem, indentacao, j, n='root'):
     print(indentacao*'\t', end = '')
     print(str(j) + r'/' + str(n) + ' - ' + str(len(elem)))
 
+def percorrer_arvore(root, int_nivel=0, j_n=1, n=1):
+    print_conveniente(int_nivel*'sub_' + 'element', root, int_nivel, j_n, n)
+    n = len(root)
+    if n > 0:
+        j_n = 1
+        for elem in root:
+            percorrer_arvore(elem, int_nivel + 1, j_n, n)
+            j_n = j_n + 1
+
 str_file = r"C:\Users\jean_\Google Drive\3-Operacional\Cadastro Positivo Boa Vista\XML_BVXA005_completo_ Modelo.xml"
 
 tree = ET.parse(str_file)
 root = tree.getroot()
 
-j_0 = 1
-print_conveniente('root',root, 0, j_0)
-
-j_1 = 1
-for elem in root:
-    print_conveniente('elem',elem, 1, j_1, len(root))
-    j_1 = j_1 + 1
-    j_2 = 1
-    for sub_elem in elem:
-        print_conveniente('sub_elem',sub_elem, 2, j_2, len(elem))
-        j_2 = j_2 + 1
-        j_3 = 1
-        for sub_sub_elem in sub_elem:
-            print_conveniente('sub_sub_elem',sub_sub_elem, 3, j_3, len(sub_elem))
-            j_3 = j_3 + 1
-            j_4 = 1
-            for sub_sub_sub_elem in sub_sub_elem:
-                print_conveniente('sub_sub_sub_elem',sub_sub_sub_elem, 4, j_4, len(sub_sub_elem))
-                j_4 = j_4 + 1
-                if len(sub_sub_sub_elem) > 0:
-                    print(r'---Existem elementos abaixo desse último!!!---')
+percorrer_arvore(root)
