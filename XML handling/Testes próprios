@@ -10,7 +10,7 @@ print(type(root[0][1]))
 print(type(root[0][1].attrib))
 
 # print(root.text)
-print(root.parse)
+print(root)
 # print(root[1].attrib)
 # print(root[0][0].attrib)
 # print(root[0][1].attrib)
