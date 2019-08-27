@@ -1,7 +1,0 @@
-import csv
-str_path_dicionario_bvs = r'C:\Users\jean_\Documents\GitHub\Up.p\XML handling\Dicionario_termos_boavista.csv'
-
-# dict_bvs = csv.reader(open(str_path_dicionario_bvs))
-
-print(dict_bvs)
-dict_bvs = csv.reader(open(str_path_dicionario_bvs))

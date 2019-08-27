@@ -1,4 +1,4 @@
-Tag/Atributo;Nome Completo
+ï»¿Tag ou Atributo;Nome Completo
 EnvoRlcCncd;EnvioRelacaoCancelamento
 CnpjOgm;CnpjOrigem
 NmOgm;NomeOrigem
@@ -8,7 +8,7 @@ DtRms;DataRemessa
 Cli;Cliente
 TipCli;TipoCliente
 IdfcCli;Identificacao
-CdEstCli;CódigoStatusCliente
+CdEstCli;CÃ³digoStatusCliente
 TsCnct;DataHoraCancelamentoReabertura
 CnpjGstCnct;CnpjGestorCancelamentoReabertura 
 EnvoCad;EnvioCadastro
@@ -23,7 +23,7 @@ IdfcCli;Identificacao
 NmCli;NomeCliente
 EndCli;EnderecoCliente
 LgrEndCli;LogradouroEnderecoCliente
-      NrEndCli                                                      ;NúmeroEndereço                                                                     
+NrEndCli;NÃºmeroEndereÃ§o                                                                     
 CmptEndCli;ComplementoEnderecoCliente
 BaiEndCli;BairroEnderecoCliente
 CepEndCli;CEPEnderecoCliente
@@ -88,7 +88,7 @@ NmCttPpl;NomeContatoPrincipal
 DptCttPpl;DepartamentoContatoPrincipal
 CrgCttPpl;CargoContatoPrincipal
 DddTelCtt|Ppl;DDDTelefoneContatoPrincipal
-NrTelCttPpl;NúmeroTelefoneContatoPrincipal
+NrTelCttPpl;NÃºmeroTelefoneContatoPrincipal
 RmalTelCttPpl;RamalTelefoneContatoPrincipal
 EmaiCttPpl;EmailContatoPrincipal
 AtdtCsmoPpl;AtendimentoConsumidorPrincipal
@@ -96,13 +96,13 @@ DptAtdtCsmoPpl;DepartamentoAtendimentoConsumidorPrincipal
 TipTelAtdtCsmoPpl;TipoTelefoneAtendimentoConsumidorPrincipal
 CdPaisTelAtdtCsmoPpl;CodigoPaisTelefoneAtendimentoConsumidorPrincipal
 DddTelAtdtCsmoPpl;DDDTelefoneAtendimentoConsumidorPrincipal
-NrTelAtdtCsmoPpl;NúmeroTelefoneAtendimentoConsumidorPrincipal
+NrTelAtdtCsmoPpl;NÃºmeroTelefoneAtendimentoConsumidorPrincipal
 EmaiAtdtCsmoPpl;EmailAtendimentoConsumidorPrincipal
 AutdLmnrPpl;AutorizadoLiminarPrincipal
 NmAutdLmnrPpl;NomeAutorizadoLiminarPrincipal
 CpfAutdLmnrPpl;CPFAutorizadoLiminarPrincipal
 DddTelAutdLmnrPpl;DDDTelefoneAutorizadoLiminarPrincipal
-NrTelAutdLmnrPpl;NúmeroTelefoneAutorizadoLiminarPrincipal
+NrTelAutdLmnrPpl;NÃºmeroTelefoneAutorizadoLiminarPrincipal
 RmalTelAutdLmnrPpl;RamalTelefoneAutorizadoLiminarPrincipal
 EmaiAutdLmnrPpl;EmailAutorizadoLiminarPrincipal
 Prtc;Participacao
@@ -122,7 +122,7 @@ NmCttPct;NomeContatoParticipante
 DptCttPct;DepartamentoContatoParticipante
 CrgCttPct;CargoContatoParticipante
 DddTelCtt|Pct;DDDTelefoneContatoParticipante
-NrTelCttPct;NúmeroTelefoneContatoParticipante
+NrTelCttPct;NÃºmeroTelefoneContatoParticipante
 RmalTelCttPct;RamalTelefoneContatoParticipante
 EmaiCttPct;EmailContatoParticipante
 AtdtCsmoPct;AtendimentoConsumidorParticipante
@@ -130,13 +130,13 @@ DptAtdtCsmoPct;DepartamentoAtendimentoConsumidorParticipante
 TipTelAtdtCsmoPct;TipoTelefoneAtendimentoConsumidorParticipante
 CdPaisTelAtdtCsmoPct;CodigoPaisTelefoneAtendimentoConsumidorParticipante
 DddTelAtdtCsmoPct;DDDTelefoneAtendimentoConsumidorParticipante
-NrTelAtdtCsmoPct;NúmeroTelefoneAtendimentoConsumidorParticipante
+NrTelAtdtCsmoPct;NÃºmeroTelefoneAtendimentoConsumidorParticipante
 EmaiAtdtCsmoPct;EmailAtendimentoConsumidorParticipante
 AutdLmnrPct;AutorizadoLiminarParticipante
 NmAutdLmnrPct;NomeAutorizadoLiminarParticipante
 CpfAutdLmnrPct;CPFAutorizadoLiminarParticipante
 DddTelAutdLmnrPct;DDDTelefoneAutorizadoLiminarParticipante
-NrTelAutdLmnrPct;NúmeroTerlefoneAutorizadoLiminarParticipante
+NrTelAutdLmnrPct;NÃºmeroTerlefoneAutorizadoLiminarParticipante
 RmalTelAutdLmnrPct;RamalAutorizadoLiminarParticipante
 EmaiAutdLmnrPct;EmailAutorizadoLiminarParticipante
 Prmz;Pametrizacao
@@ -227,7 +227,7 @@ DtCtrc;DataContratacao
 CdMdld;Modalidade
 DtAprc;DataApuracao
 CnpjCtrc;CnpjContratacao
-CmdoOpr;ComandoOperação
+CmdoOpr;ComandoOperaÃ§Ã£o
 IdfcCliCtrt;IdentificacaoClienteContratante
 TipRst;TipoRestricao
 DetOpr;DetalheOperacao
@@ -235,7 +235,7 @@ InPreFix;IndicadorPreFixado
 DtVnctUltPcl;DataVencimentoUltimaParcela
 VlCtrdFut;ValorContratadoFuturo
 QtPcl;QuantidadeParcelas
-NrPlstCrt;NúmeroPlásticoCartão
+NrPlstCrt;NÃºmeroPlÃ¡sticoCartÃ£o
 SdoDvdr;SaldoDevedor
 DtVnctOpr;DataVencimento
 NrGr;NumeroGrupo

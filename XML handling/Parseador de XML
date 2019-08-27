@@ -1,13 +1,22 @@
 import xml.etree.cElementTree as ET
 from pprint import pprint
+from importar_dados import read_dict_boavista
+
+dict_bvs = read_dict_boavista()
+
+# pprint(dict_bvs)
 
 def print_conveniente(str_nivel, elem, indentacao, j, n='root'):
     print(indentacao*'\t', end = '')
     print('-'+str_nivel+'-')
     print(indentacao*'\t', end = '')
-    print(elem.attrib)
+    dict_original = elem.attrib
+    dict_novo = dict()
+    for oldkey in dict_original.keys():
+        dict_novo[dict_bvs[oldkey]] = dict_original[oldkey]
+    print(dict_novo)
     print(indentacao*'\t', end = '')
-    print(str(j) + r'/' + str(n) + r' - ' + str(len(elem)) + u'\u2193')
+    print(str(j) + r'/' + str(n) + ' - \\' + str(len(elem)) + r'/')
 
 def percorrer_arvore(root, int_nivel=0, j_n=1, n=1):
     print_conveniente(int_nivel*'sub_' + 'element', root, int_nivel, j_n, n)
