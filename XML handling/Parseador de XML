@@ -14,8 +14,6 @@ str_file = r"C:\Users\jean_\Google Drive\3-Operacional\Cadastro Positivo Boa Vis
 tree = ET.parse(str_file)
 root = tree.getroot()
 
-print('\nAll Attributes\n')
-
 j_0 = 1
 print_conveniente('root',root, j_0, 0)
 
@@ -35,3 +33,5 @@ for elem in root:
             for sub_sub_sub_elem in sub_sub_elem:
                 print_conveniente('sub_sub_sub_elem',sub_sub_sub_elem, 4, j_4, len(sub_sub_elem))
                 j_4 = j_4 + 1
+                if len(sub_sub_sub_elem) > 0:
+                    print(r'---Existem elementos abaixo desse último!!!---')
