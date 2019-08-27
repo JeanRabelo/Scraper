@@ -4,4 +4,4 @@ str_path_dicionario_bvs = r'C:\Users\jean_\Documents\GitHub\Up.p\XML handling\Di
 
 dict_bvs = csv.DictReader(str_path_dicionario_bvs)
 
-print(dict_bvsp)
+print(dict_bvs)
