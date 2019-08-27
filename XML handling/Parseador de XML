@@ -7,7 +7,7 @@ def print_conveniente(str_nivel, elem, indentacao, j, n='root'):
     print(indentacao*'\t', end = '')
     print(elem.attrib)
     print(indentacao*'\t', end = '')
-    print(str(j) + r'/' + str(n) + ' - ' + str(len(elem)))
+    print(str(j) + r'/' + str(n) + r' - ' + str(len(elem)) + u'\u2193')
 
 def percorrer_arvore(root, int_nivel=0, j_n=1, n=1):
     print_conveniente(int_nivel*'sub_' + 'element', root, int_nivel, j_n, n)
