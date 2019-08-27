@@ -1,16 +1,37 @@
 import xml.etree.cElementTree as ET
+from pprint import pprint
+
+def print_conveniente(str_nivel, elem, i, j, n='root'):
+    print(i*'\t', end = '')
+    print('-'+str_nivel+'-')
+    print(i*'\t', end = '')
+    print(elem.attrib)
+    print(i*'\t', end = '')
+    print(str(j) + r'/' + str(n) + ' - ' + str(len(elem)))
 
 str_file = r"C:\Users\jean_\Google Drive\3-Operacional\Cadastro Positivo Boa Vista\XML_BVXA005_completo_ Modelo.xml"
 
 tree = ET.parse(str_file)
 root = tree.getroot()
 
-print(type(root))
-print(type(root[0][1]))
-print(type(root[0][1].attrib))
+print('\nAll Attributes\n')
 
-# print(root.text)
-print(root)
-# print(root[1].attrib)
-# print(root[0][0].attrib)
-# print(root[0][1].attrib)
+j_0 = 1
+print_conveniente('root',root, j_0, 0)
+
+j_1 = 1
+for elem in root:
+    print_conveniente('elem',elem, 1, j_1, len(root))
+    j_1 = j_1 + 1
+    j_2 = 1
+    for sub_elem in elem:
+        print_conveniente('sub_elem',sub_elem, 2, j_2, len(elem))
+        j_2 = j_2 + 1
+        j_3 = 1
+        for sub_sub_elem in sub_elem:
+            print_conveniente('sub_sub_elem',sub_sub_elem, 3, j_3, len(sub_elem))
+            j_3 = j_3 + 1
+            j_4 = 1
+            for sub_sub_sub_elem in sub_sub_elem:
+                print_conveniente('sub_sub_sub_elem',sub_sub_sub_elem, 4, j_4, len(sub_sub_elem))
+                j_4 = j_4 + 1
