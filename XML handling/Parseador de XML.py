@@ -1,10 +1,8 @@
-import xml.etree.cElementTree as ET
-from pprint import pprint
 from importar_dados import read_dict_boavista
+from importar_dados import read_file
 
 dict_bvs = read_dict_boavista()
-
-# pprint(dict_bvs)
+root = read_file()
 
 def print_conveniente(str_nivel, elem, indentacao, j, n='root'):
     print(indentacao*'\t', end = '')
@@ -26,10 +24,5 @@ def percorrer_arvore(root, int_nivel=0, j_n=1, n=1):
         for elem in root:
             percorrer_arvore(elem, int_nivel + 1, j_n, n)
             j_n = j_n + 1
-
-str_file = r"C:\Users\jean_\Google Drive\3-Operacional\Cadastro Positivo Boa Vista\XML_BVXA005_completo_ Modelo.xml"
-
-tree = ET.parse(str_file)
-root = tree.getroot()
 
 percorrer_arvore(root)

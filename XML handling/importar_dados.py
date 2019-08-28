@@ -1,5 +1,5 @@
+import xml.etree.cElementTree as ET
 import pandas as pd
-from pprint import pprint
 
 def read_dict_boavista():
     str_path_dicionario_bvs = r'C:\Users\jean_\Documents\GitHub\Up.p\XML handling\Dicionario_termos_boavista.csv'
@@ -8,9 +8,9 @@ def read_dict_boavista():
 
     return dict_bvs
 
-# aaa = read_dict_boavista()
+def read_file():
+    str_file = r"C:\Users\jean_\Google Drive\3-Operacional\Cadastro Positivo Boa Vista\XML_BVXA005_completo_ Modelo.xml"
 
-# pprint(type(aaa.keys()))
-
-# for oldkey in aaa.keys():
-#     print(type(oldkey))
+    tree = ET.parse(str_file)
+    root = tree.getroot()
+    return root
