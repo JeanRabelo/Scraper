@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RtnHstCrd CnpjGbd="23456789012345" CnpjIf="12345678901234" NrRms="1" SeqlRms="1" CmdoRms="I" DtRms="14082014" CdOcr="0">
+<AvsRms>
+	<Avs CdAvsRms  = "999" /> 
+	<Avs CdAvsRms  = "888" /> 
+</AvsRms>
+<OcrCli>
+<Cli TipCli="1" IdfcCli="12345678901" CdOcrCli="123" CdAvsCli = "999"/>
+<Cli TipCli="1" IdfcCli="12345678901" CdOcrCli="124">
+	<Opr NrUnco="2014000006174018" PrfAg="4886" NrCtr="6174018" /> 
+</Cli>
+</OcrCli>
+</RtnHstCrd>

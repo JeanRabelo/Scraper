@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<EnvoCfg CnpjIf="12345678901234" CnpjGbd="23456789012345" NrRms="1" SeqlRms="1" DtRms="14012013">
+	<Ppl NmPpl="PRINCIPAL" CnpjPpl="12345678901234" SitePpl="www.principal.com.br" >
+		<EndPpl LgrEndPpl="RUA DA CONFIGURACAO, 10" CmptEndPpl="ANDAR 10"
+			BaiEndPpl="CENTRO" CepEndPpl="12345678" MunEndPpl="SAO PAULO" UfEndPpl="SP" />
+		<CttPpl NmCttPpl="JOAO DA SILVA" DptCttPpl="DIRETORIA DE CREDITO" CrgCttPpl="DIRETOR"
+			DddTelCttPpl="11" NrTelCttPpl="12345678" RmalTelCttPpl="5678" EmaiCttPpl="joaodasilva@principal.com.br" />
+		<CttPpl NmCttPpl="MANUEL PEREIRA" DptCttPpl="DIRETORIA DE TECNOLOGIA" CrgCttPpl="GERENTE"
+			DddTelCttPpl="11" NrTelCttPpl="12345679" RmalTelCttPpl="5679" EmaiCttPpl="manuelpereira@principal.com.br" />
+		<AtdtCsmoPpl DptAtdtCsmoPpl="SAC" TipTelAtdtCsmoPpl="CAPITAIS E REGIOES METROPOLITANAS"
+			CdPaisTelAtdtCsmoPpl="55" DddTelAtdtCsmoPpl="11" NrTelAtdtCsmoPpl="12345678" EmaiAtdtCsmoPpl="sac@principal.com.br" />
+		<AtdtCsmoPpl DptAtdtCsmoPpl="OUVIDORIA" TipTelAtdtCsmoPpl="DEMAIS REGIOES"
+			CdPaisTelAtdtCsmoPpl="55" DddTelAtdtCsmoPpl="11" NrTelAtdtCsmoPpl="12345679" EmaiAtdtCsmoPpl="ouvidoria@principal.com.br" />
+		<AutdLmnrPpl NmAutdLmnrPpl="JOSE BATISTA" CpfAutdLmnrPpl="12345678901"
+			DddTelAutdLmnrPpl="11" NrTelAutdLmnrPpl="12345677" RmalTelAutdLmnrPpl="5677" EmaiAutdLmnrPpl="josebatista@principal.com.br" />
+		<AutdLmnrPpl NmAutdLmnrPpl="MARIA APARECIDA" CpfAutdLmnrPpl="12345678902"
+			DddTelAutdLmnrPpl="11" NrTelAutdLmnrPpl="12345676" RmalTelAutdLmnrPpl="5676" EmaiAutdLmnrPpl="mariaaparecida@principal.com.br" />
+	</Ppl>
+
+	<Prtc>
+
+		<Pct NmPct="PARTICIPANTE A" CnpjPct="12345678901234" SitePct="www.participantea.com.br" >
+			<EndPct LgrEndPct="RUA DA CONFIGURACAO A, 10" CmptEndPct="SALA 11"
+				BaiEndPct="CENTRO" CepEndPct="12345678" MunEndPct="SAO PAULO" UfEndPct="SP"/>
+			<CttPct NmCttPct="JOSE DA SILVA" DptCttPct="DIRETORIA DE CREDITO" CrgCttPct="DIRETOR A"
+				DddTelCttPct="11" NrTelCttPct="12345678" RmalCttPct="5678" EmaiCttPct="josedasilva@participantea.com.br" />
+			<CttPct NmCttPct="JOAQUIM PEREIRA" DptCttPct="DIRETORIA DE TECNOLOGIA" CrgCttPct="GERENTE A"
+				DddTelCttPct="11" NrTelCttPct="12345679" RmalCttPct="5679" EmaiCttPct="joaquimpereira@participantea.com.br" />
+			<AtdtCsmoPct DptAtdtCsmoPct="SAC" TipTelAtdtCsmoPct="CAPITAIS E REGIOES METROPOLITANAS"
+				CdPaisTelAtdtCsmoPct="55" DddTelAtdtCsmoPct="11" NrTelAtdtCsmoPct="12345678" EmaiAtdtCsmoPct="sac@participantea.com.br" />
+			<AtdtCsmoPct DptAtdtCsmoPct="OUVIDORIA" TipTelAtdtCsmoPct="DEMAIS REGIOES"
+				CdPaisTelAtdtCsmoPct="55" DddTelAtdtCsmoPct="11" NrTelAtdtCsmoPct="12345679" EmaiAtdtCsmoPct="ouvidoria@participantea.com.br" />
+			<AutdLmnrPct NmAutdLmnrPct="JOSE BATISTA" CpfAutdLmnrPct="12345678901"
+				DddTelAutdLmnrPct="11" NrTelAutdLmnrPct="12345677" RmalTelAutdLmnrPct="5677" EmaiAutdLmnrPct="josebatista@participantea.com.br" />
+			<AutdLmnrPct NmAutdLmnrPct="MARIA APARECIDA" CpfAutdLmnrPct="12345678902"
+				DddTelAutdLmnrPct="11" NrTelAutdLmnrPct="12345676" RmalTelAutdLmnrPct="5676" EmaiAutdLmnrPct="mariaaparecida@participantea.com.br" />
+		</Pct>
+
+		<Pct NmPct="PARTICIPANTE B" CnpjPct="12345678901235" SitePct="www.participanteb.com.br" >
+			<EndPct LgrEndPct="RUA DA CONFIGURACAO B, 10" CmptEndPct="SALA 12"
+				BaiEndPct="CENTRO" CepEndPct="12345678" MunEndPct="SAO PAULO" UfEndPct="SP"/>
+			<CttPct NmCttPct="JOSE DA SILVA" DptCttPct="DIRETORIA DE CREDITO" CrgCttPct="DIRETOR B"
+				DddTelCttPct="12" NrTelCttPct="12345678" RmalCttPct="5678" EmaiCttPct="josedasilva@participanteb.com.br" />
+			<CttPct NmCttPct="JOAQUIM PEREIRA" DptCttPct="DIRETORIA DE TECNOLOGIA" CrgCttPct="GERENTE B"
+				DddTelCttPct="12" NrTelCttPct="12345679" RmalCttPct="5679" EmaiCttPct="joaquimpereira@participanteb.com.br" />
+		</Pct>
+
+	</Prtc>
+	
+	<Prmz>
+		<RcbtRlcAutz DdSmnRcbtRlcAutz="SEGUNDA" />
+		<RcbtRlcAutz DdSmnRcbtRlcAutz="TERCA" />
+	</Prmz>
+
+</EnvoCfg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EnvoCta CnpjGbd="23456789012345" CnpjIf="12345678901234" NrRms="1" SeqlRms="1" DtRms="14012013">
+<Cta TipCta="O" TsAclt="14012013-110101" JstCta="Cliente alega que não contratou a operacao" NrUncoCta="12345678977">
+	<Cli TipCli="1" IdfcCli="12345678901" />
+		<Opr NrUnco="2012000006174018" PrfAg="4886" NrCtr="6174018" CnpjCtrc="12345678903256" />
+</Cta>
+<Cta TipCta="O" TsAclt="14012013-110102" JstCta="Cliente alega que não contratou a operacao" NrUncoCta="12345678897">
+	<Cli TipCli="1" IdfcCli="12345678901" />
+		<Opr NrUnco="2012000006174019" PrfAg="4886" NrCtr="ABC45678901234567"  CnpjCtrc="12345678903666" />
+</Cta>
+<Cta TipCta="C" TsAclt="14012013-110103" JstCta="Cliente alega que não é cliente dessa IF" NrUncoCta="12345678697">
+	<Cli TipCli="1" IdfcCli="12345678901" />
+</Cta>
+</EnvoCta>

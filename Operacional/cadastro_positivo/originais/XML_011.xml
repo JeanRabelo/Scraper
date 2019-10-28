@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<RtnCfg CnpjGbd="23456789012345" CnpjIf="12345678901234" NrRms="1" SeqlRms="1" DtRms="14012013" CdOcr="0">
+	<Ppl CdOcrPpl="0" >
+		<CttPpl NmCttPpl="JOAO DA SILVA" CdOcrCttPpl="0" />
+		<AtdtCsmoPpl DptAtdtCsmoPpl="SAC" CdOcrAtdtCsmoPpl="0" />
+		<AutdLmnrPpl CpfAutdLmnrPpl="12345678901" CdOcrAutdLmnrPpl="0" />
+	</Ppl>
+	<Prtc>
+		<Pct CnpjPct="12345678901234" CdOcrPct="0" >
+			<CttPct NmCttPct="JOSE DA SILVA" CdOcrCttPct="0" />
+			<AtdtCsmoPct DptAtdtCsmoPct="SAC" CdOcrAtdtCsmoPct="0" />
+			<AutdLmnrPct CpfAutdLmnrPct="12345678901" CdOcrAutdLmnrPct="0" />
+		</Pct>
+	</Prtc>
+	<Prmz CdOcrPrmz="0" />
+</RtnCfg>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EnvoCad CnpjOgm="12345678000195" NmOgm="Fonte Teste" NrRms="1" SeqlRms="1" DtRms="10062019">
+	<Cli TipCli="1" IdfcCli="11111111111" NmCli="João da Silva Teste">
+		<EndCli LgrEndCli="Rua Teste1" NrEndCli="50" CmptEndCli="apto 1" BaiEndCli="Bairro Teste" CepEndCli="09099000" MunEndCli="Cidade Teste" UfEndCli="SP"/>
+		<EndCli LgrEndCli="Rua Teste2" NrEndCli="50" CmptEndCli="apto 1" BaiEndCli="Bairro Teste" CepEndCli="09099000" MunEndCli="Cidade Teste" UfEndCli="SP"/>
+		<EndCli LgrEndCli="Rua Teste3" NrEndCli="50" CmptEndCli="apto 1" BaiEndCli="Bairro Teste" CepEndCli="09099000" MunEndCli="Cidade Teste" UfEndCli="SP"/>
+		<EndCli LgrEndCli="Rua Teste4" NrEndCli="50" CmptEndCli="apto 1" BaiEndCli="Bairro Teste" CepEndCli="09099000" MunEndCli="Cidade Teste" UfEndCli="SP"/>
+		<EndCli LgrEndCli="Rua Teste5" NrEndCli="50" CmptEndCli="apto 1" BaiEndCli="Bairro Teste" CepEndCli="09099000" MunEndCli="Cidade Teste" UfEndCli="SP"/>
+		<TelCli DddTelCli="11" NrTelCli="988881111"/>
+		<TelCli DddTelCli="11" NrTelCli="988882222"/>
+		<TelCli DddTelCli="11" NrTelCli="988883333"/>
+		<TelCli DddTelCli="11" NrTelCli="988884444"/>
+		<TelCli DddTelCli="11" NrTelCli="988885555"/>
+		<EndEtnCli EmaiCli="teste1@teste.com.br"/>
+		<EndEtnCli EmaiCli="teste2@teste.com.br"/>
+		<EndEtnCli EmaiCli="teste3@teste.com.br"/>
+		<EndEtnCli EmaiCli="teste4@teste.com.br"/>
+		<EndEtnCli EmaiCli="teste5@teste.com.br"/>	
+	</Cli>
+	<Cli TipCli="1" IdfcCli="22222222222" NmCli="José da Silva Teste">
+		<EndCli LgrEndCli="Rua Teste6" NrEndCli="50" CmptEndCli="apto 1" BaiEndCli="Bairro Teste" CepEndCli="09099000" MunEndCli="Cidade Teste" UfEndCli="SP"/>
+		<TelCli DddTelCli="11" NrTelCli="988886666"/>
+		<EndEtnCli EmaiCli="teste6@teste.com.br"/>	
+	</Cli>
+	<Cli TipCli="1" IdfcCli="55555555555" NmCli="Joaquina da Silva Teste">
+		<EndCli LgrEndCli="Rua Teste7" NrEndCli="50" CmptEndCli="apto 1" BaiEndCli="Bairro Teste" CepEndCli="09099000" MunEndCli="Cidade Teste" UfEndCli="SP"/>	
+	</Cli>
+	<Cli TipCli="1" IdfcCli="33333333333" NmCli="Maria da Silva Teste">
+		<TelCli DddTelCli="11" NrTelCli="988887777"/>
+		<TelCli DddTelCli="11" NrTelCli="988888888"/>
+		<EndEtnCli EmaiCli="teste7@teste.com.br"/>	
+	</Cli>
+	<Cli TipCli="1" IdfcCli="44444444444" NmCli="Joana da Silva Teste">
+		<EndEtnCli EmaiCli="teste8@teste.com.br"/>	
+	</Cli>
+</EnvoCad>

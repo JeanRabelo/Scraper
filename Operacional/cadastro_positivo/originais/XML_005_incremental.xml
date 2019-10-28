@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EnvoHstCrd CnpjIf="12345678000195" CnpjGbd="98765432000198" CmdoRms="I" NrRms="1" SeqlRms="1" DtRms="05082017" DtRefBaseItno="04082017" NrRmsRlc="123" FmtRms="I"> <!-- ATENÇÃO: data de referência = 04/08/2017 -->
+
+	<!--  Alteração de Cliente  --> 
+	<Cli TipCli="1" IdfcCli="12345678909" NmCli="JOAO SILVA" NtzRlc="2" CmdoCli="A" CdOcr="0">
+
+		<!--  Inclusão de Operação do tipo parcelado (parcelas mensais + parcelas semestrais)  --> 
+		<Opr NrUnco="20170000000001" DtCtrc="01032017" CdMdld="A01" DtAprc="04082017" CnpjCtrc="12345678000195" CmdoOpr="I"> 
+			<DetOpr InPreFix="S" DtVnctUltPcl="01042018" VlCtrdFut="1500000" QtPcl="15"/> 
+			<PclAnt DtVnctPclAnt="01042017" PercPclAnt="M" VlPclAnt="100000"> 
+				<PgtoPclAnt DtPgtoPclAnt="01042017" VlPgtoPclAnt="100000"/>
+			</PclAnt>
+			<PclAnt DtVnctPclAnt="01042017" PercPclAnt="S" VlPclAnt="100000"> <!-- ATENÇÃO: parcela semestral -->
+				<PgtoPclAnt DtPgtoPclAnt="01042017" VlPgtoPclAnt="100000"/>
+			</PclAnt>
+			<PclAnt DtVnctPclAnt="01052017" PercPclAnt="M" VlPclAnt="100000"> 
+				<PgtoPclAnt DtPgtoPclAnt="01052017" VlPgtoPclAnt="50000"/>
+				<PgtoPclAnt DtPgtoPclAnt="02052017" VlPgtoPclAnt="50000"/>
+			</PclAnt>
+			<PclAnt DtVnctPclAnt="01062017" PercPclAnt="M" VlPclAnt="100000"> 
+				<PgtoPclAnt DtPgtoPclAnt="01062017" VlPgtoPclAnt="50000"/>
+			</PclAnt>
+			<PclAnt DtVnctPclAnt="01072017" PercPclAnt="M" VlPclAnt="100000"/> 
+			<PclAnt DtVnctPclAnt="01082017" PercPclAnt="M" VlPclAnt="100000"/> 
+			<PgtoAvls DtPgtoAvls="15072017" VlPgtoAvls="50000" TipPgtoAvls="P"/> 
+			<PclFut DtVnctPrxPcl="02092017" PercPclFut="M" VlPrxPcl="100000" QtPclVncr="7" QtPclPgr="9"/>
+			<PclFut DtVnctPrxPcl="02102017" PercPclFut="S" VlPrxPcl="100000" QtPclVncr="2" QtPclPgr="2"/> 
+		</Opr>
+
+		<!--  Alteração de Operação do tipo parcelado  --> 
+		<Opr NrUnco="20170000000001" DtCtrc="01032017" CdMdld="A01" DtAprc="04082017" CnpjCtrc="12345678000195" CmdoOpr="A">
+			<DetOpr InPreFix="S" DtVnctUltPcl="01042018" VlCtrdFut="1550000" QtPcl="15"/> <!-- enviar apenas quando houver alteração nas informações -->
+			<PclAnt DtVnctPclAnt="01042017" PercPclAnt="M" CmdoPclAnt="E"/> <!-- alteração da primeira parcela mensal de R$ 1.000,00 para R$ 1.100,00, mantido o pagamento de R$ 1.000,00 -->
+			<PclAnt DtVnctPclAnt="01042017" PercPclAnt="M" VlPclAnt="110000" CmdoPclAnt="I"> 
+				<PgtoPclAnt DtPgtoPclAnt="01042017" VlPgtoPclAnt="100000"/>
+			</PclAnt>
+			<PclAnt DtVnctPclAnt="01042017" PercPclAnt="S" CmdoPclAnt="E"/> <!-- alteração da primeira parcela semestral de R$ 1.000,00 para R$ 1.100,00, mantido o pagamento de R$ 1.000,00 --> 
+			<PclAnt DtVnctPclAnt="01042017" PercPclAnt="S" VlPclAnt="110000" CmdoPclAnt="I"> 
+				<PgtoPclAnt DtPgtoPclAnt="01042017" VlPgtoPclAnt="100000"/>
+			</PclAnt>
+			<PclAnt DtVnctPclAnt="01052017" PercPclAnt="M" CmdoPclAnt="E"/> <!-- alteração da segunda parcela mensal de R$ 1.000,00 para R$ 1.100,00, mantidos os dois pagamentos de R$ 500,00 --> 
+			<PclAnt DtVnctPclAnt="01052017" PercPclAnt="M" VlPclAnt="110000" CmdoPclAnt="I"> 
+				<PgtoPclAnt DtPgtoPclAnt="01052017" VlPgtoPclAnt="50000"/>
+				<PgtoPclAnt DtPgtoPclAnt="02052017" VlPgtoPclAnt="50000"/>
+			</PclAnt>
+			<PclAnt DtVnctPclAnt="01062017" PercPclAnt="M" CmdoPclAnt="E"/> <!-- alteração da terceira parcela mensal de R$ 1.000,00 para R$ 1.100,00, mantido o pagamento de R$ 500,00 --> 
+			<PclAnt DtVnctPclAnt="01062017" PercPclAnt="M" VlPclAnt="110000" CmdoPclAnt="I"> 
+				<PgtoPclAnt DtPgtoPclAnt="01062017" VlPgtoPclAnt="50000"/>
+			</PclAnt>
+			<PclAnt DtVnctPclAnt="01072017" PercPclAnt="M" CmdoPclAnt="E"/> <!-- alteração da quarta parcela mensal de R$ 1.000,00 para R$ 1.100,00, mantida a ausência de pagamento --> 
+			<PclAnt DtVnctPclAnt="01072017" PercPclAnt="M" VlPclAnt="110000" CmdoPclAnt="I"/> 
+			<PgtoAvls DtPgtoAvls="15072017" VlPgtoAvls="50000" TipPgtoAvls="P" CmdoPgtoAvls="E"/> <!-- alteração do pagamento avulso de R$ 500,00 para R$ 600,00 --> 
+			<PgtoAvls DtPgtoAvls="15072017" VlPgtoAvls="60000" TipPgtoAvls="P" CmdoPgtoAvls="I"/> 
+			<PclFut DtVnctPrxPcl="02092017" PercPclFut="M" VlPrxPcl="100000" QtPclVncr="7" QtPclPgr="9"/> <!-- enviar mesmo quando não houver alteração nas informações -->
+			<PclFut DtVnctPrxPcl="02102017" PercPclFut="S" VlPrxPcl="100000" QtPclVncr="2" QtPclPgr="2"/> <!-- enviar mesmo quando não houver alteração nas informações -->
+		</Opr>
+		
+		<!--  Sobreposição de Operação do tipo parcelado (substituir informações dentro da janela de 13 meses)  --> 
+		<Opr NrUnco="20170000000001" DtCtrc="01032017" CdMdld="A01" DtAprc="04082017" CnpjCtrc="12345678000195" CmdoOpr="S"> 
+			<DetOpr InPreFix="S" DtVnctUltPcl="01042018" VlCtrdFut="1550000" QtPcl="15"/> 
+			<PclAnt DtVnctPclAnt="01042017" PercPclAnt="M" VlPclAnt="110000"> 
+				<PgtoPclAnt DtPgtoPclAnt="01042017" VlPgtoPclAnt="100000"/>
+			</PclAnt>
+			<PclAnt DtVnctPclAnt="01042017" PercPclAnt="S" VlPclAnt="110000"> 
+				<PgtoPclAnt DtPgtoPclAnt="01042017" VlPgtoPclAnt="100000"/>
+			</PclAnt>
+			<PclAnt DtVnctPclAnt="01052017" PercPclAnt="M" VlPclAnt="110000"> 
+				<PgtoPclAnt DtPgtoPclAnt="01052017" VlPgtoPclAnt="50000"/>
+				<PgtoPclAnt DtPgtoPclAnt="02052017" VlPgtoPclAnt="50000"/>
+			</PclAnt>
+			<PclAnt DtVnctPclAnt="01062017" PercPclAnt="M" VlPclAnt="110000"> 
+				<PgtoPclAnt DtPgtoPclAnt="01062017" VlPgtoPclAnt="50000"/>
+			</PclAnt>
+			<PclAnt DtVnctPclAnt="01072017" PercPclAnt="M" VlPclAnt="110000"/> 
+			<PclAnt DtVnctPclAnt="01082017" PercPclAnt="M" VlPclAnt="100000"/> 
+			<PgtoAvls DtPgtoAvls="15072017" VlPgtoAvls="60000" TipPgtoAvls="P"/> 
+			<PclFut DtVnctPrxPcl="02092017" PercPclFut="M" VlPrxPcl="100000" QtPclVncr="7" QtPclPgr="9"/> 
+			<PclFut DtVnctPrxPcl="02102017" PercPclFut="S" VlPrxPcl="100000" QtPclVncr="2" QtPclPgr="2"/> 
+		</Opr>
+
+		<!--  Exclusão de Operação do tipo parcelado (excluir informações dentro e fora da janela de 13 meses)  --> 
+		<Opr NrUnco="20170000000001" CmdoOpr="E"/>
+
+		<!--  Inclusão de Operação do tipo cartão de crédito  --> 
+		<Opr NrUnco="20170000000002" DtCtrc="01032017" CdMdld="D01" DtAprc="04082017" CmdoOpr="I">
+			<DetOpr NrPlstCrt="1234" SdoDvdr="200000"/> 
+			<FatFchdAnt DtVnctFatFchdAnt="10042017" VlTtlPgrFatFchdAnt="100400" VlMinPgrFatFchdAnt="10040">
+				<PgtoFatFchdAnt DtPgtoFatFchdAnt="10042017" VlPgtoFatFchdAnt="100400"/>
+			</FatFchdAnt>
+			<FatFchdAnt DtVnctFatFchdAnt="10052017" VlTtlPgrFatFchdAnt="-50000"/>
+			<FatFchdAnt DtVnctFatFchdAnt="10062017" VlTtlPgrFatFchdAnt="100600" VlMinPgrFatFchdAnt="10060">
+				<PgtoFatFchdAnt DtPgtoFatFchdAnt="10062017" VlPgtoFatFchdAnt="60000"/>
+				<PgtoFatFchdAnt DtPgtoFatFchdAnt="15062017" VlPgtoFatFchdAnt="10000"/>
+			</FatFchdAnt>
+			<FatFchdAnt DtVnctFatFchdAnt="10072017" VlTtlPgrFatFchdAnt="100700" VlMinPgrFatFchdAnt="10070"/> 
+			<FatFchdFut DtVnctFatFchdFut="10082017" VlTtlPgrFatFchdFut="100800" VlMinPgrFatFchdFut="10080"/> 
+		</Opr>
+		
+		<!--  Alteração de Operação do tipo cartão de crédito  --> 
+		<Opr NrUnco="20170000000002" DtCtrc="01032017" CdMdld="D01" DtAprc="04082017" CmdoOpr="A">
+			<DetOpr NrPlstCrt="1234" SdoDvdr="210000"/> <!-- enviar apenas quando houver alteração nas informações -->
+			<FatFchdAnt DtVnctFatFchdAnt="10042017" CmdoFatFchdAnt="E"/> <!-- alteração da fatura fechada anterior de abril de R$ 1.004,00 para R$ 1.104,00, mantido o pagamento de R$ 1.004,00 -->
+			<FatFchdAnt DtVnctFatFchdAnt="10042017" VlTtlPgrFatFchdAnt="110400" VlMinPgrFatFchdAnt="11040" CmdoFatFchdAnt="I">
+				<PgtoFatFchdAnt DtPgtoFatFchdAnt="10042017" VlPgtoFatFchdAnt="100400"/>
+			</FatFchdAnt>
+			<FatFchdAnt DtVnctFatFchdAnt="10062017" CmdoFatFchdAnt="E"/> <!-- alteração da fatura fechada anterior de junho de R$ 1.006,00 para R$ 1.106,00, mantidos os dois pagamento de R$ 600,00 e R% 100,00 -->
+			<FatFchdAnt DtVnctFatFchdAnt="10062017" VlTtlPgrFatFchdAnt="110600" VlMinPgrFatFchdAnt="11060" CmdoFatFchdAnt="I">
+				<PgtoFatFchdAnt DtPgtoFatFchdAnt="10062017" VlPgtoFatFchdAnt="60000"/>
+				<PgtoFatFchdAnt DtPgtoFatFchdAnt="15062017" VlPgtoFatFchdAnt="10000"/>
+			</FatFchdAnt>
+			<FatFchdAnt DtVnctFatFchdAnt="10072017" CmdoFatFchdAnt="E"/> <!-- alteração da fatura fechada anterior de julho de R$ 1.007,00 para R$ 1.107,00, mantida a ausência de pagamento -->
+			<FatFchdAnt DtVnctFatFchdAnt="10072017" VlTtlPgrFatFchdAnt="110700" VlMinPgrFatFchdAnt="11070" CmdoFatFchdAnt="I"/> 
+			<FatFchdFut DtVnctFatFchdFut="10082017" CmdoFatFchdFut="E"/> <!-- alteração da fatura fechada futura de agosto de R$ 1.008,00 para R$ 1.108,00  -->
+			<FatFchdFut DtVnctFatFchdFut="10082017" VlTtlPgrFatFchdFut="110800" VlMinPgrFatFchdFut="11080" CmdoFatFchdFut="I"/> 
+		</Opr>
+		
+		<!--  Alteração de Operação do tipo cartão de crédito  --> 
+		<Opr NrUnco="20170000000002" DtCtrc="01032017" CdMdld="D01" DtAprc="11082017" CmdoOpr="A"> <!-- ATENÇÃO: data de apuração diferente para enriquecer o exemplo -->
+			<FatFchdAnt DtVnctFatFchdAnt="10082017" VlTtlPgrFatFchdAnt="100800" VlMinPgrFatFchdAnt="10080" CmdoFatFchdAnt="I"/> 
+			<FatFchdFut DtVnctFatFchdFut="10082017" CmdoFatFchdFut="E"/>
+		</Opr>
+		
+		<!--  Sobreposição de Operação do tipo cartão de crédito  --> 
+		<Opr NrUnco="20170000000002" DtCtrc="01032017" CdMdld="D01" DtAprc="04082017" CmdoOpr="S">
+			<DetOpr NrPlstCrt="1234" SdoDvdr="210000"/> 
+			<FatFchdAnt DtVnctFatFchdAnt="10042017" VlTtlPgrFatFchdAnt="110400" VlMinPgrFatFchdAnt="11040">
+				<PgtoFatFchdAnt DtPgtoFatFchdAnt="10042017" VlPgtoFatFchdAnt="100400"/>
+			</FatFchdAnt>
+			<FatFchdAnt DtVnctFatFchdAnt="10052017" VlTtlPgrFatFchdAnt="-50000"/>
+			<FatFchdAnt DtVnctFatFchdAnt="10062017" VlTtlPgrFatFchdAnt="110600" VlMinPgrFatFchdAnt="11060">
+				<PgtoFatFchdAnt DtPgtoFatFchdAnt="10062017" VlPgtoFatFchdAnt="60000"/>
+				<PgtoFatFchdAnt DtPgtoFatFchdAnt="15062017" VlPgtoFatFchdAnt="10000"/>
+			</FatFchdAnt>
+			<FatFchdAnt DtVnctFatFchdAnt="10072017" VlTtlPgrFatFchdAnt="110700" VlMinPgrFatFchdAnt="11070"/> 
+			<FatFchdFut DtVnctFatFchdFut="10082017" VlTtlPgrFatFchdFut="110800" VlMinPgrFatFchdFut="11080"/> 
+		</Opr>
+		
+		<!--  Exclusão de Operação do tipo cartão de crédito --> 
+		<Opr NrUnco="20170000000002" CmdoOpr="E"/>
+
+		<!--  Inclusão de Operação do tipo rotativo  --> 
+		<Opr NrUnco="20170000000003" DtCtrc="01042017" CdMdld="E01" DtAprc="25072017" CmdoOpr="I"> <!-- ATENÇÃO: data de apuração diferente para enriquecer o exemplo -->
+			<DetOpr DtVnctOpr="01042018"/> 
+			<FchtAnt DtFchtAnt="28042017" SdoUtlzFchtAnt="4000"/> 
+			<FchtAnt DtFchtAnt="31052017" SdoUtlzFchtAnt="5000"/> 
+			<FchtAnt DtFchtAnt="30062017" SdoUtlzFchtAnt="6000"/> 
+			<FchtAtu DtFchtAtu="21072017" SdoUtlzFchtAtu="7000"/> 
+		</Opr>
+
+		<!--  Alteração de Operação do tipo rotativo --> 
+		<Opr NrUnco="20170000000003" DtCtrc="10042017" CdMdld="E01" DtAprc="25072017" CmdoOpr="A"> <!-- ATENÇÃO: data de apuração diferente para enriquecer o exemplo -->
+			<DetOpr DtVnctOpr="10042018"/> <!-- enviar apenas quando houver alteração nas informações -->
+			<FchtAnt DtFchtAnt="28042017" CmdoFchtAnt="E"/> 
+			<FchtAnt DtFchtAnt="28042017" SdoUtlzFchtAnt="4100" CmdoFchtAnt="I"/> 
+			<FchtAnt DtFchtAnt="31052017" CmdoFchtAnt="E"/> 
+			<FchtAnt DtFchtAnt="31052017" SdoUtlzFchtAnt="5100" CmdoFchtAnt="I"/> 
+			<FchtAtu DtFchtAtu="21072017" CmdoFchtAtu="E"/> 
+			<FchtAtu DtFchtAtu="21072017" SdoUtlzFchtAtu="7100" CmdoFchtAtu="I"/> 
+		</Opr>
+
+		<!--  Sobreposição de Operação do tipo rotativo  --> 
+		<Opr NrUnco="20170000000003" DtCtrc="10042017" CdMdld="E01" DtAprc="25072017" CmdoOpr="S"> <!-- ATENÇÃO: data de apuração diferente para enriquecer o exemplo -->
+			<DetOpr DtVnctOpr="10042018"/> 
+			<FchtAnt DtFchtAnt="28042017" SdoUtlzFchtAnt="4100"/> 
+			<FchtAnt DtFchtAnt="31052017" SdoUtlzFchtAnt="5100"/> 
+			<FchtAnt DtFchtAnt="30062017" SdoUtlzFchtAnt="6000"/> 
+			<FchtAtu DtFchtAtu="21072017" SdoUtlzFchtAtu="7100"/> 
+		</Opr>
+
+		<!--  Exclusão de Operação do tipo rotativo (excluir informações dentro e fora da janela de 13 meses)  --> 
+		<Opr NrUnco="20170000000003" CmdoOpr="E"/>
+
+		<!--  Inclusão de Operação do tipo consórcio  --> 
+		<Opr NrUnco="20170000000004" NrCtr="ABC45678901234567" DtCtrc="01052017" CdMdld="C01" DtAprc="04082017" CnpjCtrc="12345678901235" CmdoOpr="I">
+			<DetOpr NrGr="ABC4567890" CdCt="12345" SeqCt="123" SitCt="2" VlObgc="2400000" DtVnctUltPclCsr="01062019" QtPclCtCsr="24" SdoDvdrCtCsr="2210000" DtContCtCsr="02052017"/> 
+			<PclAntCsr DtVnctPclAntCsr="01062017" PercPclAntCsr="M" VlPclAntCsr="100000"> 
+				<PgtoPclAntCsr DtPgtoPclAntCsr="01062017" VlPgtoPclAntCsr="100000"/>
+			</PclAntCsr>
+			<PclAntCsr DtVnctPclAntCsr="01072017" PercPclAntCsr="M" VlPclAntCsr="100000"> 
+				<PgtoPclAntCsr DtPgtoPclAntCsr="01072017" VlPgtoPclAntCsr="50000"/>
+				<PgtoPclAntCsr DtPgtoPclAntCsr="02072017" VlPgtoPclAntCsr="40000"/>
+			</PclAntCsr>
+			<PclAntCsr DtVnctPclAntCsr="01082017" PercPclAntCsr="M" VlPclAntCsr="100000"/> 
+			<PgtoAvlsCsr DtPgtoAvlsCsr="05072017" VlPgtoAvlsCsr="50000" TipPgtoAvlsCsr="A"/> 
+			<PgtoAvlsCsr DtPgtoAvlsCsr="05072017" VlPgtoAvlsCsr="1000000" TipPgtoAvlsCsr="L"/> 
+			<PclFutCsr DtVnctPrxPclCsr="01092017" PercPclFutCsr="M" VlPrxPclCsr="100000" QtPclVncrCsr="21" QtPclPgrCtCsr="22"/>
+		</Opr>
+
+		<!--  Alteração de Operação do tipo consórcio  --> 
+		<Opr NrUnco="20170000000004" NrCtr="ABC45678901234567" DtCtrc="01052017" CdMdld="C01" DtAprc="04082017" CnpjCtrc="12345678901235" CmdoOpr="A">
+			<DetOpr NrGr="ABC4567890" CdCt="12345" SeqCt="123" SitCt="2" VlObgc="4800000" DtVnctUltPclCsr="01062019" QtPclCtCsr="24" SdoDvdrCtCsr="4610000" DtContCtCsr="02052017"/> <!-- enviar apenas quando houver alteração nas informações --> 
+			<PclAntCsr DtVnctPclAntCsr="01062017" PercPclAntCsr="M" CmdoPclAntCsr="E"/> 
+			<PclAntCsr DtVnctPclAntCsr="01062017" PercPclAntCsr="M" VlPclAntCsr="200000" CmdoPclAntCsr="I"> 
+				<PgtoPclAntCsr DtPgtoPclAntCsr="01062017" VlPgtoPclAntCsr="100000"/>
+			</PclAntCsr>
+			<PclAntCsr DtVnctPclAntCsr="01072017" PercPclAntCsr="M" CmdoPclAntCsr="E"/> 
+			<PclAntCsr DtVnctPclAntCsr="01072017" PercPclAntCsr="M" VlPclAntCsr="200000" CmdoPclAntCsr="I"> 
+				<PgtoPclAntCsr DtPgtoPclAntCsr="01072017" VlPgtoPclAntCsr="50000"/>
+				<PgtoPclAntCsr DtPgtoPclAntCsr="02072017" VlPgtoPclAntCsr="40000"/>
+			</PclAntCsr>
+			<PclAntCsr DtVnctPclAntCsr="01082017" PercPclAntCsr="M" CmdoPclAntCsr="E"/> 
+			<PclAntCsr DtVnctPclAntCsr="01082017" PercPclAntCsr="M" VlPclAntCsr="200000" CmdoPclAntCsr="I"/> 
+			<PgtoAvlsCsr DtPgtoAvlsCsr="05072017" VlPgtoAvlsCsr="50000" TipPgtoAvlsCsr="A" CmdoPgtoAvlsCsr="E"/> 
+			<PgtoAvlsCsr DtPgtoAvlsCsr="05072017" VlPgtoAvlsCsr="80000" TipPgtoAvlsCsr="A" CmdoPgtoAvlsCsr="I"/> 
+			<PgtoAvlsCsr DtPgtoAvlsCsr="05072017" VlPgtoAvlsCsr="1000000" TipPgtoAvlsCsr="L" CmdoPgtoAvlsCsr="E"/> 
+			<PgtoAvlsCsr DtPgtoAvlsCsr="05072017" VlPgtoAvlsCsr="1200000" TipPgtoAvlsCsr="L" CmdoPgtoAvlsCsr="I"/> 
+			<PclFutCsr DtVnctPrxPclCsr="01092017" PercPclFutCsr="M" VlPrxPclCsr="200000" QtPclVncrCsr="21" QtPclPgrCtCsr="22"/> <!-- enviar mesmo quando não houver alteração nas informações -->
+		</Opr>
+
+		<!--  Sobreposição de Operação do tipo consórcio (substituir informações dentro da janela de 13 meses)  --> 
+		<Opr NrUnco="20170000000004" NrCtr="ABC45678901234567" DtCtrc="01052017" CdMdld="C01" DtAprc="04082017" CnpjCtrc="12345678901235" CmdoOpr="S">
+			<DetOpr NrGr="ABC4567890" CdCt="12345" SeqCt="123" SitCt="2" VlObgc="4800000" DtVnctUltPclCsr="01062019" QtPclCtCsr="24" SdoDvdrCtCsr="4610000" DtContCtCsr="02052017"/> <!-- enviar apenas quando houver alteração nas informações --> 
+			<PclAntCsr DtVnctPclAntCsr="01062017" PercPclAntCsr="M" VlPclAntCsr="200000"> 
+				<PgtoPclAntCsr DtPgtoPclAntCsr="01062017" VlPgtoPclAntCsr="100000"/>
+			</PclAntCsr>
+			<PclAntCsr DtVnctPclAntCsr="01072017" PercPclAntCsr="M" VlPclAntCsr="200000"> 
+				<PgtoPclAntCsr DtPgtoPclAntCsr="01072017" VlPgtoPclAntCsr="50000"/>
+				<PgtoPclAntCsr DtPgtoPclAntCsr="02072017" VlPgtoPclAntCsr="40000"/>
+			</PclAntCsr>
+			<PclAntCsr DtVnctPclAntCsr="01082017" PercPclAntCsr="M" VlPclAntCsr="200000"/> 
+			<PgtoAvlsCsr DtPgtoAvlsCsr="05072017" VlPgtoAvlsCsr="80000" TipPgtoAvlsCsr="A"/> 
+			<PgtoAvlsCsr DtPgtoAvlsCsr="05072017" VlPgtoAvlsCsr="1200000" TipPgtoAvlsCsr="L"/> 
+			<PclFutCsr DtVnctPrxPclCsr="01092017" PercPclFutCsr="M" VlPrxPclCsr="200000" QtPclVncrCsr="21" QtPclPgrCtCsr="22"/> <!-- enviar mesmo quando não houver alteração nas informações -->
+		</Opr>
+
+		<!--  Exclusão de Operação do tipo consórcio (excluir informações dentro e fora da janela de 13 meses)  --> 
+		<Opr NrUnco="20170000000004" CmdoOpr="E"/>
+
+		<!--  Operação impugnada/contestada/com liminar (semelhante aos comandos de inclusão e alteração de operação, acrescentando apenas o atributo TipRst --> 
+		<Opr NrUnco="20170000000005" DtCtrc="01032017" CdMdld="A01" DtAprc="04082017" CnpjCtrc="12345678000195" TipRst="I" CmdoOpr="A">
+			<DetOpr InPreFix="S" DtVnctUltPcl="01042018" VlCtrdFut="1550000" QtPcl="15"/> 
+			<PclAnt DtVnctPclAnt="01042017" PercPclAnt="M" CmdoPclAnt="E"/> 
+			<PclAnt DtVnctPclAnt="01042017" PercPclAnt="M" VlPclAnt="110000" CmdoPclAnt="I"> 
+				<PgtoPclAnt DtPgtoPclAnt="01042017" VlPgtoPclAnt="100000"/>
+			</PclAnt>
+			<PclAnt DtVnctPclAnt="01042017" PercPclAnt="S" CmdoPclAnt="E"/> 
+			<PclAnt DtVnctPclAnt="01042017" PercPclAnt="S" VlPclAnt="110000" CmdoPclAnt="I"> 
+				<PgtoPclAnt DtPgtoPclAnt="01042017" VlPgtoPclAnt="100000"/>
+			</PclAnt>
+			<PclAnt DtVnctPclAnt="01052017" PercPclAnt="M" CmdoPclAnt="E"/> 
+			<PclAnt DtVnctPclAnt="01052017" PercPclAnt="M" VlPclAnt="110000" CmdoPclAnt="I"> 
+				<PgtoPclAnt DtPgtoPclAnt="01052017" VlPgtoPclAnt="50000"/>
+				<PgtoPclAnt DtPgtoPclAnt="02052017" VlPgtoPclAnt="50000"/>
+			</PclAnt>
+			<PclAnt DtVnctPclAnt="01062017" PercPclAnt="M" CmdoPclAnt="E"/> 
+			<PclAnt DtVnctPclAnt="01062017" PercPclAnt="M" VlPclAnt="110000" CmdoPclAnt="I"> 
+				<PgtoPclAnt DtPgtoPclAnt="01062017" VlPgtoPclAnt="50000"/>
+			</PclAnt>
+			<PclAnt DtVnctPclAnt="01072017" PercPclAnt="M" CmdoPclAnt="E"/> 
+			<PclAnt DtVnctPclAnt="01072017" PercPclAnt="M" VlPclAnt="110000" CmdoPclAnt="I"/> 
+			<PgtoAvls DtPgtoAvls="15072017" VlPgtoAvls="50000" TipPgtoAvls="P" CmdoPgtoAvls="E"/>  
+			<PgtoAvls DtPgtoAvls="15072017" VlPgtoAvls="60000" TipPgtoAvls="P" CmdoPgtoAvls="I"/> 
+			<PclFut DtVnctPrxPcl="02092017" PercPclFut="M" VlPrxPcl="100000" QtPclVncr="7" QtPclPgr="9"/> 
+			<PclFut DtVnctPrxPcl="02102017" PercPclFut="S" VlPrxPcl="100000" QtPclVncr="2" QtPclPgr="2"/> 
+		</Opr>
+		
+	</Cli>
+
+	<!--  Inclusão de Cliente  --> 
+	<Cli TipCli="1" IdfcCli="12345678909" NmCli="JOAO SILVA" NtzRlc="2" CmdoCli="I" CdOcr="0">
+
+		<!--  Operação do tipo parcelado --> 
+		<Opr NrUnco="20170000000001" DtCtrc="01032017" CdMdld="A01" DtAprc="04082017" CnpjCtrc="12345678000195"> 
+			<DetOpr InPreFix="S" DtVnctUltPcl="01042018" VlCtrdFut="1500000" QtPcl="15"/> 
+			<PclAnt DtVnctPclAnt="01042017" PercPclAnt="M" VlPclAnt="100000"> 
+				<PgtoPclAnt DtPgtoPclAnt="01042017" VlPgtoPclAnt="100000"/>
+			</PclAnt>
+			<PclAnt DtVnctPclAnt="01042017" PercPclAnt="S" VlPclAnt="100000"> <!-- ATENÇÃO: parcela semestral -->
+				<PgtoPclAnt DtPgtoPclAnt="01042017" VlPgtoPclAnt="100000"/>
+			</PclAnt>
+			<PclAnt DtVnctPclAnt="01052017" PercPclAnt="M" VlPclAnt="100000"> 
+				<PgtoPclAnt DtPgtoPclAnt="01052017" VlPgtoPclAnt="50000"/>
+				<PgtoPclAnt DtPgtoPclAnt="02052017" VlPgtoPclAnt="50000"/>
+			</PclAnt>
+			<PclAnt DtVnctPclAnt="01062017" PercPclAnt="M" VlPclAnt="100000"> 
+				<PgtoPclAnt DtPgtoPclAnt="01062017" VlPgtoPclAnt="50000"/>
+			</PclAnt>
+			<PclAnt DtVnctPclAnt="01072017" PercPclAnt="M" VlPclAnt="100000"/> 
+			<PclAnt DtVnctPclAnt="01082017" PercPclAnt="M" VlPclAnt="100000"/> 
+			<PgtoAvls DtPgtoAvls="15072017" VlPgtoAvls="50000" TipPgtoAvls="P"/> 
+			<PclFut DtVnctPrxPcl="02092017" PercPclFut="M" VlPrxPcl="100000" QtPclVncr="7" QtPclPgr="9"/>
+			<PclFut DtVnctPrxPcl="02102017" PercPclFut="S" VlPrxPcl="100000" QtPclVncr="2" QtPclPgr="2"/> 
+		</Opr>
+
+		<!--  Operação do tipo cartão de crédito --> 
+		<Opr NrUnco="20170000000002" DtCtrc="01032017" CdMdld="D01" DtAprc="04082017">
+			<DetOpr NrPlstCrt="1234" SdoDvdr="200000"/> 
+			<FatFchdAnt DtVnctFatFchdAnt="10042017" VlTtlPgrFatFchdAnt="100400" VlMinPgrFatFchdAnt="10040">
+				<PgtoFatFchdAnt DtPgtoFatFchdAnt="10042017" VlPgtoFatFchdAnt="100400"/>
+			</FatFchdAnt>
+			<FatFchdAnt DtVnctFatFchdAnt="10052017" VlTtlPgrFatFchdAnt="-50000"/>
+			<FatFchdAnt DtVnctFatFchdAnt="10062017" VlTtlPgrFatFchdAnt="100600" VlMinPgrFatFchdAnt="10060">
+				<PgtoFatFchdAnt DtPgtoFatFchdAnt="10062017" VlPgtoFatFchdAnt="60000"/>
+				<PgtoFatFchdAnt DtPgtoFatFchdAnt="15062017" VlPgtoFatFchdAnt="10000"/>
+			</FatFchdAnt>
+			<FatFchdAnt DtVnctFatFchdAnt="10072017" VlTtlPgrFatFchdAnt="100700" VlMinPgrFatFchdAnt="10070"/> 
+			<FatFchdFut DtVnctFatFchdFut="10082017" VlTtlPgrFatFchdFut="100800" VlMinPgrFatFchdFut="10080"/> 
+		</Opr>
+		
+		<!--  Operação do tipo rotativo  --> 
+		<Opr NrUnco="20170000000003" DtCtrc="01042017" CdMdld="E01" DtAprc="25072017"> <!-- ATENÇÃO: data de apuração diferente para enriquecer o exemplo -->
+			<DetOpr DtVnctOpr="01042018"/> 
+			<FchtAnt DtFchtAnt="28042017" SdoUtlzFchtAnt="4000"/> 
+			<FchtAnt DtFchtAnt="31052017" SdoUtlzFchtAnt="5000"/> 
+			<FchtAnt DtFchtAnt="30062017" SdoUtlzFchtAnt="6000"/> 
+			<FchtAtu DtFchtAtu="21072017" SdoUtlzFchtAtu="7000"/> 
+		</Opr>
+
+		<!--  Operação do tipo consórcio  --> 
+		<Opr NrUnco="20170000000004" NrCtr="ABC45678901234567" DtCtrc="01052017" CdMdld="C01" DtAprc="04082017" CnpjCtrc="12345678901235">
+			<DetOpr NrGr="ABC4567890" CdCt="12345" SeqCt="123" SitCt="2" VlObgc="2400000" DtVnctUltPclCsr="01062019" QtPclCtCsr="24" SdoDvdrCtCsr="2210000" DtContCtCsr="02052017"/> 
+			<PclAntCsr DtVnctPclAntCsr="01062017" PercPclAntCsr="M" VlPclAntCsr="100000"> 
+				<PgtoPclAntCsr DtPgtoPclAntCsr="01062017" VlPgtoPclAntCsr="100000"/>
+			</PclAntCsr>
+			<PclAntCsr DtVnctPclAntCsr="01072017" PercPclAntCsr="M" VlPclAntCsr="100000"> 
+				<PgtoPclAntCsr DtPgtoPclAntCsr="01072017" VlPgtoPclAntCsr="50000"/>
+				<PgtoPclAntCsr DtPgtoPclAntCsr="02072017" VlPgtoPclAntCsr="40000"/>
+			</PclAntCsr>
+			<PclAntCsr DtVnctPclAntCsr="01082017" PercPclAntCsr="M" VlPclAntCsr="100000"/> 
+			<PgtoAvlsCsr DtPgtoAvlsCsr="05072017" VlPgtoAvlsCsr="50000" TipPgtoAvlsCsr="A"/> 
+			<PgtoAvlsCsr DtPgtoAvlsCsr="05072017" VlPgtoAvlsCsr="1000000" TipPgtoAvlsCsr="L"/> 
+			<PclFutCsr DtVnctPrxPclCsr="01092017" PercPclFutCsr="M" VlPrxPclCsr="100000" QtPclVncrCsr="21" QtPclPgrCtCsr="22"/>
+		</Opr>
+
+		<!--  Operação impugnada/contestada/com liminar (acrescentando apenas o atributo TipRst) --> 
+		<Opr NrUnco="20170000000002" DtCtrc="01032017" CdMdld="D01" DtAprc="04082017" TipRst="I">
+			<DetOpr NrPlstCrt="1234" SdoDvdr="200000"/> 
+			<FatFchdAnt DtVnctFatFchdAnt="10042017" VlTtlPgrFatFchdAnt="100400" VlMinPgrFatFchdAnt="10040">
+				<PgtoFatFchdAnt DtPgtoFatFchdAnt="10042017" VlPgtoFatFchdAnt="100400"/>
+			</FatFchdAnt>
+			<FatFchdAnt DtVnctFatFchdAnt="10052017" VlTtlPgrFatFchdAnt="-50000"/>
+			<FatFchdAnt DtVnctFatFchdAnt="10062017" VlTtlPgrFatFchdAnt="100600" VlMinPgrFatFchdAnt="10060">
+				<PgtoFatFchdAnt DtPgtoFatFchdAnt="10062017" VlPgtoFatFchdAnt="60000"/>
+				<PgtoFatFchdAnt DtPgtoFatFchdAnt="15062017" VlPgtoFatFchdAnt="10000"/>
+			</FatFchdAnt>
+			<FatFchdAnt DtVnctFatFchdAnt="10072017" VlTtlPgrFatFchdAnt="100700" VlMinPgrFatFchdAnt="10070"/> 
+			<FatFchdFut DtVnctFatFchdFut="10082017" VlTtlPgrFatFchdFut="100800" VlMinPgrFatFchdFut="10080"/> 
+		</Opr>
+				
+		
+		<!--  Operação do tipo serviços contínuos - inclusão --> 
+		<Opr NrUnco="20170000000008" NrCtr="ABC45678901234567" DtCtrc="01052017" CdMdld="EN" DtAprc="04082017" CnpjCtrc="12345678901235" CmdoOpr="I" InPrePag="2">
+			<FatSrvCnt DtVnctFatSrvCnt="01062017" NrFat="NFAT4512398541212254555" VlFatSrvCnt="100000"> 
+				<PgtoFatSrvCnt DtPagtoFatSrvCnt="01062017" VlPgtoFatSrvCnt="100000"/>
+			</FatSrvCnt>
+			<FatSrvCnt DtVnctFatSrvCnt="01072017" NrFat="NFAT4321353413542543245" VlFatSrvCnt="100000"> 
+				<PgtoFatSrvCnt DtPagtoFatSrvCnt="01072017" VlPgtoFatSrvCnt="50000"/>
+				<PgtoFatSrvCnt DtPagtoFatSrvCnt="02072017" VlPgtoFatSrvCnt="40000"/>
+			</FatSrvCnt>
+			<FatSrvCnt DtVnctFatSrvCnt="01082017" NrFat="NFAT54646879455468788555" VlFatSrvCnt="100000"/> 
+		</Opr>
+		
+		<!--  Operação do tipo serviços contínuos - alteração de faturas --> 
+		<Opr NrUnco="20170000000008" NrCtr="ABC45678901234567" DtCtrc="01052017" CdMdld="EN" DtAprc="04082017" CnpjCtrc="12345678901235" CmdoOpr="A" InPrePag="2">
+			<FatSrvCnt DtVnctFatSrvCnt="01062017" CmdoFatSrvCnt="E"/> 				
+			<FatSrvCnt DtVnctFatSrvCnt="01062017" NrFat="NFAT4512398541212254555" VlFatSrvCnt="100000" CmdoFatSrvCnt="I"> 
+				<PgtoFatSrvCnt DtPagtoFatSrvCnt="01062017" VlPgtoFatSrvCnt="100000"/>
+			</FatSrvCnt>
+			<FatSrvCnt DtVnctFatSrvCnt="01072017" CmdoFatSrvCnt="E"/> 				
+			<FatSrvCnt DtVnctFatSrvCnt="01072017" NrFat="NFAT4321353413542543245" VlFatSrvCnt="100000" CmdoFatSrvCnt="I"> 
+				<PgtoFatSrvCnt DtPagtoFatSrvCnt="01072017" VlPgtoFatSrvCnt="50000"/>
+				<PgtoFatSrvCnt DtPagtoFatSrvCnt="02072017" VlPgtoFatSrvCnt="40000"/>
+			</FatSrvCnt>
+			<FatSrvCnt DtVnctFatSrvCnt="01082017" CmdoFatSrvCnt="E"/> 
+			<FatSrvCnt DtVnctFatSrvCnt="01082017" NrFat="NFAT54646879455468788555" VlFatSrvCnt="100000" CmdoFatSrvCnt="I"/> 
+		</Opr>
+		
+		<!--  Operação do tipo serviços contínuos - sobreposição --> 
+		<Opr NrUnco="20170000000008" NrCtr="ABC45678901234567" DtCtrc="01052017" CdMdld="EN" DtAprc="04082017" CnpjCtrc="12345678901235" CmdoOpr="S" InPrePag="2">
+			<FatSrvCnt DtVnctFatSrvCnt="01062017" NrFat="NFAT4512398541212254555" VlFatSrvCnt="100000"> 
+				<PgtoFatSrvCnt DtPagtoFatSrvCnt="01062017" VlPgtoFatSrvCnt="100000"/>
+			</FatSrvCnt>
+			<FatSrvCnt DtVnctFatSrvCnt="01072017" NrFat="NFAT4321353413542543245" VlFatSrvCnt="100000"> 
+				<PgtoFatSrvCnt DtPagtoFatSrvCnt="01072017" VlPgtoFatSrvCnt="50000"/>
+				<PgtoFatSrvCnt DtPagtoFatSrvCnt="02072017" VlPgtoFatSrvCnt="40000"/>
+			</FatSrvCnt>
+			<FatSrvCnt DtVnctFatSrvCnt="01082017" NrFat="NFAT54646879455468788555" VlFatSrvCnt="100000"/> 
+		</Opr>
+		
+		<!--  Operação do tipo serviços contínuos - exclusão --> 
+		<Opr NrUnco="20170000000008" CmdoOpr="E"/>
+			
+		
+	</Cli>
+
+	<!--  Exclusão de Cliente (excluir informações dentro e fora da janela de 13 meses) --> 
+	<Cli TipCli="1" IdfcCli="12345678901" CmdoCli="E" CdOcr="0"/>
+
+	<!--  Inclusão de Cliente do tipo 3 com operação com restrição  --> 
+	<Cli TipCli="3" IdfcCli="12345678" NmCli="JOAO SILVA" NtzRlc="2" CmdoCli="I" CdOcr="0">
+		<Opr NrUnco="20170000000001" DtCtrc="01032017" CdMdld="A01" DtAprc="04082017" CnpjCtrc="12345678000195" IdfcCliCtrt="12345678901234" TipRst="L"/> 
+	</Cli>
+	
+	<!--  Cliente com erro no processamento --> 
+	<Cli TipCli="2" IdfcCli="12345678901234" CdOcr="100"/> 
+
+</EnvoHstCrd>	

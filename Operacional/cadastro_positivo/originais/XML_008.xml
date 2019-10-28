@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RtnCta CnpjIf="12345678901234" CnpjGbd="23456789012345" NrRms="1" SeqlRms="1" DtRms="14012013" CdOcr="0">
+	<Cta TipCta="O" TsAclt="14012014-110101" CdOcrCta="00" NrUncoCta="12345678901" ObsCta="Operação com informação divergente">
+		<Cli TipCli="1" IdfcCli="12345678901" />
+			<Opr NrUnco="2012000006174018" PrfAg="4886" NrCtr="6174018" />
+	</Cta>
+	<Cta TipCta="O" TsAclt="14012014-110102" CdOcrCta="100" NrUncoCta="12345678977" ObsCta="Em análise">
+		<Cli TipCli="1" IdfcCli="12345678901" /> 
+			<Opr NrUnco="2012000006174019" PrfAg="4886" NrCtr="6174019" />
+	</Cta>
+	<Cta TipCta="C" TsAclt="14012013-110103" CdOcrCta="00" NrUncoCta="12345686977" ObsCta="Operação com informação divergente">
+		<Cli TipCli="1" IdfcCli="12345678901" />
+	</Cta>
+</RtnCta>

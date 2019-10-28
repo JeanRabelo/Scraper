@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EnvoRlcCncd CnpjOgm="4391007000132" NmOgm="CAMARA INTERBANCARIA DE PAGAMENTOS" NrRms="1" SeqlRms="1" DtRms="10072019">
+	<Cli TipCli="1" IdfcCli="85451251254" CdEstCli="C" TsCnct="08072019-102030" CnpjGstCnct="11725176000127"/>
+	<Cli TipCli="1" IdfcCli="84512121245" CdEstCli="C" TsCnct="08072019-122530" CnpjGstCnct="11725176000127"/>
+	<Cli TipCli="3" IdfcCli="12547854" CdEstCli="C" TsCnct="08072019-172525" CnpjGstCnct="45212251122222"/>
+	<Cli TipCli="1" IdfcCli="54232145511" CdEstCli="C" TsCnct="08072019-145236" CnpjGstCnct="58455855554555"/>
+	<Cli TipCli="1" IdfcCli="54521225225" CdEstCli="C" TsCnct="08072019-154525" CnpjGstCnct="45212251122222"/>
+	<Cli TipCli="3" IdfcCli="25458522" CdEstCli="C" TsCnct="08072019-145823" CnpjGstCnct="11725176000127"/>
+</EnvoRlcCncd>
