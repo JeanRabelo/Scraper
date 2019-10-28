@@ -4,6 +4,8 @@
 class Historico:
     def __init__(self):
         Historico.nome_reduzido = 'EnvoHstCrd'
+        Historico.atributos = dict()
+        
         Historico.clientes_min = 0
         Historico.clientes_max = 'ilimitado'
         Historico.clientes = list()
@@ -11,6 +13,8 @@ class Historico:
 class Cliente:
     def __init__(self):
         Cliente.nome_reduzido = 'Cli'
+        Cliente.atributos = dict()
+
         Cliente.operacoes_min = 0
         Cliente.operacoes_max = 'ilimitado'
         Cliente.operacoes = list()
@@ -18,6 +22,8 @@ class Cliente:
 class Operacao:
     def __init__(self):
         Operacao.nome_reduzido = 'Opr'
+        Operacao.atributos = dict()
+
         Operacao.detalhe_operacoes_min = 0
         Operacao.detalhe_operacoes_max = 1
         Operacao.detalhe_operacoes = dict()
@@ -34,11 +40,10 @@ class Operacao:
         Operacao.parcelas_futuras_max = 'ilimitado'
         Operacao.parcelas_futuras = list()
 
-        
-
 class DetalheOperacao:
     def __init__(self):
         DetalheOperacao.nome_reduzido = 'DetOpr'
+        DetalheOperacao.atributos = dict()
 
 
 
