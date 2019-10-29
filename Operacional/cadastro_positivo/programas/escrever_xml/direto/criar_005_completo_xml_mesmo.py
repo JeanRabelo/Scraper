@@ -76,8 +76,6 @@ def preencher_cliente(enviohistoricocredito):
 
     return noh
 
-sair = False
-
 enviohistoricocredito = preencher_historico()
 
 add_cliente = str(input('\n\tDeseja adicionar um cliente? (y/n)\n\t')).lower()
