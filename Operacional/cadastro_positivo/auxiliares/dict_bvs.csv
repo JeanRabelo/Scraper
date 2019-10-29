@@ -1,308 +1,623 @@
-Nome Completo;Nome Reduzido
-EnvioHistoricoCredito;EnvoHstCrd
-CnpjFonte;CnpjIf
-CnpjGestorBD;CnpjGbd
-ComandoRemessa;CmdoRms
-NumeroRemessa;NrRms
-SequencialRemessa;SeqlRms
-DataRemessa;DtRms
-DataReferenciaBaseInterna;DtRefBaseItno
-NumeroRemessaRelacao;NrRmsRlc
-FormatoRemessa;FmtRms
-Cliente;Cli
-TipoCliente;TipCli
-Identificacao;IdfcCli
-Nome;NmCli
-NaturezaRelacao;NtzRlc
-CodigoOcorrencia;CdOcr
-ComandoCliente;CmdoCli
-Operacao;Opr
-NumeroUnico;NrUnco
-PrefixoAgencia;PrfAg
-NumeroContrato;NrCtr
-DataContratacao;DtCtrc
-Modalidade;CdMdld
-DataApuracao;DtAprc
-CnpjContratacao;CnpjCtrc
-ComandoOperação;CmdoOpr
-IdentificacaoClienteContratante;IdfcCliCtrt
-TipoRestricao;TipRst
-DetalheOperacao;DetOpr
-IndicadorPreFixado;InPreFix
-DataVencimentoUltimaParcela;DtVnctUltPcl
-ValorContratadoFuturo;VlCtrdFut
-QuantidadeParcelas;QtPcl
-NúmeroPlásticoCartão;NrPlstCrt
-SaldoDevedor;SdoDvdr
-DataVencimento;DtVnctOpr
-NumeroGrupo;NrGr
-CodigoCota;CdCt
-SequenciaCota;SeqCt
-SituacaoCota;SitCt
-ValorContratadoObrigacao;VlObgc
-DataVencimentoUltimaParcela;DtVnctUltPclCsr
-QuantidadeParcelasCota;QtPclCtCsr
-SaldoDevedorCota;SdoDvdrCtCsr
-DataContemplacaoCota;DtContCtCsr
-ParcelaAnterior;PclAnt
-DataVencimento;DtVnctPclAnt
-PeriodicidadeParcelaAnterior;PercPclAnt
-Valor;VlPclAnt
-ComandoParcelaAnterior;CmdoPclAnt
-PagamentoParcelaAnterior;PgtoPclAnt
-DataPagamento;DtPgtoPclAnt
-ValorPagamento;VlPgtoPclAnt
-PagamentoAvulso;PgtoAvls
-DataPagamento;DtPgtoAvls
-ValorPagamento;VlPgtoAvls
-TipoPagamento;TipPgtoAvls
-ComandoPagamentoAvulso;CmdoPgtoAvls
-ParcelasFuturas;PclFut
-DataVencimentoProximaParcela;DtVnctPrxPcl
-PeriodicidadeParcelasFuturas;PercPclFut
-ValorProximaParcela;VlPrxPcl
-QuantidadeParcelasAVencer;QtPclVncr
-QuantidadeParcelasAPagar;QtPclPgr
-FaturaFechadaAnterior;FatFchdAnt
-DataVencimento;DtVnctFatFchdAnt
-ValorTotalAPagar;VlTtlPgrFatFchdAnt
-ValorMinimoAPagar;VlMinPgrFatFchdAnt
-ComandoFaturaFechadaAnterior;CmdoFatFchdAnt
-PagamentoFaturaFechadaAnterior;PgtoFatFchdAnt
-DataPagamento;DtPgtoFatFchdAnt
-ValorPagamento;VlPgtoFatFchdAnt
-FaturaFechadaFutura;FatFchdFut
-DataVencimento;DtVnctFatFchdFut
-ValorTotalAPagar;VlTtlPgrFatFchdFut
-ValorMinimoAPagar;VlMinPgrFatFchdFut
-ComandoFaturaFechadaFutura;CmdoFatFchFut
-FechamentoAnterior;FchtAnt
-DataFechamentoAnterior;DtFchtAnt
-SaldoUtilizado;SdoUtlzFchtAnt
-ComandoFechamentoAnterior;CmdoFchtAnt
-FechamentoAtual;FchtAtu
-Data;DtFchtAtu
-SaldoUtilizado;SdoUtlzFchtAtu
-ComandoFechamentoAtual;CmdoFchtAtu
-ParcelaAnteriorConsorcio;PclAntCsr
-DataVencimento;DtVnctPclAntCsr
-PeriodicidadeParcelaAnterior;PercPclAntCsr
-Valor;VlPclAntCsr
-ComandoParcelaAnteriorConsorcio;CmdoPclAntCsr
-PagamentoParcelaAnteriorConsorcio;PgtoPclAntCsr
-DataPagamento;DtPgtoPclAntCsr
-ValorPagamento;VlPgtoPclAntCsr
-PagamentoAvulsoConsorcio;PgtoAvlsCsr
-DataPagamento;DtPgtoAvlsCsr
-ValorPagamento;VlPgtoAvlsCsr
-TipoPagamento;TipPgtoAvlsCsr
-ComandoPagamentoAvulsoConsorcio;CmdoPgtoAvlsCsr
-ParcelasFuturasConsorcio;PclFutCsr
-DataVencimentoProximaParcela;DtVnctPrxPclCsr
-PeriodicidadeParcelasFuturasConsorcio;PercPclFutCsr
-ValorProximaParcela;VlPrxPclCsr
-QuantidadeParcelasAVencer;QtPclVncrCsr
-QuantidadeParcelasAPagarCota;QtPclPgrCtCsr
-RetornoHistoricoCredito;RtnHstCrd
-CnpjGestorBD;CnpjGbd
-CnpjFonte;CnpjIf
-NumeroRemessa;NrRms
-SequencialRemessa;SeqlRms
-ComandoRemessa;CmdoRms
-DataRemessa;DtRms
-CodigoOcorrencia;CdOcr
-AvisoRemessa;AvsRms
-Aviso;Avs
-CodigoAvisoRemessa;CdAvsRms
-OcorrenciaCliente;OcrCli
-Cliente;Cli
-Tipo;TipCli
-Identificacao;IdfcCli
-CodigoOcorrenciaCliente;CdOcrCli
-CodigoAvisoCliente;CdAvsCli
-Operacao;Opr
-NumeroUnico;NrUnco
-PrefixoAgencia;PrfAg
-NumeroContrato;NrCtr
-EnvioContestacao;EnvoCta
-CnpjGestorBD;CnpjGbd
-CnpjFonte;CnpjIf
-NumeroRemessa;NrRms
-SequencialRemessa;SeqlRms
-Data;DtRms
-Contestacao;Cta
-NumeroUnicoContestacao;NrUncoCta
-Tipo;TipCta
-DataHoraAcolhimento;TsAclt
-Justificativa;JstCta
-Cliente;Cli
-Tipo;TipCli
-Identificacao;IdfcCli
-Operacao;Opr
-NumeroUnico;NrUnco
-PrefixoAgencia;PrfAg
-NumeroContrato;NrCtr
-CnpjContratacao;CnpjCtrc
-RetornoContestacao;RtnCta
-CnpjFonte;CnpjIf
-CnpjGestorBD;CnpjGbd
-NumeroRemessa;NrRms
-SequencialRemessa;SeqlRms
-Data;DtRms
-CodigoOcorrencia;CdOcr
-Contestacao;Cta
-NumeroUnicoContestacao;NrUncoCta
-Tipo;TipCta
-DataHoraAcolhimento;TsAclt
-CodigoOcorrenciaContestacao;CdOcrCta
-Cliente;Cli
-Tipo;TipCli
-Identificacao;IdfcCli
-Operacao;Opr
-NumeroUnico;NrUnco
-PrefixoAgencia;PrfAg
-NumeroContrato;NrCtr
-Justificativa;ObsCta
-EnvioConfiguracao;EnvoCfg
-CnpjFonte;CnpjIf
-CnpjGestorBD;CnpjGbd
-NumeroRemessa;NrRms
-SequencialRemessa;SeqlRms
-DataRemessa;DtRms
-Principal;Ppl
-NomePrincipal;NmPpl
-CnpjPrincipal;CnpjPpl
-SitePrincipal;SitePpl
-EnderecoPrincipal;EndPpl
-LogradouroEnderecoPrincipal;LgrEndPpl
-ComplementoEnderecoPrincipal;CmptEndPpl
-BairroEnderecoPrincipal;BaiEndPpl
-CEPEnderecoPrincipal;CepEndPpl
-MunicipioEnderecoPrincipal;MunEndPpl
-UFEnderecoPrincipal;UfEndPpl
-ContatoPrincipal;CttPpl
-NomeContatoPrincipal;NmCttPpl
-DepartamentoContatoPrincipal;DptCttPpl
-CargoContatoPrincipal;CrgCttPpl
-DDDTelefoneContatoPrincipal;DddTelCtt|Ppl
-NúmeroTelefoneContatoPrincipal;NrTelCttPpl
-RamalTelefoneContatoPrincipal;RmalTelCttPpl
-EmailContatoPrincipal;EmaiCttPpl
-AtendimentoConsumidorPrincipal;AtdtCsmoPpl
-DepartamentoAtendimentoConsumidorPrincipal;DptAtdtCsmoPpl
-TipoTelefoneAtendimentoConsumidorPrincipal;TipTelAtdtCsmoPpl
-CodigoPaisTelefoneAtendimentoConsumidorPrincipal;CdPaisTelAtdtCsmoPpl
-DDDTelefoneAtendimentoConsumidorPrincipal;DddTelAtdtCsmoPpl
-NúmeroTelefoneAtendimentoConsumidorPrincipal;NrTelAtdtCsmoPpl
-EmailAtendimentoConsumidorPrincipal;EmaiAtdtCsmoPpl
-AutorizadoLiminarPrincipal;AutdLmnrPpl
-NomeAutorizadoLiminarPrincipal;NmAutdLmnrPpl
-CPFAutorizadoLiminarPrincipal;CpfAutdLmnrPpl
-DDDTelefoneAutorizadoLiminarPrincipal;DddTelAutdLmnrPpl
-NúmeroTelefoneAutorizadoLiminarPrincipal;NrTelAutdLmnrPpl
-RamalTelefoneAutorizadoLiminarPrincipal;RmalTelAutdLmnrPpl
-EmailAutorizadoLiminarPrincipal;EmaiAutdLmnrPpl
-Participacao;Prtc
-Participante;Pct
-NomeParticipante;NmPct
-CnpjParticipante;CnpjPct
-SiteParticipante;SitePct
-EnderecoParticipante;EndPct
-LogradouroEnderecoParticipante;LgrEndPct
-ComplementoEnderecoParticipante;CmptEndPct
-BairroEnderecoParticipante;BaiEndPct
-CEPEnderecoParticipante;CepEndPct
-MunicipioEnderecoParticipante;MunEndPct
-UFEnderecoParticipante;UfEndPct
-ContatoParticipante;CttPct
-NomeContatoParticipante;NmCttPct
-DepartamentoContatoParticipante;DptCttPct
-CargoContatoParticipante;CrgCttPct
-DDDTelefoneContatoParticipante;DddTelCtt|Pct
-NúmeroTelefoneContatoParticipante;NrTelCttPct
-RamalTelefoneContatoParticipante;RmalTelCttPct
-EmailContatoParticipante;EmaiCttPct
-AtendimentoConsumidorParticipante;AtdtCsmoPct
-DepartamentoAtendimentoConsumidorParticipante;DptAtdtCsmoPct
-TipoTelefoneAtendimentoConsumidorParticipante;TipTelAtdtCsmoPct
-CodigoPaisTelefoneAtendimentoConsumidorParticipante;CdPaisTelAtdtCsmoPct
-DDDTelefoneAtendimentoConsumidorParticipante;DddTelAtdtCsmoPct
-NúmeroTelefoneAtendimentoConsumidorParticipante;NrTelAtdtCsmoPct
-EmailAtendimentoConsumidorParticipante;EmaiAtdtCsmoPct
-AutorizadoLiminarParticipante;AutdLmnrPct
-NomeAutorizadoLiminarParticipante;NmAutdLmnrPct
-CPFAutorizadoLiminarParticipante;CpfAutdLmnrPct
-DDDTelefoneAutorizadoLiminarParticipante;DddTelAutdLmnrPct
-NúmeroTerlefoneAutorizadoLiminarParticipante;NrTelAutdLmnrPct
-RamalAutorizadoLiminarParticipante;RmalTelAutdLmnrPct
-EmailAutorizadoLiminarParticipante;EmaiAutdLmnrPct
-Pametrizacao;Prmz
-RecebimentoRelacaoAutorizados;RcbtRlcAutzComplexType
-DiaSemanaRecebimentoRelacaoAutorizados;DdSmnRcbtRlcAutz
-RetornoConfiguracao;RtnCfg
-CnpjGestorBD;CnpjGbd
-CnpjFonte;CnpjIf
-NumeroRemessa;NrRms
-SequencialRemessa;SeqlRms
-DataRemessa;DtRms
-CodigoOcorrencia;CdOcr
-Principal;Ppl
-CodigoOcorrenciaPrincipal;CdOcrPpl
-ContatoPrincipal;CttPpl
-NomeContatoPrincipal;NmCttPpl
-CodigoOcorrenciaContatoPrincipal;CdOcrCttPpl
-AtendimentoConsumidorPrincipal;AtdtCsmoPpl
-DepartamentoAtendimentoConsumidorPrincipal;DptAtdtCsmoPpl
-CodigoOcorrenciaAtendimentoConsumidorPrincipal;CdOcrAtdtCsmoPpl
-AutorizadoLiminarPrincipal;AutdLmnrPpl
-CpfAutorizadoLiminarPrincipal;CpfAutdLmnrPpl
-CodigoOcorrenciaAutorizadoLiminarPrincipal;CdOcrAutdLmnrPpl
-Participante;Prtc
-CnpjParticipante;CnpjPct
-CodigoOcorrenciaParticipante;CdOcrPct
-ContatoParticipante;CttPct
-NomeContatoParticipante;NmCttPct
-CodigoOcorrenciaContatoParticipante;CdOcrCttPct
-AtendimentoConsumidorParticipante;AtdtCsmoPct
-DepartamentoAtendimentoConsumidorParticipante;DptAtdtCsmoPct
-CodigoOcorrenciaAtendimentoConsumidorParticipante;CdOcrAtdtCsmoPct
-AutorizadoLiminarParticipante;AutdLmnrPct
-CpfAutorizadoLiminarParticipante;CpfAutdLmnrPct
-CodigoOcorrenciaAutorizadoLiminarParticipante;CdOcrAutdLmnrPct
-Parametrizacao;Prmz
-CodigoOcorrenciaParametrizacao;CdOcrPrmz
-EnvioCadastro;EnvoCad
-CnpjOrigem;CnpjOgm
-NomeOrigem;NmOgm
-NumeroRemessa;NrRms
-SequencialRemessa;SeqlRms
-DataRemessa;DtRms
-Cliente;Cli
-TipoCliente;TipCli
-Identificacao;IdfcCli
-NomeCliente;NmCli
-EnderecoCliente;EndCli
-LogradouroEnderecoCliente;LgrEndCli
-NúmeroEndereço                                                                     ;      NrEndCli                                                      
-ComplementoEnderecoCliente;CmptEndCli
-BairroEnderecoCliente;BaiEndCli
-CEPEnderecoCliente;CepEndCli
-MunicipioEnderecoCliente;MunEndCli
-UFEnderecoCliente;UfEndCli
-TelefoneCliente;TelCli
-DDDTelefoneCliente;DddTelCli
-NumeroTelefoneCliente;NrTelCli
-EnderecoEletronicoCliente;EndEtnCli
-EmailCliente;EmaiCli
-EnvioRelacaoCancelamento;EnvoRlcCncd
-CnpjOrigem;CnpjOgm
-NomeOrigem;NmOgm
-NumeroRemessa;NrRms
-SequencialRemessa;SeqlRms
-DataRemessa;DtRms
-Cliente;Cli
-TipoCliente;TipCli
-Identificacao;IdfcCli
-CódigoStatusCliente;CdEstCli
-DataHoraCancelamentoReabertura;TsCnct
-CnpjGestorCancelamentoReabertura ;CnpjGstCnct
+Nome Completo;Nome Reduzido;Tipo;Obrigatório;Formato;Tamanho;Conteúdo;Significado / Validação / Erro;Observação
+EnvioHistoricoCredito;EnvoHstCrd;tag;sim;-;-;-;(CdOcr = 117);Obrigatório
+CnpjFonte;CnpjIf;atributo;sim;numérico;14;1 a 99999999999999;"Deve ter entre 3 e 14 dígitos, correspondendo ao CNPJ completo da fonte
+(CdOcr = 101)";Obrigatório
+CnpjGestorBD;CnpjGbd;atributo;sim;numérico;14;1 a 99999999999999;"Deve ter entre 3 e 14 dígitos, correspondendo ao CNPJ completo do GBD
+(CdOcr = 102)";Obrigatório
+ComandoRemessa;CmdoRms;atributo;sim;alfanumérico;1;I - inclusão / E - exclusão;(CdOcr = 104);Obrigatório
+NumeroRemessa;NrRms;atributo;sim;numérico;9;1 a 999999999;"Número da remessa, alterado a cada remessa, sem zerar/reiniciar na alteração de data e deve ser maior à remessa já enviada
+(CdOcr = 123)";"Obrigatório
+
+Considerado chave primária (PK) da remessa
+
+GBD apenas deve validar se o número da remessa já foi utilizado, não havendo controle de sequência, e devolver com o mesmo conteúdo"
+SequencialRemessa;SeqlRms;atributo;sim;numérico;5;1 a 99999;"Sequencial dentro de uma mesma remessa (particionamento), deve começar em 1 a cada número de remessa
+(CdOcr = 103)";"Obrigatório
+
+GBD deve controlar sequência"
+DataRemessa;DtRms;atributo;sim;numérico;8;DDMMAAAA;"Data de geração da remessa, não pode ser anterior a data de transmissão menos 7 dias e deve ser posterior à remessa já enviada
+(CdOcr = 100)";Obrigatório
+DataReferenciaBaseInterna;DtRefBaseItno;atributo;sim;numérico;8;DDMMAAAA;"Data de consolidação da base interna da IF, não pode ser anterior a data da remessa menos 7 dias
+(CdOcr = 125)";Obrigatório
+NumeroRemessaRelacao;NrRmsRlc;atributo;não;numérico;9;1 a 999999999;Número da remessa da relação;Descontinuado
+FormatoRemessa;FmtRms;atributo;sim;alfanumérico;1;C - completo / I - incremental;"Indicador se a remessa é completa (C) ou incremental (I)
+(CdOcr = 127)";Obrigatório
+Cliente;Cli;tag;não;-;-;-;;"Pode conter apenas históricos de crédito com CdOcr ?100
+
+Ausência de histórico de crédito indica CdOcr = 1"
+TipoCliente;TipCli;atributo;não;numérico;1;"1 - PF / 2 - PJ (CNPJ completo) /
+3 - PJ (radical de CNPJ)";(CdOcr = 112);Obrigatório quando Cliente [A12] for informado
+Identificacao;IdfcCli;atributo;não;numérico;14;0 a 99999999999999;"TipoCliente [A13] = 1 > Deve ter entre 3 e 11 dígitos, correspondendo ao CPF completo do cliente
+TipoCliente [A13] = 2 > Deve ter entre 3 e 14 dígitos, correspondendo ao CNPJ completo do cliente
+TipoCliente [A13] = 3 > Deve ter entre 1 e 8 dígitos, correspondendo ao radical de CNPJ do cliente
+(CdOcr = 113)
+
+Identificação duplicada
+(CdOcr = 171)";"Obrigatório quando Cliente [A12] for informado
+
+Caso seja identificado uma Identificação duplicada, o arquivo completo é rejeitado."
+Nome;NmCli;atributo;não;alfanumérico;60;;(CdOcr = 114);Obrigatório quando Cliente [A12] for informado e CodigoOcorrencia [A17] = 0
+NaturezaRelacao;NtzRlc;atributo;não;numérico;1;1 - comercial / 2 - creditícia  / 3 - serviços continuados / 4 - consórcio / 5- creditícia e consórcio /  9 - outros;(CdOcr = 126);Obrigatório quando Cliente [A12] for informado
+CodigoOcorrencia;CdOcr;atributo;não;numérico;5;0 a 99999;"Código de ocorrência no cliente
+(CdOcr = 135)";Obrigatório quando Cliente [A12] for informado
+ComandoCliente;CmdoCli;atributo;não;alfanumérico;1;I - inclusão / A - alteração / E - exclusão;"Indicador se é alteração, exclusão ou inclusão de informações de cliente
+(CdOcr = 207)";Obrigatório quando Cliente [A12] for informado e FormatoRemessa [A11] = I
+Operacao;Opr;tag;não;-;-;-;(CdOcr = 117);"Obrigatório quando cliente tiver operação dentro dos 13 meses
+
+Obrigatório quando CodigoOcorrencia [A17] = 0 e ComandoCliente [A18] = ""A"" ou ""I"""
+NumeroUnico;NrUnco;atributo;não;alfanumérico;40;;"Número único da operação, atribuído pela IF
+(CdOcr = 118)
+
+Chave primária duplicada
+(CdOcr = 180)";"Obrigatório quando Operação [A19] for informado
+
+Considerado chave primária (PK) da operação em conjunto com tipo do documento [A13] e identificação do cliente [A14]. 
+
+Identificação do cliente segue a regra a seguir:  se [A13] = 3, identificação do cliente = [A28] e se [A12] <> 3, identificação do cliente = [A14].  
+
+Não pode ser alterado depois do primeiro envio.
+
+Recomendação para composição do Número Único de forma que garanta sua exclusividade, como a inclusão da Modalidade."
+PrefixoAgencia;PrfAg;atributo;não;numérico;4;1 a 9999;"Prefixo da agência onde a operação foi contratada
+(CdOcr = 119)";
+NumeroContrato;NrCtr;atributo;não;alfanumérico;20;;"Número do contrato da operação
+(CdOcr = 120)";
+DataContratacao;DtCtrc;atributo;não;numérico;8;DDMMAAAA;"Data de contratação/formalização da operação 
+(CdOcr = 128)";Obrigatório quando Operacao [A19] for informado
+Modalidade;CdMdld;atributo;não;alfanumérico;3;ver domínio;"Código da modalidade da operação
+(CdOcr = 129)";Obrigatório quando Operacao [A19] for informado
+DataApuracao;DtAprc;atributo;não;numérico;8;DDMMAAAA;"Data de apuração da operação dentro da IF, devendo ser anterior ou igual à data de referência da base interna e posterior ou igual à data de contratação
+(CdOcr = 130)";Obrigatório quando Operacao [A19] for informado
+CnpjContratacao;CnpjCtrc;atributo;não;numérico;14;1 a 99999999999999;"Deve ter entre 3 e 14 dígitos, correspondendo ao CNPJ completo da contratação
+(CdOcr = 131)";"Obrigatório quando diferente de CnpjFonte [A3]
+
+A partir de 21/08/2017 o GBD validará de acordo com o arquivo de configuração"
+ComandoOperação;CmdoOpr;atributo;não;alfanumérico;1;"I - inclusão / A - alteração / 
+E - exclusão / S - sobreposição";(CdOcr = 132);"Obrigatório quando Operação [A19] for informado e ComandoCliente [A18] = ""A"""
+IdentificacaoClienteContratante;IdfcCliCtrt;atributo;não;numérico;14;1 a 99999999999999;"Deve ter entre 3 e 14 dígitos, correspondendo ao CNPJ completo do cliente
+(CdOcr = 133)";Obrigatório quando TipoCliente [A13] = 3
+TipoRestricao;TipRst;atributo;não;alfanumérico;1;"C - contestação / I - impugnação /
+L - liminar / F - fraude";(CdOcr = 134);
+DetalheOperacao;DetOpr;tag;não;-;-;-;(CdOcr = 117);Obrigatório quando Operacao [A19] for informado e quando TipoRestricao [A29] não for informado
+IndicadorPreFixado;InPreFix;atributo;não;alfanumérico;1;S / N;(CdOcr = 136);Obrigatório quando Modalidade [A24] for de parcelado
+DataVencimentoUltimaParcela;DtVnctUltPcl;atributo;não;numérico;8;DDMMAAAA;"Data de vencimento da última parcela da operação, deve ser igual ou posterior à data de contratação
+(CdOcr = 137)";"Obrigatório quando Modalidade [A24] for de parcelado
+
+Pode ser informado '01.01.0001'como data inválida e '31.12.9999'como indefinida"
+ValorContratadoFuturo;VlCtrdFut;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor contratado futuro da operação
+(CdOcr = 138)";"Obrigatório quando Modalidade [A24] for de parcelado
+
+Valor original na data da contratação – com juros e encargos"
+QuantidadeParcelas;QtPcl;atributo;não;numérico;3;1 a 999;"Quantidade de parcelas da operação
+(CdOcr = 139)";Obrigatório quando Modalidade [A24] for de parcelado
+NúmeroPlásticoCartão;NrPlstCrt;atributo;não;numérico;4;0 a 9999;"Últimos 4 dígitos do plástico do cartão
+(CdOcr = 210)";Obrigatório quando Modalidade [A24] for de cartão de crédito
+SaldoDevedor;SdoDvdr;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Saldo devedor da operação, pode ser negativo
+(CdOcr = 157)";"Obrigatório quando Modalidade [A24] for de cartão de crédito
+
+Pode ser informado ""0"""
+DataVencimento;DtVnctOpr;atributo;não;numérico;8;DDMMAAAA;"Data de vencimento da operação, deve ser posterior à data de contratação
+(CdOcr = 166)";"Obrigatório quando Modalidade [A24] for de rotativo
+
+Pode ser informado '01.01.0001'como data inválida e '31.12.9999'como indefinida"
+NumeroGrupo;NrGr;atributo;não;alfanumérico;10;;"Número do grupo
+(CdOcr = 173)";Obrigatório quando Modalidade [A24] for de consórcio
+CodigoCota;CdCt;atributo;não;numérico;5;0 a 99999;"Código da cota
+(CdOcr = 174)";Obrigatório quando Modalidade [A24] for de consórcio
+SequenciaCota;SeqCt;atributo;não;alfanumérico;3;;"Sequência da cota
+(CdOcr = 175)";Obrigatório quando Modalidade [A24] for de consórcio
+SituacaoCota;SitCt;atributo;não;alfanumérico;1;1 - ativa / 2 - ativa crédito utilizado (parcial ou total) / 3 - excluída / 4 - cedida;"Situação da cota
+(CdOcr = 176)";Obrigatório quando Modalidade [A24] for de consórcio
+ValorContratadoObrigacao;VlObgc;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor da obrigação
+(CdOcr = 177)";"Obrigatório quando Modalidade [A24] for de consórcio
+Informar total pago quando SituacaoCota [A43] = 3
+Pode ser ""0"" quando SituacaoCota [A43] = 3"
+DataVencimentoUltimaParcela;DtVnctUltPclCsr;atributo;não;numérico;8;DDMMAAAA;"Data de vencimento da última parcela da operação, deve ser posterior à data de contratação
+(CdOcr = 137)";"Obrigatório quando Modalidade [A24] for de consórcio
+
+Não informar quando SituacaoCota [A43] = 3 ou 4"
+QuantidadeParcelasCota;QtPclCtCsr;atributo;não;numérico;3;1 a 999;"Quantidade de parcelas da cota
+(CdOcr = 139)";"Obrigatório quando Modalidade [A24] for de consórcio
+
+Não informar quando SituacaoCota [A43] = 3 ou 4"
+SaldoDevedorCota;SdoDvdrCtCsr;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Saldo devedor da cota
+(CdOcr = 157)";"Obrigatório quando Modalidade [A24] for de consórcio
+Não informar quando SituacaoCota [A41] = 3 ou 4
+Pode ser informado ""0"" quando SituacaoCota [A41] = 1 ou 2"
+DataContemplacaoCota;DtContCtCsr;atributo;não;numérico;8;DDMMAAAA;"Data de contemplação da cota, deve ser posterior ou igual à data de contratação
+(CdOcr = 178)";"Obrigatório quando Modalidade [A24] for de consórcio e SituacaoCota [A41] = 2
+
+Não informar quando SituacaoCota [A41] = 1, 3 ou 4"
+ParcelaAnterior;PclAnt;tag;não;-;-;-;; 
+DataVencimento;DtVnctPclAnt;atributo;não;numérico;8;DDMMAAAA;"Data de vencimento da parcela, não pode ser anterior à data atual menos 6 anos e posterior à data atual mais 50 anos
+(CdOcr = 148)
+
+A data de vencimento não pode ser maior que a data de apuração quando a data do pagamento [A51] não for informada
+(CdOcr=184)
+
+O conjunto de informações 'data de vencimento + periodicidade' não pode se repetir para a mesma operação
+(CdOcr=208)";Obrigatório quando ParcelaAnterior [A47] for informado
+PeriodicidadeParcelaAnterior;PercPclAnt;atributo;não;alfanumérico;1;A - anual / B - bimestral / D - diário / E - eventual / M - mensal / Q - quadrimestral / S - semestral / T - trimestral / W - semanal;"Periodicidade de vencimento das parcelas
+(CdOcr=209)";Obrigatório quando ParcelaAnterior [A47] for informado
+Valor;VlPclAnt;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor da parcela
+(CdOcr = 149)";Obrigatório quando ParcelaAnterior [A47] for informado
+ComandoParcelaAnterior;CmdoPclAnt;atributo;não;alfanumérico;1;I - inclusão / E - exclusão;(CdOcr = 143);Obrigatório quando ParcelaAnterior [A47] for informado e ComandoOperacao [A27] = A
+PagamentoParcelaAnterior;PgtoPclAnt;tag;não;-;-;-;;
+DataPagamento;DtPgtoPclAnt;atributo;não;numérico;8;DDMMAAAA;"Data de pagamento da parcela, deve ser posterior ou igual à data de contratação e anterior ou igual a data de apuração
+(CdOcr = 150)";"Obrigatório quando PagamentoParcelaAnterior [A52] for informado
+
+Pode ser informado ""01.01.0001"""
+ValorPagamento;VlPgtoPclAnt;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor de pagamento da parcela
+(CdOcr = 151)";"Obrigatório quando PagamentoParcelaAnterior [A52] for informado
+
+Pode ser informado ""0"""
+PagamentoAvulso;PgtoAvls;tag;não;-;;;;
+DataPagamento;DtPgtoAvls;atributo;não;numérico;8;DDMMAAAA;"Data de pagamento avulso, deve ser posterior ou igual à data de contratação  e anterior ou igual a data de apuração
+(CdOcr = 152)";Obrigatório quando PagamentoAvulso [A55] for informado
+ValorPagamento;VlPgtoAvls;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor de pagamento avulso
+(CdOcr = 153)";Obrigatório quando PagamentoAvulso [A55] for informado
+TipoPagamento;TipPgtoAvls;atributo;não;alfanumérico;1;P - pagamento parcial / T - pagamento total / A - antecipação / L - lance / S - seguro;"Tipo de pagamento avulso
+(CdOcr = 144)";Obrigatório quando PagamentoAvulso [A55] for informado
+ComandoPagamentoAvulso;CmdoPgtoAvls;atributo;não;alfanumérico;1;I - inclusão / E - exclusão;(CdOcr = 143);Obrigatório quando PagamentoAvulso [A55] for informado e ComandoOperacao [A27] = A
+ParcelasFuturas;PclFut;tag;não;-;-;-;"Somente 1 tag por operação/periodicidade
+(CdOcr = 181)";Obrigatório quando Modalidade [A24] for Parcelado
+DataVencimentoProximaParcela;DtVnctPrxPcl;atributo;não;numérico;8;DDMMAAAA;"Data de vencimento da próxima parcela
+(CdOcr = 154)";"Obrigatório quando ParcelasFuturas [A60] for informado e QuantidadeParcelasAVencer [A64] for diferente de ZERO
+
+Data vencimento da próxima parcela deve ser igual ou maior a data de apuração."
+PeriodicidadeParcelasFuturas;PercPclFut;atributo;não;alfanumérico;1;A - anual / B - bimestral / D - diário / E - eventual / M - mensal / Q - quadrimestral / S - semestral / T - trimestral / W - semanal;"Periodicidade de vencimento das parcelas futuras
+(CdOcr=209)";Obrigatório quando ParcelasFuturas [A60] for informado
+ValorProximaParcela;VlPrxPcl;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor da próxima parcela
+(CdOcr = 155)";"Obrigatório quando ParcelasFuturas [A60] for informado e QuantidadeParcelasAVencer [A64] for diferente de ZERO
+
+Não permtir valor menor ou igual a ZERO."
+QuantidadeParcelasAVencer;QtPclVncr;atributo;não;numérico;3;0 a 999;"Quantidade de parcelas a vencer, para cada periodicidade
+(CdOcr = 156)
+
+A quantidade de parcelas a vencer da parcela futura [A59] deve ser menor ou igual a quantidade de parcelas a pagar da operação [A33]
+(CdOcr=183)";Obrigatório quando ParcelasFuturas [A60] for informado
+QuantidadeParcelasAPagar;QtPclPgr;atributo;não;numérico;3;0 a 999;"Quantidade de parcelas a pagar da operação, para cada periodicidade, deve ser menor ou igual à quantidade de parcelas [A35] e não pode ser ZERO quando tiver parcela sem pagamento
+(CdOcr = 147)";Obrigatório quando ParcelasFuturas [A60] for informado
+FaturaFechadaAnterior;FatFchdAnt;tag;não;-;-;-;;
+DataVencimento;DtVnctFatFchdAnt;atributo;não;numérico;8;DDMMAAAA;"Data de vencimento da fatura fechada
+(CdOcr = 158)
+
+Não pode ocorrer duplicidade de data de vencimento da fatura 
+(CdOcr=185)
+
+A data de vencimento fatura anterior deve ser menor ou igual a data de apuração [A24], desde que a parcela não esteja paga
+(CdOcr=186)";Obrigatório quando FaturaFechadaAnterior [A66] for informado
+ValorTotalAPagar;VlTtlPgrFatFchdAnt;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor total para pagamento da fatura fechada, pode assumir valor negativo
+(CdOcr = 159)";"Obrigatório quando FaturaFechadaAnterior [A66] for informado
+
+Pode ser informado ""0"""
+ValorMinimoAPagar;VlMinPgrFatFchdAnt;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor mínimo para pagamento da fatura fechada
+(CdOcr = 160)
+
+O valor mínimo deve ser menor ou igual que o Valor Total a Pagar, com exceção de fatura com valor negativo que deverá ser igual a zeros.
+(CdOcr = 160)";"Obrigatório quando FaturaFechadaAnterior [A66] for informado
+
+Pode ser informado ""0"""
+ComandoFaturaFechadaAnterior;CmdoFatFchdAnt;atributo;não;alfanumérico;1;I - inclusão / E - exclusão;(CdOcr = 143);Obrigatório quando FaturaFechadaAnterior [A66] for informado e ComandoOperacao [A27] = A
+PagamentoFaturaFechadaAnterior;PgtoFatFchdAnt;tag;não;-;-;-;;
+DataPagamento;DtPgtoFatFchdAnt;atributo;não;numérico;8;DDMMAAAA;"Data de pagamento da fatura fechada
+(CdOcr = 161)
+
+A data de pagamento da fatura anterior deve ser menor ou igual a data de apuração [A24] e maior ou igual a data de contratação [A22].
+(CdOcr=188)";"Obrigatório quando PagamentoFaturaFechadaAnterior [A71] for informado
+
+Pode ser informado ""01.01.0001"""
+ValorPagamento;VlPgtoFatFchdAnt;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor de pagamento da fatura fechada
+(CdOcr = 162)";"Obrigatório quando PagamentoFaturaFechadaAnterior [A71] for informado
+
+Pode ser informado ""0"""
+FaturaFechadaFutura;FatFchdFut;tag;não;-;-;-;;
+DataVencimento;DtVnctFatFchdFut;atributo;não;numérico;8;DDMMAAAA;"Data de vencimento da fatura futura
+(CdOcr = 163)
+
+Não pode ocorrer duplicidade de data de vencimento da fatura 
+(CdOcr=185)
+
+A data de vencimento fatura futura deve ser maior ou igual a data de apuração [A24]
+(CdOcr=187)";Obrigatório quando FaturaFechadaFutura [A74] for informado
+ValorTotalAPagar;VlTtlPgrFatFchdFut;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor total para pagamento da fatura futura, pode assumir valor negativo
+(CdOcr = 164)";"Obrigatório quando FaturaFechadaFutura [A74] for informado
+
+Pode ser informado ""0"""
+ValorMinimoAPagar;VlMinPgrFatFchdFut;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor mínimo para pagamento da fatura futura
+(CdOcr = 165)
+
+O valor mínimo deve ser menor que o Valor Total a Pagar  [A78], exceto quando for negativo
+(CdOcr = 165)";"Obrigatório quando FaturaFechadaFutura [A74] for informado
+
+Pode ser informado ""0"""
+ComandoFaturaFechadaFutura;CmdoFatFchFut;atributo;não;alfanumérico;1;I - inclusão / E - exclusão;(CdOcr = 143);Obrigatório quando FaturaFechadaFutura [A74] for informado e ComandoOperacao [A27] = A
+FechamentoAnterior;FchtAnt;tag;não;-;-;-;;
+DataFechamentoAnterior;DtFchtAnt;atributo;não;numérico;8;DDMMAAAA;"Data do fechamento
+(CdOcr = 167)
+
+Não pode haver fechamento duplicado para a mesma operação no mesmo mês
+(CdOcr=182)";Obrigatório quando FechamentoAnterior [A79] for informado
+SaldoUtilizado;SdoUtlzFchtAnt;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Saldo utilizado no fechamento
+(CdOcr = 168)";"Obrigatório quando FechamentoAnterior [A79] for informado
+
+Pode ser informado ""0"""
+ComandoFechamentoAnterior;CmdoFchtAnt;atributo;não;alfanumérico;1;I - inclusão / E - exclusão;(CdOcr = 143);Obrigatório quando FechamentoAnterior [A79] for informado e ComandoOperacao [A27] = A
+FechamentoAtual;FchtAtu;tag;não;-;-;-;;
+Data;DtFchtAtu;atributo;não;numérico;8;DDMMAAAA;"Data do fechamento
+(CdOcr = 169)";Obrigatório quando FechamentoAual [A83] for informado
+SaldoUtilizado;SdoUtlzFchtAtu;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Saldo utilizado no fechamento
+(CdOcr = 170)";"Obrigatório quando FechamentoAual [A83] for informado
+
+Pode ser informado ""0"""
+ComandoFechamentoAtual;CmdoFchtAtu;atributo;não;alfanumérico;1;I - inclusão / E - exclusão;(CdOcr = 143);Obrigatório quando FechamentoAtual [A83] for informado e ComandoOperacao [A27] = A
+ParcelaAnteriorConsorcio;PclAntCsr;tag;não;-;-;-;;
+DataVencimento;DtVnctPclAntCsr;atributo;não;numérico;8;DDMMAAAA;"Data de vencimento da parcela, não pode ser anterior à data atual menos 6 anos e posterior à data atual mais 50 anos
+(CdOcr = 148)
+
+A data de vencimento não pode ser maior que a data de apuração quando a data do pagamento [A83] não for informada.
+(CdOcr=184)
+
+O conjunto de informações 'data de vencimento + periodicidade'' não pode se repetir para a mesma operação
+(CdOcr=208)";Obrigatório quando ParcelaAnteriorConsorcio [A87] for informado
+PeriodicidadeParcelaAnterior;PercPclAntCsr;atributo;não;alfanumérico;1;A - anual / B - bimestral / D - diário / E - eventual / M - mensal / Q - quadrimestral / S - semestral / T - trimestral / W - semanal;"Periodicidade de vencimento das parcelas
+(CdOcr=209)";Obrigatório quando ParcelaAnteriorConsorcio [A87] for informado
+Valor;VlPclAntCsr;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor da parcela
+(CdOcr = 149)";Obrigatório quando ParcelaAnteriorConsorcio [A87] for informado
+ComandoParcelaAnteriorConsorcio;CmdoPclAntCsr;atributo;não;alfanumérico;1;I - inclusão / E - exclusão;(CdOcr = 143);Obrigatório quando ParcelaAnteriorConsorcio [A87] for informado e ComandoOperacao [A27] = A
+PagamentoParcelaAnteriorConsorcio;PgtoPclAntCsr;tag;não;-;-;-;;
+DataPagamento;DtPgtoPclAntCsr;atributo;não;numérico;8;DDMMAAAA;"Data de pagamento da parcela, deve ser posterior ou igual à data de contratação menos 90 dias e anterior ou igual à data de apuração
+(CdOcr = 150)";"Obrigatório quando PagamentoParcelaAnterior [A92] for informado
+
+Pode ser informado ""01010001"""
+ValorPagamento;VlPgtoPclAntCsr;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor de pagamento da parcela
+(CdOcr = 151)";"Obrigatório quando PagamentoParcelaAnterior [A92] for informado
+
+Pode ser informado ""0"" apenas quando DataPagamento [A93] = ""01010001"""
+PagamentoAvulsoConsorcio;PgtoAvlsCsr;tag;não;-;;;;
+DataPagamento;DtPgtoAvlsCsr;atributo;não;numérico;8;DDMMAAAA;"Data de pagamento avulso, deve ser posterior à data de contratação menos 90 dias e anterior ou igual a data de apuração.
+(CdOcr = 152)";Obrigatório quando PagamentoAvulsoConsorcio [A95] for informado
+ValorPagamento;VlPgtoAvlsCsr;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor de pagamento avulso
+(CdOcr = 153)";Obrigatório quando PagamentoAvulsoConsorcio [A95] for informado
+TipoPagamento;TipPgtoAvlsCsr;atributo;não;alfanumérico;1;P - pagamento parcial / T - pagamento total / A - antecipação / L - lance / S - seguro;"Tipo de pagamento avulso
+(CdOcr = 144)";Obrigatório quando PagamentoAvulsoConsorcio [A95] for informado
+ComandoPagamentoAvulsoConsorcio;CmdoPgtoAvlsCsr;atributo;não;alfanumérico;1;I - inclusão / E - exclusão;(CdOcr = 143);Obrigatório quando PagamentoAvulsoConsorcio [A95] for informado e ComandoOperacao [A27] = A
+ParcelasFuturasConsorcio;PclFutCsr;tag;não;-;-;-;"Somente 1 tag por operação
+(CdOcr = 181)";"Obrigatório quando Modalidade [A24] for Consórcio
+
+Não informar quando SituacaoCota [A43] = 3 ou 4"
+DataVencimentoProximaParcela;DtVnctPrxPclCsr;atributo;não;numérico;8;DDMMAAAA;"Data de vencimento da próxima parcela
+(CdOcr = 154)";"Obrigatório quando ParcelasFuturasConsorcio [A100] for informado e QuantidadeParcelasAVencer [A104] for diferente de ZERO
+
+Data vencimento da próxima parcela deve ser igual ou maior a data de apuração."
+PeriodicidadeParcelasFuturasConsorcio;PercPclFutCsr;atributo;não;alfanumérico;1;A - anual / B - bimestral / D - diário / E - eventual / M - mensal / Q - quadrimestral / S - semestral / T - trimestral / W - semanal;"Periodicidade de vencimento das parcelas
+(CdOcr=209)";Obrigatório quando ParcelasFuturasConsorcio [A100] for informado
+ValorProximaParcela;VlPrxPclCsr;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor da próxima parcela
+(CdOcr = 155)";"Obrigatório quando ParcelasFuturasConsorcio [A100] for informado e QuantidadeParcelasAVencer [A104] for diferente de ZERO
+
+Não permtir valor menor ou igual a ZERO."
+QuantidadeParcelasAVencer;QtPclVncrCsr;atributo;não;numérico;3;0 a 999;"Quantidade de parcelas a vencer
+(CdOcr = 156)
+
+A quantidade de parcelas a vencer da parcela futura [A90] deve ser menor ou igual a quantidade de parcelas a pagar da operação [A33]
+(CdOcr=183)";Obrigatório quando ParcelasFuturasConsorcio [A100] for informado
+QuantidadeParcelasAPagarCota;QtPclPgrCtCsr;atributo;não;numérico;3;0 a 999;"Quantidade de parcelas a pagar da cota, deve ser inferior ou igual à quantidade de parcelas da operação de consórcio [A46]
+(CdOcr = 147)";"Obrigatório quando ParcelasFuturasConsorcio [A100] for informado
+
+Não informar quando SituacaoCota [A41] = 3 ou 4"
+RetornoHistoricoCredito;RtnHstCrd;tag;sim;-;-;-;;
+CnpjGestorBD;CnpjGbd;atributo;sim;numérico;14;1 a 99999999999999;"Deve ter entre 3 e 14 dígitos, correspondendo ao CNPJ completo do GBD
+(CdOcr = 102)";Obrigatório
+CnpjFonte;CnpjIf;atributo;sim;numérico;14;1 a 99999999999999;"Deve ter entre 3 e 14 dígitos, correspondendo ao CNPJ completo da fonte
+(CdOcr = 101)";Obrigatório
+NumeroRemessa;NrRms;atributo;sim;numérico;9;1 a 999999999;Deve ser idêntico ao informado no envio (H1);Obrigatório
+SequencialRemessa;SeqlRms;atributo;sim;numérico;5;1 a 99999;Sequencial dentro de uma mesma remessa (particionamento), devendo começar em 1 a cada número de remessa ;"Obrigatório
+
+IF deve controlar sequência"
+ComandoRemessa;CmdoRms;atributo;sim;alfanumérico;1;"I - inclusão / E - exclusão /
+V - vazia";Deve ser idêntico ao informado no envio (H1);Obrigatório
+DataRemessa;DtRms;atributo;sim;numérico;8;DDMMAAAA;Deve ser idêntico ao informado no envio (H1);Obrigatório
+CodigoOcorrencia;CdOcr;atributo;sim;numérico;5;0 a 99999;Código de ocorrência no arquivo;Obrigatório
+AvisoRemessa;AvsRms;tag;não;-;-;-;;
+Aviso;Avs;tag;não;-;-;-;;
+CodigoAvisoRemessa;CdAvsRms;atributo;não;numérico;5;1 a 99999;Código do Aviso  da Remssa;"Campo obrigartório com o retorno do código conforme a lista de dominio da planilha ""Códigos para Avisos""  para informar as mensagens do processamento do arquivo 005."
+OcorrenciaCliente;OcrCli;tag;não;-;-;-;;"Pode conter apenas históricos com CdOcrCli >= 100
+Ausência de autorização/cancelamento indica CdOcrCli = 0"
+Cliente;Cli;tag;não;-;-;-;;"Pode conter apenas históricos com CdOcrCli >= 100
+Ausência de autorização/cancelamento indica CdOcrCli = 0"
+Tipo;TipCli;atributo;não;numérico;1;"1 - PF / 2 - PJ (CNPJ completo) /
+3 - PJ (radical de CNPJ)";Deve ser idêntico ao informado no envio (H1);Obrigatório quando Cliente [A14] for informado
+Identificacao;IdfcCli;atributo;não;numérico;14;0 a 99999999999999;Deve ser idêntico ao informado no envio (H1);Obrigatório quando Cliente [A14] for informado
+CodigoOcorrenciaCliente;CdOcrCli;atributo;sim;numérico;5;0 a 99999;Código de ocorrência na histórico;Obrigatório quando Cliente [A14] for informado
+CodigoAvisoCliente;CdAvsCli;atributo;não;numérico;5;1 a 99999;Código do Aviso ;Campo obrigartório e será o retorno da análise do arquivo 005
+Operacao;Opr;tag;não;-;-;-;;
+NumeroUnico;NrUnco;atributo;não;alfanumérico;40;;Deve ser idêntico ao informado no envio (H1);Obrigatório quando Operacao [A19] for informado
+PrefixoAgencia;PrfAg;atributo;não;numérico;4;1 a 9999;Deve ser idêntico ao informado no envio (H1);Obrigatório quando Operacao [A19] for informado
+NumeroContrato;NrCtr;atributo;não;alfanumérico;20;;Deve ser idêntico ao informado no envio (H1);Obrigatório quando Operacao [A19] for informado
+EnvioContestacao;EnvoCta;tag;sim;-;-;-;(CdOcr = 117);Obrigatório
+CnpjGestorBD;CnpjGbd;atributo;sim;numérico;14;1 a 99999999999999;"Deve ter entre 3 e 14 dígitos, correspondendo ao 
+CNPJ completo do GBD
+(CdOcr = 102)";Obrigatório
+CnpjFonte;CnpjIf;atributo;sim;numérico;14;1 a 99999999999999;"Deve ter entre 3 e 14 dígitos, correspondendo ao 
+CNPJ completo da fonte
+(CdOcr = 101)";Obrigatório
+NumeroRemessa;NrRms;atributo;sim;numérico;9;1 a 999999999;"Número da remessa, alterado a cada remessa, sem zerar/reiniciar na alteração de data e deve ser maior à remessa já enviada
+(CdOcr = 123)";"Obrigatório
+Considerado chave primária (PK) da remessa
+IF apenas deve validar se o número da remessa já foi utilizado, não havendo controle de sequência, e devolver com o mesmo conteúdo"
+SequencialRemessa;SeqlRms;atributo;sim;numérico;5;1 a 99999;"Sequencial dentro de uma mesma remessa (particionamento), devendo começar em 1 a cada número de remessa
+(CdOcr = 103)";"Obrigatório
+IF deve controlar sequência"
+Data;DtRms;atributo;sim;numérico;8;DDMMAAAA;"Data de geração da remessa, não pode ser anterior a data de transmissão menos 7 dias e deve ser posterior à remessa já enviada
+(CdOcr = 100)";Obrigatório
+Contestacao;Cta;tag;sim;-;-;-;(CdOcr = 117);Obrigatório
+NumeroUnicoContestacao;NrUncoCta;atributo;não;numérico;22;1 a 9999999999999999999999;Número único da contestação, atribuído pelo GBD;Número único de contestação para o cliente.
+Tipo;TipCta;atributo;sim;alfanumérico;1;C - cliente / O - operação;(CdOcr = 122);Obrigatório
+DataHoraAcolhimento;TsAclt;atributo;sim;alfanumérico;15;DDMMAAAA-HHMMSS;(CdOcr = 111);Obrigatório
+Justificativa;JstCta;atributo;sim;alfanumérico;480;;"Livre digitação
+(CdOcr = 145)";Obrigatório
+Cliente;Cli;tag;sim;-;-;-;(CdOcr = 117);Obrigatório
+Tipo;TipCli;atributo;sim;numérico;1;"1 - PF / 2 - PJ (CNPJ completo) /
+3 - PJ (radical de CNPJ)";(CdOcr = 112);Obrigatório quando Cliente [A13] for informado
+Identificacao;IdfcCli;atributo;sim;numérico;14;1 a 99999999999999;"TipoCliente [A13] = 1 > Deve ter entre 3 e 11 dígitos, correspondendo ao CPF completo do cliente
+TipoCliente [A14] = 2 > Deve ter entre 3 e 14 dígitos, correspondendo ao CNPJ completo do cliente
+TipoCliente [A14] = 3 > Deve ter entre 1 e 8 dígitos, correspondendo ao radical de CNPJ do cliente
+(CdOcr = 113)";Obrigatório quando Cliente [A13] for informado
+Operacao;Opr;tag;não;-;-;-;(CdOcr = 117);Obrigatório quando TipoContestacao [A10] = O
+NumeroUnico;NrUnco;atributo;não;alfanumérico;40;;"Número único da operação, atribuído pela IF
+(CdOcr = 118)";Obrigatório quando  Operação [A16] for informado e PrefixoAgencia [A18] e NumeroContrato [A19] não forem informados
+PrefixoAgencia;PrfAg;atributo;não;numérico;4;1 a 9999;"Prefixo da agência onde a operação foi contratada
+(CdOcr = 119)";Obrigatório quando  Operação [A16] for informado e  NumeroUnico [A17] não for informado
+NumeroContrato;NrCtr;atributo;não;alfanumérico;20;;"Número do contrato da operação
+(CdOcr = 120)";Obrigatório quando Operação [A16] for informado e  NumeroUnico [A17] não for informado
+CnpjContratacao;CnpjCtrc;atributo;não;numérico;14;1 a 99999999999999;Deve ter entre 3 e 14 dígitos, correspondendo ao CNPJ completo da contratação;"Deve ser o mesmo CNPJ informado no arquivo ACPO005.
+Esse campo deve ser informado quando o tipo da contestação for O - Operação."
+RetornoContestacao;RtnCta;tag;sim;-;-;-;;
+CnpjFonte;CnpjIf;atributo;sim;numérico;14;1 a 99999999999999;Deve ter entre 3 e 14 dígitos, correspondendo ao CNPJ completo da fonte;Obrigatório
+CnpjGestorBD;CnpjGbd;atributo;sim;numérico;14;1 a 99999999999999;Deve ter entre 3 e 14 dígitos, correspondendo ao CNPJ completo do GBD;Obrigatório
+NumeroRemessa;NrRms;atributo;sim;numérico;9;1 a 999999999;Deve ser idêntico ao informado no envio (C1);Obrigatório
+SequencialRemessa;SeqlRms;atributo;sim;numérico;5;1 a 99999;Sequencial dentro de uma mesma remessa (particionamento), devendo começar em 1 a cada número de remessa;"Obrigatório
+GBD deve controlar sequência"
+Data;DtRms;atributo;sim;numérico;8;DDMMAAAA;Deve ser idêntico ao informado no envio (C1);Obrigatório
+CodigoOcorrencia;CdOcr;atributo;sim;numérico;5;0 a 99999;Código de ocorrência no arquivo;Obrigatório
+Contestacao;Cta;tag;não;-;-;-;;"Pode conter contestações com CdOcrCta igual a 0, 5, 7, 8 e >= 100
+Ausência de contestação indica CdOcrCta = 0"
+NumeroUnicoContestacao;NrUncoCta;atributo;não;numérico;22;1 a 9999999999999999999999;Número único da contestação, atribuído pelo GBD;Número único de contestação para o cliente.
+Tipo;TipCta;atributo;não;alfanumérico;1;C - cliente / O - operação;Deve ser idêntico ao informado no envio (C1);
+DataHoraAcolhimento;TsAclt;atributo;não;alfanumérico;15;DDMMAAAA-HHMMSS;Deve ser idêntico ao informado no envio (C1);
+CodigoOcorrenciaContestacao;CdOcrCta;atributo;não;numérico;5;0 a 99999;Código de ocorrência na contestação;Obrigatório quando Contestacao [A9] for informado
+Cliente;Cli;tag;não;-;-;-;;
+Tipo;TipCli;atributo;não;numérico;1;"1 - PF / 2 - PJ (CNPJ completo) /
+3 - PJ (radical de CNPJ)";Deve ser idêntico ao informado no envio (C1);
+Identificacao;IdfcCli;atributo;não;numérico;14;1 a 99999999999999;Deve ser idêntico ao informado no envio (C1);
+Operacao;Opr;tag;não;-;-;-;Deve ser idêntico ao informado no envio (C1);
+NumeroUnico;NrUnco;atributo;não;alfanumérico;40;;Deve ser idêntico ao informado no envio (C1);
+PrefixoAgencia;PrfAg;atributo;não;numérico;4;1 a 9999;Deve ser idêntico ao informado no envio (C1);
+NumeroContrato;NrCtr;atributo;não;alfanumérico;20;;Deve ser idêntico ao informado no envio (C1);
+Justificativa;ObsCta;atributo;sim;alfanumérico;480;;"Livre digitação
+(CdOcr = 145)";Obrigatório
+EnvioConfiguracao;EnvoCfg;tag;sim;-;-;-;(CdOcr = 117);Obrigatório
+CnpjFonte;CnpjIf;atributo;sim;numérico;14;1 a 99999999999999;"Deve ter entre 3 e 14 dígitos, correspondendo ao CNPJ completo da fonte
+(CdOcr = 101)";Obrigatório
+CnpjGestorBD;CnpjGbd;atributo;sim;numérico;14;1 a 99999999999999;"Deve ter entre 3 e 14 dígitos, correspondendo ao CNPJ completo do GBD
+(CdOcr = 102)";Obrigatório
+NumeroRemessa;NrRms;atributo;sim;numérico;9;1 a 999999999;"Número da remessa, alterado a cada remessa, sem zerar/reiniciar na alteração de data e deve ser maior à remessa já enviada
+(CdOcr = 123)";"Obrigatório
+Considerado chave primária (PK) da remessa
+GBD apenas deve validar se o número da remessa já foi utilizado, não havendo controle de sequência, e devolver com o mesmo conteúdo"
+SequencialRemessa;SeqlRms;atributo;sim;numérico;5;1 a 99999;"Sequencial dentro de uma mesma remessa (particionamento), devendo começar em 1 a cada número de remessa
+(CdOcr = 103)";"Obrigatório
+GBD deve controlar sequência"
+DataRemessa;DtRms;atributo;sim;numérico;8;DDMMAAAA;"Data de geração da remessa, deve ser posterior à remessa já enviada
+(CdOcr = 100)";Obrigatório
+Principal;Ppl;tag;sim;-;-;-;(CdOcr = 117);Obrigatório
+NomePrincipal;NmPpl;atributo;sim;alfanumérico;60;;"Nome da empresa principal
+(CdOcr = 190)";Obrigatório
+CnpjPrincipal;CnpjPpl;atributo;sim;numérico;14;1 a 99999999999999;"Deve ter entre 3 a 14 dígitos, correspondente ao CNPJ da empresa principal
+(CdOcr = 191)";Obrigatório
+SitePrincipal;SitePpl;atributo;não;alfanumérico;120;;URL do site da empresa principal;
+EnderecoPrincipal;EndPpl;tag;sim;-;-;-;-;Obrigatório
+LogradouroEnderecoPrincipal;LgrEndPpl;atributo;sim;alfanumérico;60;;"Logradouro do endereço da empresa principal
+(CdOcr = 192)";Obrigatório
+ComplementoEnderecoPrincipal;CmptEndPpl;atributo;não;alfanumérico;60;;"Complemento do endereço da empresa principal
+(CdOcr = 193)";
+BairroEnderecoPrincipal;BaiEndPpl;atributo;sim;alfanumérico;60;;"Bairro do endereço da empresa principal
+(CdOcr = 194)";Obrigatório
+CEPEnderecoPrincipal;CepEndPpl;atributo;sim;numérico;8;1000 a 99999999;"CEP do endereço da empresa principal
+(CdOcr = 195)";Obrigatório
+MunicipioEnderecoPrincipal;MunEndPpl;atributo;sim;alfanumérico;60;;"Município do endereço da empresa principal
+(CdOcr = 196)";Obrigatório
+UFEnderecoPrincipal;UfEndPpl;atributo;sim;alfanumérico;2;;"UF do endereço da empresa principal
+(CdOcr = 197)";Obrigatório
+ContatoPrincipal;CttPpl;tag;sim;-;-;-;"Deve ser enviado entre 1 e 5 ocorrências, para contato técnico  da empresa principal (exemplo: Gestor e TI)
+(CdOcr = 117)";Obrigatório
+NomeContatoPrincipal;NmCttPpl;atributo;sim;alfanumérico;60;;"Nome da pessoa para contato técnico da empresa principal
+(CdOcr = 190)";Obrigatório
+DepartamentoContatoPrincipal;DptCttPpl;atributo;sim;alfanumérico;60;;"Departamento da pessoa para contato técnico da empresa principal
+(CdOcr = 198)";Obrigatório
+CargoContatoPrincipal;CrgCttPpl;atributo;não;alfanumérico;60;;Cargo da pessoa para contato técnico da empresa principal;
+DDDTelefoneContatoPrincipal;DddTelCtt|Ppl;atributo;sim;numérico;2;10 a 99;"DDD do telefone da pessoa para contato técnico da empresa principal
+(CdOcr = 199)";Obrigatório
+NúmeroTelefoneContatoPrincipal;NrTelCttPpl;atributo;sim;numérico;9;;"Número do telefone da pessoa para contato técnico da empresa principal
+(CdOcr = 200)";Obrigatório
+RamalTelefoneContatoPrincipal;RmalTelCttPpl;atributo;não;alfanumérico;4;;Ramal do telefone da pessoa para contato técnico da empresa principal;
+EmailContatoPrincipal;EmaiCttPpl;atributo;sim;alfanumérico;120;;"Email da pessoa para contato técnico da empresa principal
+(CdOcr = 201)";Obrigatório
+AtendimentoConsumidorPrincipal;AtdtCsmoPpl;tag;sim;-;-;-;"Deve ser enviado entre 1 e 5 ocorrências, para atendimento ao consumidor da empresa principal (exemplo: SAC)
+(CdOcr = 117)";Obrigatório
+DepartamentoAtendimentoConsumidorPrincipal;DptAtdtCsmoPpl;atributo;sim;alfanumérico;60;;"Departamento para atendimento ao consumidor da empresa principal
+(CdOcr = 198)";Obrigatório
+TipoTelefoneAtendimentoConsumidorPrincipal;TipTelAtdtCsmoPpl;atributo;sim;alfanumérico;60;"ACESSO DO EXTERIOR
+CAPITAIS E REGIOES METROPOLITANAS
+DEFICIENCIA AUDITIVA/FALA
+DEMAIS REGIOES";"Tipo do telefone para atendimento ao consumidor da empresa principal
+(CdOcr = 202)";Obrigatório
+CodigoPaisTelefoneAtendimentoConsumidorPrincipal;CdPaisTelAtdtCsmoPpl;atributo;não;numérico;3;1 a 999;"Código do país do telefone para atendimento ao consumidor da empresa principal
+(CdOcr = 203)";
+DDDTelefoneAtendimentoConsumidorPrincipal;DddTelAtdtCsmoPpl;atributo;não;numérico;2;10 a 99;"DDD do telefone para atendimento ao consumidor da empresa principal
+(CdOcr = 199)";
+NúmeroTelefoneAtendimentoConsumidorPrincipal;NrTelAtdtCsmoPpl;atributo;sim;numérico;12;;"Número do telefone para atendimento ao consumidor da empresa principal
+(CdOcr = 200)";Obrigatório
+EmailAtendimentoConsumidorPrincipal;EmaiAtdtCsmoPpl;atributo;não;alfanumérico;120;;"Email para atendimento ao consumidor da empresa principal
+(CdOcr = 201)";Obrigatório
+AutorizadoLiminarPrincipal;AutdLmnrPpl;tag;sim;-;-;-;"Deve ser enviado entre 1 e 5 ocorrências, para autorização para liminar da empresa principal
+(CdOcr = 117)";Obrigatório
+NomeAutorizadoLiminarPrincipal;NmAutdLmnrPpl;atributo;sim;alfanumérico;60;;"Nome da pessoa autorizada para liminar da empresa principal
+(CdOcr = 190)";Obrigatório
+CPFAutorizadoLiminarPrincipal;CpfAutdLmnrPpl;atributo;sim;numérico;11;1 a 99999999999;"CPF da pessoa autorizada para liminar da empresa principal
+(CdOcr = 191)";Obrigatório
+DDDTelefoneAutorizadoLiminarPrincipal;DddTelAutdLmnrPpl;atributo;sim;numérico;2;10 a 99;"DDD do telefone da pessoa autorizada para liminar da empresa principal
+(CdOcr = 199)";Obrigatório
+NúmeroTelefoneAutorizadoLiminarPrincipal;NrTelAutdLmnrPpl;atributo;sim;numérico;9;;"Número do telefone da pessoa autorizada para liminar da empresa principal
+(CdOcr = 200)";Obrigatório
+RamalTelefoneAutorizadoLiminarPrincipal;RmalTelAutdLmnrPpl;atributo;não;alfanumérico;4;;Ramal do telefone da pessoa autorizada para liminar da empresa principal;
+EmailAutorizadoLiminarPrincipal;EmaiAutdLmnrPpl;atributo;sim;alfanumérico;120;;"Email da pessoa autorizada para liminar da empresa principal
+(CdOcr = 201)";Obrigatório
+Participacao;Prtc;tag;não;-;-;-;"Deve ser enviada quando a empresa principal for conglomerado
+(CdOcr = 117)";Obrigatório quando a empresa principal for conglomerado
+Participante;Pct;tag;não;-;-;-;"Deve ser enviada uma ocorrência para cada empresa participante do conglomerado
+(CdOcr = 117)";Obrigatório quando Participação [A41] for informado
+NomeParticipante;NmPct;atributo;não;alfanumérico;60;;"Nome da empresa participante
+(CdOcr = 190)";Obrigatório quando Participante [A42] for informado
+CnpjParticipante;CnpjPct;atributo;não;numérico;14;1 a 99999999999999;"Deve ter entre 3 a 14 dígitos, correspondente ao CNPJ da empresa participante
+(CdOcr = 191) (CdOcr = 206)";Obrigatório quando Participante [A42] for informado
+SiteParticipante;SitePct;atributo;não;alfanumérico;120;;URL do site da empresa participante;
+EnderecoParticipante;EndPct;tag;não;-;-;-;-;Obrigatório quando Participante [A42] for informado
+LogradouroEnderecoParticipante;LgrEndPct;atributo;não;alfanumérico;60;;"Logradouro do endereço da empresa participante
+(CdOcr = 192)";Obrigatório quando Participante [A42] for informado
+ComplementoEnderecoParticipante;CmptEndPct;atributo;não;alfanumérico;60;;"Complemento do endereço da empresa participante
+(CdOcr = 193)";
+BairroEnderecoParticipante;BaiEndPct;atributo;não;alfanumérico;60;;"Bairro do endereço da empresa participante
+(CdOcr = 194)";Obrigatório quando Participante [A42] for informado
+CEPEnderecoParticipante;CepEndPct;atributo;não;numérico;8;1000 a 99999999;"CEP do endereço da empresa participante
+(CdOcr = 195)";Obrigatório quando Participante [A42] for informado
+MunicipioEnderecoParticipante;MunEndPct;atributo;não;alfanumérico;60;;"Município do endereço da empresa participante
+(CdOcr = 196)";Obrigatório quando Participante [A42] for informado
+UFEnderecoParticipante;UfEndPct;atributo;não;alfanumérico;2;;"UF do endereço da empresa participante
+(CdOcr = 197)";Obrigatório quando Participante [A42] for informado
+ContatoParticipante;CttPct;tag;não;-;-;-;"Deve ser enviado entre 0 e 5 ocorrências, para contato técnico  da empresa participante (exemplo: Gestor e TI)
+(CdOcr = 117)";
+NomeContatoParticipante;NmCttPct;atributo;não;alfanumérico;60;;"Nome da pessoa para contato técnico da empresa participante
+(CdOcr = 190)";Obrigatório quando ContatoParticipante [A53] for informado
+DepartamentoContatoParticipante;DptCttPct;atributo;não;alfanumérico;60;;"Departamento da pessoa para contato técnico da empresa participante
+(CdOcr = 198)";Obrigatório quando ContatoParticipante [A53] for informado
+CargoContatoParticipante;CrgCttPct;atributo;não;alfanumérico;60;;Cargo da pessoa para contato técnico da empresa participante;
+DDDTelefoneContatoParticipante;DddTelCtt|Pct;atributo;não;numérico;2;10 a 99;"DDD do telefone da pessoa para contato técnico da empresa participante
+(CdOcr = 199)";Obrigatório quando ContatoParticipante [A53] for informado
+NúmeroTelefoneContatoParticipante;NrTelCttPct;atributo;não;numérico;9;;"Número do telefone da pessoa para contato técnico da empresa participante
+(CdOcr = 200)";Obrigatório quando ContatoParticipante [A53] for informado
+RamalTelefoneContatoParticipante;RmalTelCttPct;atributo;não;alfanumérico;4;;Ramal do telefone da pessoa para contato técnico da empresa participante;
+EmailContatoParticipante;EmaiCttPct;atributo;não;alfanumérico;120;;"Email da pessoa para contato técnico da empresa participante
+(CdOcr = 201)";Obrigatório quando ContatoParticipante [A53] for informado
+AtendimentoConsumidorParticipante;AtdtCsmoPct;tag;não;-;-;-;"Deve ser enviado entre 0 e 5 ocorrências, para atendimento ao consumidor da empresa participante (exemplo: SAC)
+(CdOcr = 117)";
+DepartamentoAtendimentoConsumidorParticipante;DptAtdtCsmoPct;atributo;não;alfanumérico;60;;"Departamento para atendimento ao consumidor da empresa participante
+(CdOcr = 198)";Obrigatório quando AtendimentoConsumidorParticipante [A61] for informado
+TipoTelefoneAtendimentoConsumidorParticipante;TipTelAtdtCsmoPct;atributo;não;alfanumérico;60;"ACESSO DO EXTERIOR
+CAPITAIS E REGIOES METROPOLITANAS
+DEFICIENCIA AUDITIVA/FALA
+DEMAIS REGIOES";"Tipo do telefone para atendimento ao consumidor da empresa participante
+(CdOcr = 202)";Obrigatório quando AtendimentoConsumidorParticipante [A61] for informado
+CodigoPaisTelefoneAtendimentoConsumidorParticipante;CdPaisTelAtdtCsmoPct;atributo;não;numérico;3;1 a 999;"Código do país do telefone para atendimento ao consumidor da empresa participante
+(CdOcr = 203)";
+DDDTelefoneAtendimentoConsumidorParticipante;DddTelAtdtCsmoPct;atributo;não;numérico;2;10 a 99;"DDD do telefone para atendimento ao consumidor da empresa participante
+(CdOcr = 199)";
+NúmeroTelefoneAtendimentoConsumidorParticipante;NrTelAtdtCsmoPct;atributo;não;numérico;12;;"Número do telefone para atendimento ao consumidor da empresa participante
+(CdOcr = 200)";Obrigatório quando AtendimentoConsumidorParticipante [A61] for informado
+EmailAtendimentoConsumidorParticipante;EmaiAtdtCsmoPct;atributo;não;alfanumérico;120;;"Email para atendimento ao consumidor da empresa participante
+(CdOcr = 201)";
+AutorizadoLiminarParticipante;AutdLmnrPct;tag;não;-;-;-;"Deve ser enviado entre 0 e 5 ocorrências, para autorização para liminar da empresa participante
+(CdOcr = 117)";
+NomeAutorizadoLiminarParticipante;NmAutdLmnrPct;atributo;não;alfanumérico;60;;"Nome da pessoa autorizada para liminar da empresa participante
+(CdOcr = 190)";Obrigatório quando AutorizadoLiminarParticipante [A68] for informado
+CPFAutorizadoLiminarParticipante;CpfAutdLmnrPct;atributo;não;numérico;11;1 a 99999999999;"CPF da pessoa autorizada para liminar da empresa participante
+(CdOcr = 191)";Obrigatório quando AutorizadoLiminarParticipante [A68] for informado
+DDDTelefoneAutorizadoLiminarParticipante;DddTelAutdLmnrPct;atributo;não;numérico;2;10 a 99;"DDD do telefone da pessoa autorizada para liminar da empresa participante
+(CdOcr = 199)";Obrigatório quando AutorizadoLiminarParticipante [A68] for informado
+NúmeroTerlefoneAutorizadoLiminarParticipante;NrTelAutdLmnrPct;atributo;não;numérico;9;;"Número do telefone da pessoa autorizada para liminar da empresa participante
+(CdOcr = 200)";Obrigatório quando AutorizadoLiminarParticipante [A68] for informado
+RamalAutorizadoLiminarParticipante;RmalTelAutdLmnrPct;atributo;não;alfanumérico;4;;Ramal do telefone da pessoa autorizada para liminar da empresa participante;
+EmailAutorizadoLiminarParticipante;EmaiAutdLmnrPct;atributo;não;alfanumérico;120;;"Email da pessoa autorizada para liminar da empresa participante
+(CdOcr = 201)";Obrigatório quando AutorizadoLiminarParticipante [A68] for informado
+Pametrizacao;Prmz;tag;não;-;-;-;Deve ser enviado quando houver parametrização diferenciada;
+RecebimentoRelacaoAutorizados;RcbtRlcAutzComplexType;tag;não;-;-;-;Deve ser enviada quando a empresa principal deseja receber a relação de autorizados em dias específicos da semana;Obrigatório quando Parametrizacaoo [A75] for informado
+DiaSemanaRecebimentoRelacaoAutorizados;DdSmnRcbtRlcAutz;atributo;não;alfanumérico;10;"SEGUNDA / TERCA / QUARTA /
+QUINTA / SEXTA";"Deve ser enviada para definir em que dias da semana a empresa principal deseja receber a relação de autorizados
+(CdOcr = 204)";Obrigatório quando RecebimentoRelacaooAutorizados [A76] for informado
+RetornoConfiguracao;RtnCfg;tag;sim;-;-;-;;Obrigatório
+CnpjGestorBD;CnpjGbd;atributo;sim;numérico;14;1 a 99999999999999;Deve ter entre 3 e 14 dígitos, correspondendo ao CNPJ completo do GBD;Obrigatório
+CnpjFonte;CnpjIf;atributo;sim;numérico;14;1 a 99999999999999;Deve ter entre 3 e 14 dígitos, correspondendo ao CNPJ completo da fonte;Obrigatório
+NumeroRemessa;NrRms;atributo;sim;numérico;9;1 a 999999999;Deve ser idêntico ao informado no envio (A1);Obrigatório
+SequencialRemessa;SeqlRms;atributo;sim;numérico;5;1 a 99999;Sequencial dentro de uma mesma remessa (particionamento), devendo começar em 1 a cada número de remessa ;"Obrigatório
+IF deve controlar sequência"
+DataRemessa;DtRms;atributo;sim;numérico;8;DDMMAAAA;Deve ser idêntico ao informado no envio (A1);Obrigatório
+CodigoOcorrencia;CdOcr;atributo;sim;numérico;5;0 a 99999;Código de ocorrência no arquivo;Obrigatório
+Principal;Ppl;tag;sim;-;-;-;;Obrigatório
+CodigoOcorrenciaPrincipal;CdOcrPpl;atributo;sim;numérico;5;0 a 99999;Código de ocorrência da empresa principal;
+ContatoPrincipal;CttPpl;tag;não;-;-;-;;
+NomeContatoPrincipal;NmCttPpl;atributo;sim;alfanumérico;60;;Nome da pessoa para contato técnico da empresa principal;Obrigatório quando ContatoPrincipal [A11] for informado
+CodigoOcorrenciaContatoPrincipal;CdOcrCttPpl;atributo;sim;numérico;5;0 a 99999;Código de ocorrência do contato da empresa principal;Obrigatório quando ContatoPrincipal [A11] for informado
+AtendimentoConsumidorPrincipal;AtdtCsmoPpl;tag;não;-;-;-;;
+DepartamentoAtendimentoConsumidorPrincipal;DptAtdtCsmoPpl;atributo;sim;alfanumérico;60;;Departamento para atendimento ao consumidor da empresa principal;Obrigatório quando AtendimentoConsumidorPrincipal [A14] for informado
+CodigoOcorrenciaAtendimentoConsumidorPrincipal;CdOcrAtdtCsmoPpl;atributo;sim;numérico;5;0 a 99999;Código de ocorrência do atendimento ao consumidor da empresa principal;Obrigatório quando AtendimentoConsumidorPrincipal [A14] for informado
+AutorizadoLiminarPrincipal;AutdLmnrPpl;tag;não;-;-;-;;
+CpfAutorizadoLiminarPrincipal;CpfAutdLmnrPpl;atributo;sim;numérico;11;1 a 99999999999;CPF da pessoa autorizada para liminar da empresa principal;Obrigatório quando AutorizadoLiminarPrincipal [A17] for informado
+CodigoOcorrenciaAutorizadoLiminarPrincipal;CdOcrAutdLmnrPpl;atributo;sim;numérico;5;0 a 99999;Código de ocorrência do autorizado para liminar da ampresa principal;Obrigatório quando AutorizadoLiminarPrincipal [A17] for informado
+Participante;Prtc;tag;não;-;-;-;;
+CnpjParticipante;CnpjPct;atributo;não;numérico;14;1 a 99999999999999;Deve ter entre 3 a 14 dígitos, correspondente ao CNPJ da empresa participante;Obrigatório quando Participante [A20] for informado
+CodigoOcorrenciaParticipante;CdOcrPct;atributo;não;numérico;5;0 a 99999;Código de ocorrência da empresa participante;Obrigatório quando Participante [A20] for informado
+ContatoParticipante;CttPct;tag;não;-;-;-;;
+NomeContatoParticipante;NmCttPct;atributo;não;;;;Nome da pessoa para contato técnico da empresa participante;Obrigatório quando ContatoParticipante [A23] for informado
+CodigoOcorrenciaContatoParticipante;CdOcrCttPct;atributo;não;numérico;5;0 a 99999;Código de ocorrência do contato da empresa participante;Obrigatório quando ContatoParticipante [A23] for informado
+AtendimentoConsumidorParticipante;AtdtCsmoPct;tag;não;-;-;-;;
+DepartamentoAtendimentoConsumidorParticipante;DptAtdtCsmoPct;atributo;não;;;;Departamento para atendimento ao consumidor da empresa participante;Obrigatório quando AtendimentoConsumidorParticipante [A26] for informado
+CodigoOcorrenciaAtendimentoConsumidorParticipante;CdOcrAtdtCsmoPct;atributo;não;numérico;5;0 a 99999;Código de ocorrência do atendimento ao consumidor da empresa participante;Obrigatório quando AtendimentoConsumidorParticipante [A26] for informado
+AutorizadoLiminarParticipante;AutdLmnrPct;tag;não;-;-;-;;
+CpfAutorizadoLiminarParticipante;CpfAutdLmnrPct;atributo;não;;;;CPF da pessoa autorizada para liminar da empresa participante;Obrigatório quando AutorizadoLiminarParticipante [A29] for informado
+CodigoOcorrenciaAutorizadoLiminarParticipante;CdOcrAutdLmnrPct;atributo;não;numérico;5;0 a 99999;Código de ocorrência do autorizado para liminar da ampresa participante;Obrigatório quando AutorizadoLiminarParticipante [A29] for informado
+Parametrizacao;Prmz;tag;não;-;-;-;;
+CodigoOcorrenciaParametrizacao;CdOcrPrmz;atributo;não;numérico;5;0 a 99999;Código de ocorrência da parametrização;Obrigatório quando Parametrizacao [A32] for informado
+EnvioCadastro;EnvoCad;tag;sim;-;-;-;;
+CnpjOrigem;CnpjOgm;atributo;sim;numérico;14;1 a 99999999999999;"Deve ter 14 dígitos, correspondendo ao CNPJ da origem do arquivo
+Infomar o CNPJ Completo da Fonte";
+NomeOrigem;NmOgm;atributo;sim;alfanumérico;60;;Informar o Nome da Fonte que está enviando o arquivo;
+NumeroRemessa;NrRms;atributo;sim;numérico;9;1 a 999999999;Número da remessa, alterado a cada remessa, sem zerar/reiniciar na alteração de data e deve ser maior à remessa já enviada;
+SequencialRemessa;SeqlRms;atributo;sim;numérico;5;1 a 999999;Sequencial dentro de uma mesma remessa (particionamento), deve começar em 1 a cada número de remessa;
+DataRemessa;DtRms;atributo;sim;numérico;8;DDMMAAAA; ;
+Cliente;Cli;tag;sim;-;-;-;;
+TipoCliente;TipCli;atributo;sim;numérico;1;"1 - PF / 2 - PJ (CNPJ completo) /
+3 - PJ (radical de CNPJ)";;
+Identificacao;IdfcCli;atributo;sim;numérico;14;1 a 99999999999999;"TipoCliente  = 1 > Deve ter  11 dígitos, correspondendo ao CPF completo do cliente
+TipoCliente = 2 > Deve  14 dígitos, correspondendo ao CNPJ completo do cliente
+TipoCliente  = 3 > Deve ter  8 dígitos, correspondendo ao radical de CNPJ do cliente
+";
+NomeCliente;NmCli;atributo;sim;alfanumérico;60;;;
+EnderecoCliente;EndCli;tag;sim;-;-;-;até 5 repetições;
+LogradouroEnderecoCliente;LgrEndCli;atributo;sim;alfanumérico;60;;Obrigatório, se informado o Grupo Endereço;
+NúmeroEndereço                                                                     ;      NrEndCli                                                      ;atributo;não;alfanumérico;Mín: 1;;;
+ComplementoEnderecoCliente;CmptEndCli;atributo;não;alfanumérico;60;;;
+BairroEnderecoCliente;BaiEndCli;atributo;não;alfanumérico;60;;;
+CEPEnderecoCliente;CepEndCli;atributo;sim;numérico;8;1000 a 99999999;Obrigatório, se informado o Grupo Endereço;
+MunicipioEnderecoCliente;MunEndCli;atributo;sim;alfanumérico;60;;Obrigatório, se informado o Grupo Endereço;
+UFEnderecoCliente;UfEndCli;atributo;sim;alfanumérico;2;;Obrigatório, se informado o Grupo Endereço;
+TelefoneCliente;TelCli;tag;sim;-;-;-;até 5 repetições;
+DDDTelefoneCliente;DddTelCli;atributo;não;numérico;2;11 a 99;;
+NumeroTelefoneCliente;NrTelCli;atributo;sim;numérico;9;;Obrigatório, se informado o Grupo Telefone;
+EnderecoEletronicoCliente;EndEtnCli;tag;sim;-;-;-;até 5 repetições;
+EmailCliente;EmaiCli;atributo;sim;alfanumérico;120;;Obrigatório, se informado o  Grupo E-mail;
+EnvioRelacaoCancelamento;EnvoRlcCncd;tag;sim;-;-;-;Envio de relação de clientes cancelados;
+CnpjOrigem;CnpjOgm;atributo;sim;numérico;14;4,39101E+12;Deve ter 14 dígitos, correspondendo ao CNPJ da CIP;
+NomeOrigem;NmOgm;atributo;sim;alfanumérico;60;CAMARA INTERBANCARIA DE PAGAMENTOS;;
+NumeroRemessa;NrRms;atributo;sim;numérico;9;1 a 999999999;Número da remessa, alterado a cada remessa, sem zerar/reiniciar na alteração de data e deve ser maior à remessa já enviada;
+SequencialRemessa;SeqlRms;atributo;sim;numérico;5;1 a 999999;Sequencial dentro de uma mesma remessa (particionamento), deve começar em 1 a cada número de remessa;
+DataRemessa;DtRms;atributo;sim;numérico;8;DDMMAAAA; ;
+Cliente;Cli;tag;não;-;-;-;;
+TipoCliente;TipCli;atributo;sim;numérico;1;"1 - PF / 2 - PJ (CNPJ completo) /
+3 - PJ (radical de CNPJ)";;
+Identificacao;IdfcCli;atributo;sim;numérico;14;1 a 99999999999999;"TipoCliente  = 1 >  11 dígitos, correspondendo ao CPF completo do cliente
+TipoCliente = 2 > 14 dígitos, correspondendo ao CNPJ completo do cliente
+TipoCliente  = 3 >  8 dígitos, correspondendo ao radical de CNPJ do cliente
+";
+CódigoStatusCliente;CdEstCli;atributo;sim;alfanumérico;1;C;Código do status do cliente  C = Cancelamento;
+DataHoraCancelamentoReabertura;TsCnct;atributo;sim;numérico;5;0 a 99999;DDMMAAA-HHMMSS;
+CnpjGestorCancelamentoReabertura ;CnpjGstCnct;atributo;sim;numérico;14;1 a 99999999999999;Deve ter 14 dígitos, correspondendo ao CNPJ completo do GBD;
