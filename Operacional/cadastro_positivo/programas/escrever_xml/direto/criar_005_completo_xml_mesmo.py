@@ -2,18 +2,10 @@ import csv
 import xml.etree.ElementTree as ET
 
 def importar_dicionario():
-    dicionario_arquivo = open(r'C:\Users\jean_\Documents\GitHub\Up.p\Operacional\cadastro_positivo\auxiliares\dict_bvs.csv')
-    dicionario_csv = csv.reader(dicionario_arquivo, delimiter=';')
-    dicionario = dict()
-    dicionario_reverso = dict()
-    for row in dicionario_csv:
-        dicionario[row[0]] = row[1]
-        dicionario_reverso[row[1]] = row[0]
+    dicionario_arquivo = open(r'C:\Users\jean_\Documents\GitHub\Up.p\Operacional\cadastro_positivo\auxiliares\dict_bvs_005.csv')
+    return csv.reader(dicionario_arquivo, delimiter=';')
 
-
-    return [dicionario, dicionario_reverso]
-
-[dict_bvs, dict_bvs_reverso] = [importar_dicionario()[0], importar_dicionario()[1]]
+dict_bvs = importar_dicionario()
 
 def preencher_historico():
     CnpjFonte =  str(input('Cnpj da Fonte de dados\n')).replace(r'-', '').replace(r'/', '').replace(r'.', '')
@@ -75,6 +67,34 @@ def preencher_cliente(enviohistoricocredito):
     noh.set('CmdoCli', ComandoCliente)
 
     return noh
+
+def preencher_noh(nome_reduzido, pai=None):
+    if pai is None:
+        print('Esse pai foi none: ' + str(nome_reduzido))
+        noh = ET.Element(nome_reduzido)
+    else:
+        print('Esse pai NÃO foi none: ' + str(nome_reduzido))
+        noh = ET.SubElement(pai, nome_reduzido)
+
+
+    list_atributos_reduzidos = list()
+    add_atributo_reduzido = False
+    for row in dict_bvs:
+        if row[2] = 'tag':
+            add_atributo_reduzido = False
+
+        if add_atributo_reduzido:
+            list_atributos_reduzidos.append([row[0],row[1]])
+            print('Adicionado: ' + row[0] + r'/' + row[1])
+
+        if row[1] = nome_reduzido:
+            add_atributo_reduzido = True
+
+    for atributo in list_atributos_reduzidos:
+        valor = input(' coloque o número')
+
+
+
 
 enviohistoricocredito = preencher_historico()
 

@@ -1,0 +1,307 @@
+Nome Completo;Nome Reduzido;Tipo;Obrigatório;Formato;Tamanho;Conteúdo;Significado / Validação / Erro;Observação;Nivel da Tag
+EnvioHistoricoCredito;EnvoHstCrd;tag;sim;-;-;-;(CdOcr = 117);Obrigatório;0
+CnpjFonte;CnpjIf;atributo;sim;numérico;14;1 a 99999999999999;"Deve ter entre 3 e 14 dígitos, correspondendo ao CNPJ completo da fonte
+(CdOcr = 101)";Obrigatório;
+CnpjGestorBD;CnpjGbd;atributo;sim;numérico;14;1 a 99999999999999;"Deve ter entre 3 e 14 dígitos, correspondendo ao CNPJ completo do GBD
+(CdOcr = 102)";Obrigatório;
+ComandoRemessa;CmdoRms;atributo;sim;alfanumérico;1;I - inclusão / E - exclusão;(CdOcr = 104);Obrigatório;
+NumeroRemessa;NrRms;atributo;sim;numérico;9;1 a 999999999;"Número da remessa, alterado a cada remessa, sem zerar/reiniciar na alteração de data e deve ser maior à remessa já enviada
+(CdOcr = 123)";"Obrigatório
+
+Considerado chave primária (PK) da remessa
+
+GBD apenas deve validar se o número da remessa já foi utilizado, não havendo controle de sequência, e devolver com o mesmo conteúdo";
+SequencialRemessa;SeqlRms;atributo;sim;numérico;5;1 a 99999;"Sequencial dentro de uma mesma remessa (particionamento), deve começar em 1 a cada número de remessa
+(CdOcr = 103)";"Obrigatório
+
+GBD deve controlar sequência";
+DataRemessa;DtRms;atributo;sim;numérico;8;DDMMAAAA;"Data de geração da remessa, não pode ser anterior a data de transmissão menos 7 dias e deve ser posterior à remessa já enviada
+(CdOcr = 100)";Obrigatório;
+DataReferenciaBaseInterna;DtRefBaseItno;atributo;sim;numérico;8;DDMMAAAA;"Data de consolidação da base interna da IF, não pode ser anterior a data da remessa menos 7 dias
+(CdOcr = 125)";Obrigatório;
+NumeroRemessaRelacao;NrRmsRlc;atributo;não;numérico;9;1 a 999999999;Número da remessa da relação;Descontinuado;
+FormatoRemessa;FmtRms;atributo;sim;alfanumérico;1;C - completo / I - incremental;"Indicador se a remessa é completa (C) ou incremental (I)
+(CdOcr = 127)";Obrigatório;
+Cliente;Cli;tag;não;-;-;-;;"Pode conter apenas históricos de crédito com CdOcr ?100
+
+Ausência de histórico de crédito indica CdOcr = 1";1
+TipoCliente;TipCli;atributo;não;numérico;1;"1 - PF / 2 - PJ (CNPJ completo) /
+3 - PJ (radical de CNPJ)";(CdOcr = 112);Obrigatório quando Cliente [A12] for informado;
+Identificacao;IdfcCli;atributo;não;numérico;14;0 a 99999999999999;"TipoCliente [A13] = 1 > Deve ter entre 3 e 11 dígitos, correspondendo ao CPF completo do cliente
+TipoCliente [A13] = 2 > Deve ter entre 3 e 14 dígitos, correspondendo ao CNPJ completo do cliente
+TipoCliente [A13] = 3 > Deve ter entre 1 e 8 dígitos, correspondendo ao radical de CNPJ do cliente
+(CdOcr = 113)
+
+Identificação duplicada
+(CdOcr = 171)";"Obrigatório quando Cliente [A12] for informado
+
+Caso seja identificado uma Identificação duplicada, o arquivo completo é rejeitado.";
+Nome;NmCli;atributo;não;alfanumérico;60;;(CdOcr = 114);Obrigatório quando Cliente [A12] for informado e CodigoOcorrencia [A17] = 0;
+NaturezaRelacao;NtzRlc;atributo;não;numérico;1;1 - comercial / 2 - creditícia  / 3 - serviços continuados / 4 - consórcio / 5- creditícia e consórcio /  9 - outros;(CdOcr = 126);Obrigatório quando Cliente [A12] for informado;
+CodigoOcorrencia;CdOcr;atributo;não;numérico;5;0 a 99999;"Código de ocorrência no cliente
+(CdOcr = 135)";Obrigatório quando Cliente [A12] for informado;
+ComandoCliente;CmdoCli;atributo;não;alfanumérico;1;I - inclusão / A - alteração / E - exclusão;"Indicador se é alteração, exclusão ou inclusão de informações de cliente
+(CdOcr = 207)";Obrigatório quando Cliente [A12] for informado e FormatoRemessa [A11] = I;
+Operacao;Opr;tag;não;-;-;-;(CdOcr = 117);"Obrigatório quando cliente tiver operação dentro dos 13 meses
+
+Obrigatório quando CodigoOcorrencia [A17] = 0 e ComandoCliente [A18] = ""A"" ou ""I""";2
+NumeroUnico;NrUnco;atributo;não;alfanumérico;40;;"Número único da operação, atribuído pela IF
+(CdOcr = 118)
+
+Chave primária duplicada
+(CdOcr = 180)";"Obrigatório quando Operação [A19] for informado
+
+Considerado chave primária (PK) da operação em conjunto com tipo do documento [A13] e identificação do cliente [A14]. 
+
+Identificação do cliente segue a regra a seguir:  se [A13] = 3, identificação do cliente = [A28] e se [A12] <> 3, identificação do cliente = [A14].  
+
+Não pode ser alterado depois do primeiro envio.
+
+Recomendação para composição do Número Único de forma que garanta sua exclusividade, como a inclusão da Modalidade.";
+PrefixoAgencia;PrfAg;atributo;não;numérico;4;1 a 9999;"Prefixo da agência onde a operação foi contratada
+(CdOcr = 119)";;
+NumeroContrato;NrCtr;atributo;não;alfanumérico;20;;"Número do contrato da operação
+(CdOcr = 120)";;
+DataContratacao;DtCtrc;atributo;não;numérico;8;DDMMAAAA;"Data de contratação/formalização da operação 
+(CdOcr = 128)";Obrigatório quando Operacao [A19] for informado;
+Modalidade;CdMdld;atributo;não;alfanumérico;3;ver domínio;"Código da modalidade da operação
+(CdOcr = 129)";Obrigatório quando Operacao [A19] for informado;
+DataApuracao;DtAprc;atributo;não;numérico;8;DDMMAAAA;"Data de apuração da operação dentro da IF, devendo ser anterior ou igual à data de referência da base interna e posterior ou igual à data de contratação
+(CdOcr = 130)";Obrigatório quando Operacao [A19] for informado;
+CnpjContratacao;CnpjCtrc;atributo;não;numérico;14;1 a 99999999999999;"Deve ter entre 3 e 14 dígitos, correspondendo ao CNPJ completo da contratação
+(CdOcr = 131)";"Obrigatório quando diferente de CnpjFonte [A3]
+
+A partir de 21/08/2017 o GBD validará de acordo com o arquivo de configuração";
+ComandoOperação;CmdoOpr;atributo;não;alfanumérico;1;"I - inclusão / A - alteração / 
+E - exclusão / S - sobreposição";(CdOcr = 132);"Obrigatório quando Operação [A19] for informado e ComandoCliente [A18] = ""A""";
+IdentificacaoClienteContratante;IdfcCliCtrt;atributo;não;numérico;14;1 a 99999999999999;"Deve ter entre 3 e 14 dígitos, correspondendo ao CNPJ completo do cliente
+(CdOcr = 133)";Obrigatório quando TipoCliente [A13] = 3;
+TipoRestricao;TipRst;atributo;não;alfanumérico;1;"C - contestação / I - impugnação /
+L - liminar / F - fraude";(CdOcr = 134);;
+DetalheOperacao;DetOpr;tag;não;-;-;-;(CdOcr = 117);Obrigatório quando Operacao [A19] for informado e quando TipoRestricao [A29] não for informado;3
+IndicadorPreFixado;InPreFix;atributo;não;alfanumérico;1;S / N;(CdOcr = 136);Obrigatório quando Modalidade [A24] for de parcelado;
+DataVencimentoUltimaParcela;DtVnctUltPcl;atributo;não;numérico;8;DDMMAAAA;"Data de vencimento da última parcela da operação, deve ser igual ou posterior à data de contratação
+(CdOcr = 137)";"Obrigatório quando Modalidade [A24] for de parcelado
+
+Pode ser informado '01.01.0001'como data inválida e '31.12.9999'como indefinida";
+ValorContratadoFuturo;VlCtrdFut;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor contratado futuro da operação
+(CdOcr = 138)";"Obrigatório quando Modalidade [A24] for de parcelado
+
+Valor original na data da contratação – com juros e encargos";
+QuantidadeParcelas;QtPcl;atributo;não;numérico;3;1 a 999;"Quantidade de parcelas da operação
+(CdOcr = 139)";Obrigatório quando Modalidade [A24] for de parcelado;
+NúmeroPlásticoCartão;NrPlstCrt;atributo;não;numérico;4;0 a 9999;"Últimos 4 dígitos do plástico do cartão
+(CdOcr = 210)";Obrigatório quando Modalidade [A24] for de cartão de crédito;
+SaldoDevedor;SdoDvdr;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Saldo devedor da operação, pode ser negativo
+(CdOcr = 157)";"Obrigatório quando Modalidade [A24] for de cartão de crédito
+
+Pode ser informado ""0""";
+DataVencimento;DtVnctOpr;atributo;não;numérico;8;DDMMAAAA;"Data de vencimento da operação, deve ser posterior à data de contratação
+(CdOcr = 166)";"Obrigatório quando Modalidade [A24] for de rotativo
+
+Pode ser informado '01.01.0001'como data inválida e '31.12.9999'como indefinida";
+NumeroGrupo;NrGr;atributo;não;alfanumérico;10;;"Número do grupo
+(CdOcr = 173)";Obrigatório quando Modalidade [A24] for de consórcio;
+CodigoCota;CdCt;atributo;não;numérico;5;0 a 99999;"Código da cota
+(CdOcr = 174)";Obrigatório quando Modalidade [A24] for de consórcio;
+SequenciaCota;SeqCt;atributo;não;alfanumérico;3;;"Sequência da cota
+(CdOcr = 175)";Obrigatório quando Modalidade [A24] for de consórcio;
+SituacaoCota;SitCt;atributo;não;alfanumérico;1;1 - ativa / 2 - ativa crédito utilizado (parcial ou total) / 3 - excluída / 4 - cedida;"Situação da cota
+(CdOcr = 176)";Obrigatório quando Modalidade [A24] for de consórcio;
+ValorContratadoObrigacao;VlObgc;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor da obrigação
+(CdOcr = 177)";"Obrigatório quando Modalidade [A24] for de consórcio
+Informar total pago quando SituacaoCota [A43] = 3
+Pode ser ""0"" quando SituacaoCota [A43] = 3";
+DataVencimentoUltimaParcela;DtVnctUltPclCsr;atributo;não;numérico;8;DDMMAAAA;"Data de vencimento da última parcela da operação, deve ser posterior à data de contratação
+(CdOcr = 137)";"Obrigatório quando Modalidade [A24] for de consórcio
+
+Não informar quando SituacaoCota [A43] = 3 ou 4";
+QuantidadeParcelasCota;QtPclCtCsr;atributo;não;numérico;3;1 a 999;"Quantidade de parcelas da cota
+(CdOcr = 139)";"Obrigatório quando Modalidade [A24] for de consórcio
+
+Não informar quando SituacaoCota [A43] = 3 ou 4";
+SaldoDevedorCota;SdoDvdrCtCsr;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Saldo devedor da cota
+(CdOcr = 157)";"Obrigatório quando Modalidade [A24] for de consórcio
+Não informar quando SituacaoCota [A41] = 3 ou 4
+Pode ser informado ""0"" quando SituacaoCota [A41] = 1 ou 2";
+DataContemplacaoCota;DtContCtCsr;atributo;não;numérico;8;DDMMAAAA;"Data de contemplação da cota, deve ser posterior ou igual à data de contratação
+(CdOcr = 178)";"Obrigatório quando Modalidade [A24] for de consórcio e SituacaoCota [A41] = 2
+
+Não informar quando SituacaoCota [A41] = 1, 3 ou 4";
+ParcelaAnterior;PclAnt;tag;não;-;-;-;; ;3
+DataVencimento;DtVnctPclAnt;atributo;não;numérico;8;DDMMAAAA;"Data de vencimento da parcela, não pode ser anterior à data atual menos 6 anos e posterior à data atual mais 50 anos
+(CdOcr = 148)
+
+A data de vencimento não pode ser maior que a data de apuração quando a data do pagamento [A51] não for informada
+(CdOcr=184)
+
+O conjunto de informações 'data de vencimento + periodicidade' não pode se repetir para a mesma operação
+(CdOcr=208)";Obrigatório quando ParcelaAnterior [A47] for informado;
+PeriodicidadeParcelaAnterior;PercPclAnt;atributo;não;alfanumérico;1;A - anual / B - bimestral / D - diário / E - eventual / M - mensal / Q - quadrimestral / S - semestral / T - trimestral / W - semanal;"Periodicidade de vencimento das parcelas
+(CdOcr=209)";Obrigatório quando ParcelaAnterior [A47] for informado;
+Valor;VlPclAnt;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor da parcela
+(CdOcr = 149)";Obrigatório quando ParcelaAnterior [A47] for informado;
+ComandoParcelaAnterior;CmdoPclAnt;atributo;não;alfanumérico;1;I - inclusão / E - exclusão;(CdOcr = 143);Obrigatório quando ParcelaAnterior [A47] for informado e ComandoOperacao [A27] = A;
+PagamentoParcelaAnterior;PgtoPclAnt;tag;não;-;-;-;;;4
+DataPagamento;DtPgtoPclAnt;atributo;não;numérico;8;DDMMAAAA;"Data de pagamento da parcela, deve ser posterior ou igual à data de contratação e anterior ou igual a data de apuração
+(CdOcr = 150)";"Obrigatório quando PagamentoParcelaAnterior [A52] for informado
+
+Pode ser informado ""01.01.0001""";
+ValorPagamento;VlPgtoPclAnt;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor de pagamento da parcela
+(CdOcr = 151)";"Obrigatório quando PagamentoParcelaAnterior [A52] for informado
+
+Pode ser informado ""0""";
+PagamentoAvulso;PgtoAvls;tag;não;-;;;;;3
+DataPagamento;DtPgtoAvls;atributo;não;numérico;8;DDMMAAAA;"Data de pagamento avulso, deve ser posterior ou igual à data de contratação  e anterior ou igual a data de apuração
+(CdOcr = 152)";Obrigatório quando PagamentoAvulso [A55] for informado;
+ValorPagamento;VlPgtoAvls;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor de pagamento avulso
+(CdOcr = 153)";Obrigatório quando PagamentoAvulso [A55] for informado;
+TipoPagamento;TipPgtoAvls;atributo;não;alfanumérico;1;P - pagamento parcial / T - pagamento total / A - antecipação / L - lance / S - seguro;"Tipo de pagamento avulso
+(CdOcr = 144)";Obrigatório quando PagamentoAvulso [A55] for informado;
+ComandoPagamentoAvulso;CmdoPgtoAvls;atributo;não;alfanumérico;1;I - inclusão / E - exclusão;(CdOcr = 143);Obrigatório quando PagamentoAvulso [A55] for informado e ComandoOperacao [A27] = A;
+ParcelasFuturas;PclFut;tag;não;-;-;-;"Somente 1 tag por operação/periodicidade
+(CdOcr = 181)";Obrigatório quando Modalidade [A24] for Parcelado;3
+DataVencimentoProximaParcela;DtVnctPrxPcl;atributo;não;numérico;8;DDMMAAAA;"Data de vencimento da próxima parcela
+(CdOcr = 154)";"Obrigatório quando ParcelasFuturas [A60] for informado e QuantidadeParcelasAVencer [A64] for diferente de ZERO
+
+Data vencimento da próxima parcela deve ser igual ou maior a data de apuração.";
+PeriodicidadeParcelasFuturas;PercPclFut;atributo;não;alfanumérico;1;A - anual / B - bimestral / D - diário / E - eventual / M - mensal / Q - quadrimestral / S - semestral / T - trimestral / W - semanal;"Periodicidade de vencimento das parcelas futuras
+(CdOcr=209)";Obrigatório quando ParcelasFuturas [A60] for informado;
+ValorProximaParcela;VlPrxPcl;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor da próxima parcela
+(CdOcr = 155)";"Obrigatório quando ParcelasFuturas [A60] for informado e QuantidadeParcelasAVencer [A64] for diferente de ZERO
+
+Não permtir valor menor ou igual a ZERO.";
+QuantidadeParcelasAVencer;QtPclVncr;atributo;não;numérico;3;0 a 999;"Quantidade de parcelas a vencer, para cada periodicidade
+(CdOcr = 156)
+
+A quantidade de parcelas a vencer da parcela futura [A59] deve ser menor ou igual a quantidade de parcelas a pagar da operação [A33]
+(CdOcr=183)";Obrigatório quando ParcelasFuturas [A60] for informado;
+QuantidadeParcelasAPagar;QtPclPgr;atributo;não;numérico;3;0 a 999;"Quantidade de parcelas a pagar da operação, para cada periodicidade, deve ser menor ou igual à quantidade de parcelas [A35] e não pode ser ZERO quando tiver parcela sem pagamento
+(CdOcr = 147)";Obrigatório quando ParcelasFuturas [A60] for informado;
+FaturaFechadaAnterior;FatFchdAnt;tag;não;-;-;-;;;3
+DataVencimento;DtVnctFatFchdAnt;atributo;não;numérico;8;DDMMAAAA;"Data de vencimento da fatura fechada
+(CdOcr = 158)
+
+Não pode ocorrer duplicidade de data de vencimento da fatura 
+(CdOcr=185)
+
+A data de vencimento fatura anterior deve ser menor ou igual a data de apuração [A24], desde que a parcela não esteja paga
+(CdOcr=186)";Obrigatório quando FaturaFechadaAnterior [A66] for informado;
+ValorTotalAPagar;VlTtlPgrFatFchdAnt;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor total para pagamento da fatura fechada, pode assumir valor negativo
+(CdOcr = 159)";"Obrigatório quando FaturaFechadaAnterior [A66] for informado
+
+Pode ser informado ""0""";
+ValorMinimoAPagar;VlMinPgrFatFchdAnt;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor mínimo para pagamento da fatura fechada
+(CdOcr = 160)
+
+O valor mínimo deve ser menor ou igual que o Valor Total a Pagar, com exceção de fatura com valor negativo que deverá ser igual a zeros.
+(CdOcr = 160)";"Obrigatório quando FaturaFechadaAnterior [A66] for informado
+
+Pode ser informado ""0""";
+ComandoFaturaFechadaAnterior;CmdoFatFchdAnt;atributo;não;alfanumérico;1;I - inclusão / E - exclusão;(CdOcr = 143);Obrigatório quando FaturaFechadaAnterior [A66] for informado e ComandoOperacao [A27] = A;
+PagamentoFaturaFechadaAnterior;PgtoFatFchdAnt;tag;não;-;-;-;;;4
+DataPagamento;DtPgtoFatFchdAnt;atributo;não;numérico;8;DDMMAAAA;"Data de pagamento da fatura fechada
+(CdOcr = 161)
+
+A data de pagamento da fatura anterior deve ser menor ou igual a data de apuração [A24] e maior ou igual a data de contratação [A22].
+(CdOcr=188)";"Obrigatório quando PagamentoFaturaFechadaAnterior [A71] for informado
+
+Pode ser informado ""01.01.0001""";
+ValorPagamento;VlPgtoFatFchdAnt;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor de pagamento da fatura fechada
+(CdOcr = 162)";"Obrigatório quando PagamentoFaturaFechadaAnterior [A71] for informado
+
+Pode ser informado ""0""";
+FaturaFechadaFutura;FatFchdFut;tag;não;-;-;-;;;3
+DataVencimento;DtVnctFatFchdFut;atributo;não;numérico;8;DDMMAAAA;"Data de vencimento da fatura futura
+(CdOcr = 163)
+
+Não pode ocorrer duplicidade de data de vencimento da fatura 
+(CdOcr=185)
+
+A data de vencimento fatura futura deve ser maior ou igual a data de apuração [A24]
+(CdOcr=187)";Obrigatório quando FaturaFechadaFutura [A74] for informado;
+ValorTotalAPagar;VlTtlPgrFatFchdFut;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor total para pagamento da fatura futura, pode assumir valor negativo
+(CdOcr = 164)";"Obrigatório quando FaturaFechadaFutura [A74] for informado
+
+Pode ser informado ""0""";
+ValorMinimoAPagar;VlMinPgrFatFchdFut;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor mínimo para pagamento da fatura futura
+(CdOcr = 165)
+
+O valor mínimo deve ser menor que o Valor Total a Pagar  [A78], exceto quando for negativo
+(CdOcr = 165)";"Obrigatório quando FaturaFechadaFutura [A74] for informado
+
+Pode ser informado ""0""";
+ComandoFaturaFechadaFutura;CmdoFatFchFut;atributo;não;alfanumérico;1;I - inclusão / E - exclusão;(CdOcr = 143);Obrigatório quando FaturaFechadaFutura [A74] for informado e ComandoOperacao [A27] = A;
+FechamentoAnterior;FchtAnt;tag;não;-;-;-;;;3
+DataFechamentoAnterior;DtFchtAnt;atributo;não;numérico;8;DDMMAAAA;"Data do fechamento
+(CdOcr = 167)
+
+Não pode haver fechamento duplicado para a mesma operação no mesmo mês
+(CdOcr=182)";Obrigatório quando FechamentoAnterior [A79] for informado;
+SaldoUtilizado;SdoUtlzFchtAnt;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Saldo utilizado no fechamento
+(CdOcr = 168)";"Obrigatório quando FechamentoAnterior [A79] for informado
+
+Pode ser informado ""0""";
+ComandoFechamentoAnterior;CmdoFchtAnt;atributo;não;alfanumérico;1;I - inclusão / E - exclusão;(CdOcr = 143);Obrigatório quando FechamentoAnterior [A79] for informado e ComandoOperacao [A27] = A;
+FechamentoAtual;FchtAtu;tag;não;-;-;-;;;3
+Data;DtFchtAtu;atributo;não;numérico;8;DDMMAAAA;"Data do fechamento
+(CdOcr = 169)";Obrigatório quando FechamentoAual [A83] for informado;
+SaldoUtilizado;SdoUtlzFchtAtu;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Saldo utilizado no fechamento
+(CdOcr = 170)";"Obrigatório quando FechamentoAual [A83] for informado
+
+Pode ser informado ""0""";
+ComandoFechamentoAtual;CmdoFchtAtu;atributo;não;alfanumérico;1;I - inclusão / E - exclusão;(CdOcr = 143);Obrigatório quando FechamentoAtual [A83] for informado e ComandoOperacao [A27] = A;
+ParcelaAnteriorConsorcio;PclAntCsr;tag;não;-;-;-;;;3
+DataVencimento;DtVnctPclAntCsr;atributo;não;numérico;8;DDMMAAAA;"Data de vencimento da parcela, não pode ser anterior à data atual menos 6 anos e posterior à data atual mais 50 anos
+(CdOcr = 148)
+
+A data de vencimento não pode ser maior que a data de apuração quando a data do pagamento [A83] não for informada.
+(CdOcr=184)
+
+O conjunto de informações 'data de vencimento + periodicidade'' não pode se repetir para a mesma operação
+(CdOcr=208)";Obrigatório quando ParcelaAnteriorConsorcio [A87] for informado;
+PeriodicidadeParcelaAnterior;PercPclAntCsr;atributo;não;alfanumérico;1;A - anual / B - bimestral / D - diário / E - eventual / M - mensal / Q - quadrimestral / S - semestral / T - trimestral / W - semanal;"Periodicidade de vencimento das parcelas
+(CdOcr=209)";Obrigatório quando ParcelaAnteriorConsorcio [A87] for informado;
+Valor;VlPclAntCsr;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor da parcela
+(CdOcr = 149)";Obrigatório quando ParcelaAnteriorConsorcio [A87] for informado;
+ComandoParcelaAnteriorConsorcio;CmdoPclAntCsr;atributo;não;alfanumérico;1;I - inclusão / E - exclusão;(CdOcr = 143);Obrigatório quando ParcelaAnteriorConsorcio [A87] for informado e ComandoOperacao [A27] = A;
+PagamentoParcelaAnteriorConsorcio;PgtoPclAntCsr;tag;não;-;-;-;;;4
+DataPagamento;DtPgtoPclAntCsr;atributo;não;numérico;8;DDMMAAAA;"Data de pagamento da parcela, deve ser posterior ou igual à data de contratação menos 90 dias e anterior ou igual à data de apuração
+(CdOcr = 150)";"Obrigatório quando PagamentoParcelaAnterior [A92] for informado
+
+Pode ser informado ""01010001""";
+ValorPagamento;VlPgtoPclAntCsr;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor de pagamento da parcela
+(CdOcr = 151)";"Obrigatório quando PagamentoParcelaAnterior [A92] for informado
+
+Pode ser informado ""0"" apenas quando DataPagamento [A93] = ""01010001""";
+PagamentoAvulsoConsorcio;PgtoAvlsCsr;tag;não;-;;;;;4
+DataPagamento;DtPgtoAvlsCsr;atributo;não;numérico;8;DDMMAAAA;"Data de pagamento avulso, deve ser posterior à data de contratação menos 90 dias e anterior ou igual a data de apuração.
+(CdOcr = 152)";Obrigatório quando PagamentoAvulsoConsorcio [A95] for informado;
+ValorPagamento;VlPgtoAvlsCsr;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor de pagamento avulso
+(CdOcr = 153)";Obrigatório quando PagamentoAvulsoConsorcio [A95] for informado;
+TipoPagamento;TipPgtoAvlsCsr;atributo;não;alfanumérico;1;P - pagamento parcial / T - pagamento total / A - antecipação / L - lance / S - seguro;"Tipo de pagamento avulso
+(CdOcr = 144)";Obrigatório quando PagamentoAvulsoConsorcio [A95] for informado;
+ComandoPagamentoAvulsoConsorcio;CmdoPgtoAvlsCsr;atributo;não;alfanumérico;1;I - inclusão / E - exclusão;(CdOcr = 143);Obrigatório quando PagamentoAvulsoConsorcio [A95] for informado e ComandoOperacao [A27] = A;
+ParcelasFuturasConsorcio;PclFutCsr;tag;não;-;-;-;"Somente 1 tag por operação
+(CdOcr = 181)";"Obrigatório quando Modalidade [A24] for Consórcio
+
+Não informar quando SituacaoCota [A43] = 3 ou 4";3
+DataVencimentoProximaParcela;DtVnctPrxPclCsr;atributo;não;numérico;8;DDMMAAAA;"Data de vencimento da próxima parcela
+(CdOcr = 154)";"Obrigatório quando ParcelasFuturasConsorcio [A100] for informado e QuantidadeParcelasAVencer [A104] for diferente de ZERO
+
+Data vencimento da próxima parcela deve ser igual ou maior a data de apuração.";
+PeriodicidadeParcelasFuturasConsorcio;PercPclFutCsr;atributo;não;alfanumérico;1;A - anual / B - bimestral / D - diário / E - eventual / M - mensal / Q - quadrimestral / S - semestral / T - trimestral / W - semanal;"Periodicidade de vencimento das parcelas
+(CdOcr=209)";Obrigatório quando ParcelasFuturasConsorcio [A100] for informado;
+ValorProximaParcela;VlPrxPclCsr;atributo;não;numérico;15;13 inteiros + 2 decimais (sem vírgula);"Valor da próxima parcela
+(CdOcr = 155)";"Obrigatório quando ParcelasFuturasConsorcio [A100] for informado e QuantidadeParcelasAVencer [A104] for diferente de ZERO
+
+Não permtir valor menor ou igual a ZERO.";
+QuantidadeParcelasAVencer;QtPclVncrCsr;atributo;não;numérico;3;0 a 999;"Quantidade de parcelas a vencer
+(CdOcr = 156)
+
+A quantidade de parcelas a vencer da parcela futura [A90] deve ser menor ou igual a quantidade de parcelas a pagar da operação [A33]
+(CdOcr=183)";Obrigatório quando ParcelasFuturasConsorcio [A100] for informado;
+QuantidadeParcelasAPagarCota;QtPclPgrCtCsr;atributo;não;numérico;3;0 a 999;"Quantidade de parcelas a pagar da cota, deve ser inferior ou igual à quantidade de parcelas da operação de consórcio [A46]
+(CdOcr = 147)";"Obrigatório quando ParcelasFuturasConsorcio [A100] for informado
+
+Não informar quando SituacaoCota [A41] = 3 ou 4";
