@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EnvoCad CnpjOgm="34046974000128" DtRms="18112019" NmOgm="Upp Sao Paulo Empresa Simples De Credito Ltda" NrRms="2" SeqlRms="1">
+  <Cli IdfcCli="05877202000130" NmCli="SERGINHO DA TERRA COMERCIO DE TERRA E SERVICOS LTDA-ME" TipCli="2">
+    <EndCli BaiEndCli="Vila Santo Antonio" CepEndCli="06708280" CmptEndCli="Fundos" LgrEndCli="Rua Jose Felix de Oliveira" MunEndCli="Cotia" NrEndCli="888" UfEndCli="SP" />
+    <TelCli DddTelCli="11" NrTelCli="999221073" />
+    <EndEtnCli EmaiCli="serginhodaterra@hotmail.com" />
+  </Cli>
+  <Cli IdfcCli="27194784000192" NmCli="ELAINE SANTOS DE OLIVEIRA CENTRO DE BELEZA LTDA" TipCli="2">
+    <EndCli BaiEndCli="Cidade Sao Pedro - Gleba A" CepEndCli="06535020" CmptEndCli="=&quot;&quot;" LgrEndCli="Avenida Fortunato Camargo" MunEndCli="Santana de Parnaiba" NrEndCli="110" UfEndCli="SP" />
+    <TelCli DddTelCli="11" NrTelCli="972479922" />
+    <EndEtnCli EmaiCli="santosdeoliveira_elaine@yahoo.com" />
+  </Cli>
+  <Cli IdfcCli="31821954000199" NmCli="IRENE DA SILVA LEMOS 04906244807" TipCli="2">
+    <EndCli BaiEndCli="Chacara Belenzinho" CepEndCli="03375000" LgrEndCli="R HEMISFERIO" MunEndCli="Sao Paulo" NrEndCli="343" UfEndCli="SP" />
+    <TelCli DddTelCli="11" NrTelCli="976038470" />
+    <EndEtnCli EmaiCli="irenesilvalemos@gmail.com" />
+  </Cli>
+  <Cli IdfcCli="27202127000140" NmCli="FELIPE THADEU BONUCCI" TipCli="2">
+    <EndCli BaiEndCli="Jardim Pinheiros" CepEndCli="05596000" CmptEndCli="Sala 01" LgrEndCli="Avenida Marechal Fiuza De Castro" MunEndCli="Sao Paulo" NrEndCli="194" UfEndCli="SP" />
+    <TelCli DddTelCli="11" NrTelCli="993091113" />
+    <TelCli DddTelCli="11" NrTelCli="95174359" />
+    <EndEtnCli EmaiCli="felipebonucci@hotmail.com" />
+  </Cli>
+</EnvoCad>

@@ -1,0 +1,29 @@
+Nome Completo;Tag/Atributo;Tipo;Obrigatório;Formato;Tamanho;Conteúdo;Significado / Validação;Nivel da Tag
+EnvioCadastro;EnvoCad;tag;sim;-;-;-;;0
+CnpjOrigem;CnpjOgm;atributo;sim;numérico;14;1 a 99999999999999;"Deve ter 14 dígitos, correspondendo ao CNPJ da origem do arquivo
+Infomar o CNPJ Completo da Fonte";
+NomeOrigem;NmOgm;atributo;sim;alfanumérico;60;;Informar o Nome da Fonte que está enviando o arquivo;
+NumeroRemessa;NrRms;atributo;sim;numérico;9;1 a 999999999;Número da remessa, alterado a cada remessa, sem zerar/reiniciar na alteração de data e deve ser maior à remessa já enviada;
+SequencialRemessa;SeqlRms;atributo;sim;numérico;5;1 a 999999;Sequencial dentro de uma mesma remessa (particionamento), deve começar em 1 a cada número de remessa;
+DataRemessa;DtRms;atributo;sim;numérico;8;DDMMAAAA; ;
+Cliente;Cli;tag;sim;-;-;-;;1
+TipoCliente;TipCli;atributo;sim;numérico;1;"1 - PF / 2 - PJ (CNPJ completo) /
+3 - PJ (radical de CNPJ)";;
+Identificacao;IdfcCli;atributo;sim;numérico;14;1 a 99999999999999;"TipoCliente  = 1 > Deve ter  11 dígitos, correspondendo ao CPF completo do cliente
+TipoCliente = 2 > Deve  14 dígitos, correspondendo ao CNPJ completo do cliente
+TipoCliente  = 3 > Deve ter  8 dígitos, correspondendo ao radical de CNPJ do cliente
+";
+NomeCliente;NmCli;atributo;sim;alfanumérico;60;;;
+EnderecoCliente;EndCli;tag;sim;-;-;-;até 5 repetições;2
+LogradouroEnderecoCliente;LgrEndCli;atributo;sim;alfanumérico;60;;Obrigatório, se informado o Grupo Endereço;
+NúmeroEndereço                                                                     ;NrEndCli;atributo;não;alfanumérico;Mín: 1;;;
+ComplementoEnderecoCliente;CmptEndCli;atributo;não;alfanumérico;60;;;
+BairroEnderecoCliente;BaiEndCli;atributo;não;alfanumérico;60;;;
+CEPEnderecoCliente;CepEndCli;atributo;sim;numérico;8;1000 a 99999999;Obrigatório, se informado o Grupo Endereço;
+MunicipioEnderecoCliente;MunEndCli;atributo;sim;alfanumérico;60;;Obrigatório, se informado o Grupo Endereço;
+UFEnderecoCliente;UfEndCli;atributo;sim;alfanumérico;2;;Obrigatório, se informado o Grupo Endereço;
+TelefoneCliente;TelCli;tag;sim;-;-;-;até 5 repetições;2
+DDDTelefoneCliente;DddTelCli;atributo;não;numérico;2;11 a 99;;
+NumeroTelefoneCliente;NrTelCli;atributo;sim;numérico;9;;Obrigatório, se informado o Grupo Telefone;
+EnderecoEletronicoCliente;EndEtnCli;tag;sim;-;-;-;até 5 repetições;2
+EmailCliente;EmaiCli;atributo;sim;alfanumérico;120;;Obrigatório, se informado o  Grupo E-mail;

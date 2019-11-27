@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EnvoHstCrd CmdoRms="I" CnpjGbd="98765432000198" CnpjIf="34046974000128" DtRefBaseItno="29102019" DtRms="29102019" FmtRms="C" NrRms="1" SeqlRms="1">
+  <Cli CdOcr="0" CmdoCli="I" IdfcCli="03712945000124" NmCli="JRSANTOS SERVI&#199;OS M&#201;DICOS EPP" NtzRlc="2" TipCli="2">
+    <Opr CdMdld="A01" CmdoOpr="I" DtAprc="04112019" DtCtrc="09082019" IdfcCliCtrt="03712945000124" NrCtr="01.220-1" NrUnco="6">
+      <DetOpr DtVnctUltPcl="12022020" InPreFix="S" QtPcl="6" VlCtrdFut="1507991" />
+      <PclAnt DtVnctPclAnt="12092019" PercPclAnt="M" VlPclAnt="269000">
+        <PgtoPclAnt DtPgtoPclAnt="12092019" VlPgtoPclAnt="269000" />
+      </PclAnt>
+      <PclAnt DtVnctPclAnt="14102019" PercPclAnt="M" VlPclAnt="269000">
+        <PgtoPclAnt DtPgtoPclAnt="14102019" VlPgtoPclAnt="269000" />
+      </PclAnt>
+      <PclFut DtVnctPrxPcl="12112019" PercPclFut="M" QtPclPgr="4" QtPclVncr="4" VlPrxPcl="269000" />
+    </Opr>
+  </Cli>
+  <Cli CdOcr="0" CmdoCli="I" IdfcCli="11955647000193" NmCli="SILVIO ANIBAL MARCI SANTOS ME" NtzRlc="2" TipCli="2">
+    <Opr CdMdld="A01" CmdoOpr="I" DtAprc="04112019" DtCtrc="15082019" IdfcCliCtrt="11955647000193" NrCtr="01.228-1" NrUnco="9">
+      <DetOpr DtVnctUltPcl="16122019" InPreFix="S" QtPcl="4" VlCtrdFut="502449" />
+      <PclAnt DtVnctPclAnt="16092019" PercPclAnt="M" VlPclAnt="138000">
+        <PgtoPclAnt DtPgtoPclAnt="16092019" VlPgtoPclAnt="138000" />
+      </PclAnt>
+      <PclAnt DtVnctPclAnt="16102019" PercPclAnt="M" VlPclAnt="138000">
+        <PgtoPclAnt DtPgtoPclAnt="15102019" VlPgtoPclAnt="138000" />
+      </PclAnt>
+      <PclFut DtVnctPrxPcl="18112019" PercPclFut="M" QtPclPgr="2" QtPclVncr="2" VlPrxPcl="138000" />
+    </Opr>
+  </Cli>
+  <Cli CdOcr="0" CmdoCli="I" IdfcCli="05024159000160" NmCli="cafeteria sensacao ltda me" NtzRlc="2" TipCli="2">
+    <Opr CdMdld="A01" CmdoOpr="I" DtAprc="04112019" DtCtrc="09092019" IdfcCliCtrt="05024159000160" NrCtr="01.252-1" NrUnco="15">
+      <DetOpr DtVnctUltPcl="09102019" InPreFix="S" QtPcl="6" VlCtrdFut="1005318" />
+      <PclAnt DtVnctPclAnt="09102019" PercPclAnt="M" VlPclAnt="179500">
+        <PgtoPclAnt DtPgtoPclAnt="09102019" VlPgtoPclAnt="179500" />
+      </PclAnt>
+      <PclFut DtVnctPrxPcl="11112019" PercPclFut="M" QtPclPgr="5" QtPclVncr="5" VlPrxPcl="179500" />
+    </Opr>
+  </Cli>
+  <Cli CdOcr="0" CmdoCli="I" IdfcCli="09040978000151" NmCli="cafeteria santa lourdes ltda-me" NtzRlc="2" TipCli="2">
+    <Opr CdMdld="A01" CmdoOpr="I" DtAprc="04112019" DtCtrc="22082019" IdfcCliCtrt="09040978000151" NrCtr="01.235-1" NrUnco="14">
+      <DetOpr DtVnctUltPcl="25112019" InPreFix="S" QtPcl="3" VlCtrdFut="1507016" />
+      <PclAnt DtVnctPclAnt="23092019" PercPclAnt="M" VlPclAnt="524307">
+        <PgtoPclAnt DtPgtoPclAnt="23092019" VlPgtoPclAnt="524307" />
+      </PclAnt>
+      <PclAnt DtVnctPclAnt="23102019" PercPclAnt="M" VlPclAnt="524307">
+        <PgtoPclAnt DtPgtoPclAnt="23102019" VlPgtoPclAnt="524307" />
+      </PclAnt>
+      <PclFut DtVnctPrxPcl="25112019" PercPclFut="M" QtPclPgr="1" QtPclVncr="1" VlPrxPcl="524307" />
+    </Opr>
+  </Cli>
+  <Cli CdOcr="0" CmdoCli="I" IdfcCli="23724696000102" NmCli="MAKEL INSTALA&#199;&#195;O E MANUTEN&#199;&#195;O EIRELLI - EPP" NtzRlc="2" TipCli="2">
+    <Opr CdMdld="A01" CmdoOpr="I" DtAprc="04112019" DtCtrc="20092019" IdfcCliCtrt="23724696000102" NrCtr="01.263-1" NrUnco="14">
+      <DetOpr DtVnctUltPcl="21112019" InPreFix="S" QtPcl="2" VlCtrdFut="271205" />
+      <PclAnt DtVnctPclAnt="21102019" PercPclAnt="M" VlPclAnt="145500">
+        <PgtoPclAnt DtPgtoPclAnt="28102019" VlPgtoPclAnt="149555" />
+      </PclAnt>
+      <PclFut DtVnctPrxPcl="21112019" PercPclFut="M" QtPclPgr="1" QtPclVncr="1" VlPrxPcl="145500" />
+    </Opr>
+  </Cli>
+</EnvoHstCrd>

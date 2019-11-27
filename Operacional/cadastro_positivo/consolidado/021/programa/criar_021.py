@@ -2,7 +2,7 @@ import xml.etree.ElementTree as ET
 from openpyxl import load_workbook
 from pprint import pprint
 
-PATH_IN = r'C:\Users\jean_\Documents\GitHub\Up.p\Operacional\cadastro_positivo\consolidado\005\dados\005.xlsx'
+PATH_IN = r'C:\Users\jean_\Documents\GitHub\Up.p\Operacional\cadastro_positivo\consolidado\021\dados\021.xlsx'
 
 wb = load_workbook(filename = PATH_IN)
 
@@ -16,7 +16,7 @@ def printar_elem_corrente(wb, i, row, col):
 def fill_elem(elem, wb, i, row, col):
     elem.set(str(wb.worksheets[i].cell(row, col + 1).value), str(wb.worksheets[i].cell(row, col + 2).value))
 
-root = ET.Element('EnvoHstCrd')
+root = ET.Element('EnvoCad')
 current_element = root
 
 index_curr_sheet = 0
@@ -56,5 +56,5 @@ for i in range(0,n_sheets):
 
 print('Acabou!')
 tree = ET.ElementTree(root)
-PATH_OUT = r'C:\Users\jean_\Documents\GitHub\Up.p\Operacional\cadastro_positivo\consolidado\005\resultado\BVXA005_34046974_11725176_20191002_00001.xml'
+PATH_OUT = r'C:\Users\jean_\Documents\GitHub\Up.p\Operacional\cadastro_positivo\consolidado\021\resultado\BVXA021_34046974_11725176_20191118_00001.xml'
 tree.write(PATH_OUT)
