@@ -1,0 +1,44 @@
+{
+  "contrato": {
+    "dataInicioContrato": "01/05/2020",
+    "valorEmprestado": 10000,
+    "taxaDeJurosRemuneratoriosAoMes": 0.02,
+    "taxaDeJurosMoratoriosAoMes": 0.01,
+    "multaMoratoriaPercentual": 0.02,
+    "tipoPessoa": "PF",
+    "simplesNacional": false,
+    "parcelas": [
+      {
+        "dataContratual": "01/06/2020",
+        "valorParcela": 1010,
+        "quebraValorParcela": {
+          "valorParcelaPrincipal": 894.315547148482,
+          "valorParcelaJuros": 95,6844528515176,
+          "valorParcelaTarifa": 20
+        },
+        "transferencias": [
+          {
+            "dataTransferencia": "17/05/2020",
+            "valorTransferencia": 490.123033773454
+          }
+        ]
+      }
+    ]
+  },
+  "parcela": {
+        "dataContratual": "01/06/2020",
+        "valorParcela": 1010,
+        "quebraValorParcela": {
+          "valorParcelaPrincipal": 894.315547148482,
+          "valorParcelaJuros": 95,6844528515176,
+          "valorParcelaTarifa": 20
+        },
+    "transferencias": [
+      {
+        "dataTransferencia": "17/05/2020",
+        "valorTransferencia": 490.123033773454
+      }
+    ]
+  },
+  "dataDeVisualizacao": "01/06/2020"
+}

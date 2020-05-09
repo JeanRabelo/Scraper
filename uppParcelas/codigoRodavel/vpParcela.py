@@ -47,12 +47,12 @@ def valorPresenteParcela(contrato, parcela, strDataDeVisualizacao):
                     diasDesdeVencimento = strToDate(Transferencia['dataTransferencia']) - strToDate(parcela["dataContratual"])
                     valorMultaMoratoria = contrato['multaMoratoriaPercentual'] * valorParcelaAoInvestidorNoVencimentoASerPaga
                     valorJurosMoratorios = contrato['taxaDeJurosMoratoriosAoMes'] * valorParcelaAoInvestidorNoVencimentoASerPaga * diasDesdeVencimento / 30
-                    valorIofAtraso = taxaIofDiario(contrato) * valorParcelaAoInvestidorNoVencimentoASerPaga * (max(min(strToDate(contrato['dataInicioContrato']) + timedelta(365) - strToDate(parcela["dataContratual"]), diasDesdeVencimento).days, 0)) / 30
+                    valorIofAtraso = taxaIofDiario(contrato) * valorParcelaAoInvestidorNoVencimentoASerPaga * (max(min(strToDate(contrato['dataInicioContrato']) + timedelta(365) - strToDate(parcela["dataContratual"]), diasDesdeVencimento).days, 0))
                     valorJurosRemuneratoriosAdicionais = valorParcelaAoInvestidorNoVencimentoASerPaga * (pow(1 + contrato['taxaDeJurosRemuneratoriosAoMes'], diasDesdeVencimento / 30) - 1)
                 else:
                     diasDesdeUltimaTransferencia = strToDate(Transferencia['dataTransferencia']) - dataUltimaTransferenciaParcela
                     valorJurosMoratorios = valorJurosMoratorios + contrato['taxaDeJurosMoratoriosAoMes'] * valorParcelaAoInvestidorNoVencimentoASerPaga * diasDesdeUltimaTransferencia / 30
-                    valorIofAtraso = valorIofAtraso + taxaIofDiario(contrato) * valorParcelaAoInvestidorNoVencimentoASerPaga * (max(min(strToDate(contrato['dataInicioContrato'])+365-dataUltimaTransferenciaParcela, diasDesdeUltimaTransferencia), 0)) / 30
+                    valorIofAtraso = valorIofAtraso + taxaIofDiario(contrato) * valorParcelaAoInvestidorNoVencimentoASerPaga * (max(min(strToDate(contrato['dataInicioContrato'])+365-dataUltimaTransferenciaParcela, diasDesdeUltimaTransferencia), 0))
                     valorJurosRemuneratoriosAdicionais = valorJurosRemuneratoriosAdicionais + (valorParcelaAoInvestidorNoVencimentoASerPaga + valorJurosRemuneratoriosAdicionais) * (pow(1 + contrato['taxaDeJurosRemuneratoriosAoMes'], diasDesdeUltimaTransferencia / 30) - 1)
 
                 valorAtualParcelaAoInvestidor = valorParcelaAoInvestidorNoVencimentoASerPaga + valorMultaMoratoria + valorJurosMoratorios + valorJurosRemuneratoriosAdicionais + valorIofAtraso
@@ -101,7 +101,7 @@ def valorPresenteParcela(contrato, parcela, strDataDeVisualizacao):
 
         # Os juros moratórios crescem de maneira simples e não composta
         valorJurosMoratorios = valorJurosMoratorios + contrato['taxaDeJurosMoratoriosAoMes'] * valorParcelaAoInvestidorNoVencimentoASerPaga * (dataDeVisualizacao - dataUltimaTransferenciaParcela).days / 30
-        valorIofAtraso = valorIofAtraso + taxaIofDiario(contrato) * valorParcelaAoInvestidorNoVencimentoASerPaga * (max(min((strToDate(contrato['dataInicioContrato']) + timedelta(365) - dataUltimaTransferenciaParcela).days, (dataDeVisualizacao - dataUltimaTransferenciaParcela).days), 0)) / 30
+        valorIofAtraso = valorIofAtraso + taxaIofDiario(contrato) * valorParcelaAoInvestidorNoVencimentoASerPaga * (max(min((strToDate(contrato['dataInicioContrato']) + timedelta(365) - dataUltimaTransferenciaParcela).days, (dataDeVisualizacao - dataUltimaTransferenciaParcela).days), 0))
         # Não há incidência de Juros Remuneratórios adicionais sobre o valor da tarifa cobrada pela up.p na parcela
         valorJurosRemuneratoriosAdicionais = valorJurosRemuneratoriosAdicionais + (valorParcelaAoInvestidorNoVencimentoASerPaga + valorJurosRemuneratoriosAdicionais) * (pow(1 + contrato['taxaDeJurosRemuneratoriosAoMes'], (dataDeVisualizacao - dataUltimaTransferenciaParcela).days / 30) - 1)
         # É muito difícl extrair dessa função o valor de principal e juros remuneratórios regulares da parcela
