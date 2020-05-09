@@ -1,9 +1,14 @@
-def quebraTransferencia(contrato, dataTransferencia, valorTransferencia, parcela):
-    valorQuebraDividaDataTransferencia = quebraDivida(contrato, dataTransferencia)
-    valorQuebraParcelaDataTransferencia = valorPresenteParcela(contrato, parcela, dataTransferencia)
+from vpParcela import valorPresenteParcela, taxaIofDiario, strToDate
+from quebraDivida import quebraDivida
+from datetime import date, timedelta
+
+def quebraTransferencia(contrato, strDataTransferencia, valorTransferencia, parcela):
+    dataTransferencia = strToDate(strDataTransferencia)
+    valorQuebraDividaDataTransferencia = quebraDivida(contrato, strDataTransferencia)
+    valorQuebraParcelaDataTransferencia = valorPresenteParcela(contrato, parcela, strDataTransferencia)
 
     # Caso a transferência tenha um valor maior do que o valor presente da parcela, retornar um erro
-    checarSeATransferenciaÉMaiorQueAParcela
+    # checarSeATransferenciaÉMaiorQueAParcela
 
     valorQuebraTransferencia = {}
 
@@ -24,8 +29,8 @@ def quebraTransferencia(contrato, dataTransferencia, valorTransferencia, parcela
     valorTransferencia = valorTransferencia - min(valorTransferencia, valorQuebraParcelaDataTransferencia['valorMultaMoratoria'])
 
     # Preenchendo o valor dos Juros Remuneratórios Regulares com base nos Juros Remuneratórios Regulares da dívida na data da parcela
-    if dataTransferencia >= parcela.data: # Se a transferÊncia estiver em atraso ou pontual
-        valorParcelaJurosRemuneratoriosRegularesNaTransferencia = parcela.valorParcelaJuros
+    if dataTransferencia >= strToDate(parcela['dataContratual']): # Se a transferÊncia estiver em atraso ou pontual
+        valorParcelaJurosRemuneratoriosRegularesNaTransferencia = parcela['quebraValorParcela']['valorParcelaJuros']
     else: # Se a transferÊncia estiver adiantada
         valorParcelaJurosRemuneratoriosRegularesNaTransferencia = min(valorQuebraDividaDataTransferencia['valorDividaJurosRemuneratoriosRegulares'], valorQuebraParcelaDataTransferencia['valorPresenteParcelaSemTarifa'])
 
@@ -33,8 +38,8 @@ def quebraTransferencia(contrato, dataTransferencia, valorTransferencia, parcela
     valorTransferencia = valorTransferencia - min(valorTransferencia, valorParcelaJurosRemuneratoriosRegularesNaTransferencia)
 
     # Preenchendo o valor do Principal com base no valor Regulares da dívida na data da parcela
-    if dataTransferencia >= parcela.data: # Se a transferÊncia estiver em atraso ou pontual
-        valorParcelaPrincipalNaTransferencia = parcela.valorTransferenciaPrincipal
+    if dataTransferencia >= strToDate(parcela['dataContratual']): # Se a transferÊncia estiver em atraso ou pontual
+        valorParcelaPrincipalNaTransferencia = parcela['quebraValorParcela']['valorParcelaPrincipal']
     else: # Se a transferÊncia estiver adiantada
         valorParcelaPrincipalNaTransferencia = valorQuebraParcelaDataTransferencia['valorPresenteParcelaSemTarifa'] - valorParcelaJurosRemuneratoriosRegularesNaTransferencia
 

@@ -4,8 +4,8 @@
   "contrato": {
     "dataInicioContrato": "01/05/2020",
     "valorEmprestado": 100,
-    "taxaJurosRemuneratoriosAoMes": 0.00,
-    "taxaJurosMoratoriosAoMes": 0.01,
+    "taxaDeJurosRemuneratoriosAoMes": 0.00,
+    "taxaDeJurosMoratoriosAoMes": 0.01,
     "multaMoratoriaPercentual": 0.02,
     "tipoPessoa": "PF",
     "simplesNacional": false,
@@ -14,11 +14,22 @@
         "dataContratual": "30/05/2020",
         "valorParcela": 100,
         "quebraValorParcela": {
-          "principal": 70,
-          "juros": 20,
-          "tarifa": 10
+          "valorParcelaJuros": 70,
+          "valorParcelaPrincipal": 20,
+          "valorParcelaTarifa": 10
         },
         "transferencias": [
+          {
+            "dataTransferencia": "09/05/2020",
+            "valorTransferencia": 10,
+            "valorTransferenciaJuros": 0.1,
+            "valorTransferenciaPrincipal": 99.9,
+            "valorTransferenciaJurosAdicionais": 0,
+            "valorTransferenciaJurosMoratorios": 0,
+            "valorTransferenciaMultaMoratoria": 0,
+            "valorTransferenciaTarifa": 0,
+            "valorTransferenciaIofAtraso": 0
+          }
         ]
       }
     ]
@@ -27,10 +38,22 @@
         "dataContratual": "30/05/2020",
         "valorParcela": 100,
         "quebraValorParcela": {
-          "principal": 70,
-          "juros": 20,
-          "tarifa": 10
+          "valorParcelaJuros": 70,
+          "valorParcelaPrincipal": 20,
+          "valorParcelaTarifa": 10
         },
-    "transferencias": []
+    "transferencias": [
+      {
+      "dataTransferencia": "09/05/2020",
+      "valorTransferencia": 10,
+      "valorTransferenciaJuros": 0.1,
+      "valorTransferenciaPrincipal": 99.9,
+      "valorTransferenciaJurosAdicionais": 0,
+      "valorTransferenciaJurosMoratorios": 0,
+      "valorTransferenciaMultaMoratoria": 0,
+      "valorTransferenciaTarifa": 0,
+      "valorTransferenciaIofAtraso": 0
+      }
+    ]
   }
 }
